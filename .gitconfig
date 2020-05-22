@@ -1,0 +1,38 @@
+[user]
+	name = shibuyahiroyuki
+	email = mk.9.q.kyu@gmail.com
+[core]
+	editor = vim
+[color]
+	ui = true
+[alias]
+    ad  = add
+    ada = add -A
+    st = status
+    # adf = !git status -s | fzf -m | awk '{print $NF}' | xargs git add
+    br  = branch
+    bra = branch -a
+    brd = !git branch | peco | xargs git branch -D
+    cm  = commit -m
+    co  = checkout
+    cob = checkout -b
+    cof = !git branch | peco | xargs git checkout
+    df  = diff
+    dfh = diff HEAD
+    dft = difftool
+    lg  = log
+    lgp = log -p
+    lgs = log --stat
+    lgg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cs) %C(bold blue)<%an>%Creset' --abbrev-commit
+    mt  = mergetool
+    st  = status
+    ps  = !git push origin `git rev-parse --abbrev-ref HEAD`
+    pl  = !git pull origin `git rev-parse --abbrev-ref HEAD`
+    rb  = rebase
+    rf  = reflog --date=iso
+    rs  = reset
+    rsh = reset --hard
+    pr  = pull-request # hub
+    prb = pull-request -b # ブランチ指定してPR
+[ghq]
+	root = ~/.ghq/
