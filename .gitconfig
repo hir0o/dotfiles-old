@@ -57,4 +57,4 @@
 	changed = green
 	untracked = cyan
 [ghq]
-	root = ~/.ghq/
+	root = ~/ghq/

@@ -1,4 +1,4 @@
-DOTPATH=~/.dotfiles
+DOTPATH=~/ghq/github.com/mkmk4423/dotfiles
 
 for f in .??*
 do
