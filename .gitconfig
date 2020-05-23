@@ -34,5 +34,27 @@
     rsh = reset --hard
     pr  = pull-request # hub
     prb = pull-request -b # ブランチ指定してPR
+[color]
+	ui = true
+	diff = auto
+	branch = auto
+	status = auto
+        showbranch = auto
+
+[color "branch"]
+	local = green
+	remote = red
+	current = green reverse
+
+[color "diff"]
+	old = red bold
+	new = green bold
+	meta = yellow bold
+	frag = magenta bold
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
 [ghq]
 	root = ~/.ghq/
