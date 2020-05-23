@@ -1,4 +1,4 @@
-DOTPATH=./
+DOTPATH=~/.dotfiles
 
 for f in .??*
 do

@@ -32,8 +32,8 @@
     rf  = reflog --date=iso
     rs  = reset
     rsh = reset --hard
-    pr  = pull-request # hub
-    prb = pull-request -b # ブランチ指定してPR
+    prd  = pull-request     # デフォルトブランチにPR
+    prb = pull-request -b   # ブランチ指定してPR
 [color]
 	ui = true
 	diff = auto
