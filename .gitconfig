@@ -1,10 +1,10 @@
 [user]
-	name = shibuyahiroyuki
-	email = mk.9.q.kyu@gmail.com
+    name = shibuyahiroyuki
+    email = mk.9.q.kyu@gmail.com
 [core]
-	editor = vim
+    editor = vim
 [color]
-	ui = true
+    ui = true
 [alias]
     ad  = add
     ada = add -A
@@ -37,23 +37,23 @@
     prb = pull-request -b
     op = browse
 [color]
-	ui = true
-	diff = auto
-	branch = auto
-	status = auto
+    ui = true
+    diff = auto
+    branch = auto
+    status = auto
     showbranch = auto
 [color "branch"]
-	local = green
-	remote = red
-	current = green reverse
+    local = green
+    remote = red
+    current = green reverse
 [color "diff"]
-	old = red bold
-	new = green bold
-	meta = yellow bold
-	frag = magenta bold
+    old = red bold
+    new = green bold
+    meta = yellow bold
+    frag = magenta bold
 [color "status"]
-	added = yellow
-	changed = green
-	untracked = cyan
+    added = yellow
+    changed = green
+    untracked = cyan
 [ghq]
-	root = ~/ghq/
+    root = ~/ghq/
