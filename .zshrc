@@ -89,6 +89,8 @@ function gcre() {
 function gcom() {
     git add -A && git status && git commit -m $@;
 }
+# ghqで管理しているリポジトリに移動
+alias cg='cd $(ghq root)/$(ghq list | peco)'
 # }}
 
 
@@ -99,7 +101,6 @@ alias sst='mysql.server status'
 alias sstop='mysql.server stop'
 ## }}
 
-alias cg='cd $(ghq root)/$(ghq list | peco)' # ghqで管理しているリポジトリに移動する
 
 # 文字コードの指定
 export LANG=ja_JP.UTF-8
