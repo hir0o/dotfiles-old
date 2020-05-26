@@ -8,13 +8,13 @@
 [alias]
     ad  = add
     ada = add -A
-    st = status
-    # adf = !git status -s | fzf -m | awk '{print $NF}' | xargs git add
+    st  = status
+    rmc =git rm -r --cached .
     br  = branch
     bra = branch -a
     brd = !git branch | peco | xargs git branch -D
     cm  = commit -m
-    co  = checkout
+    co  = branch  | peco | xargs git checkout
     cob = checkout -b
     cof = !git branch | peco | xargs git checkout
     df  = diff
@@ -32,8 +32,10 @@
     rf  = reflog --date=iso
     rs  = reset
     rsh = reset --hard
-    prd  = pull-request     # デフォルトブランチにPR
-    prb = pull-request -b   # ブランチ指定してPR
+    res = git checkout . && git clean -df .
+    prd  = pull-request
+    prb = pull-request -b
+    op = browse
 [color]
 	ui = true
 	diff = auto
