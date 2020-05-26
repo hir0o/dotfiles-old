@@ -39,19 +39,16 @@
 	diff = auto
 	branch = auto
 	status = auto
-        showbranch = auto
-
+    showbranch = auto
 [color "branch"]
 	local = green
 	remote = red
 	current = green reverse
-
 [color "diff"]
 	old = red bold
 	new = green bold
 	meta = yellow bold
 	frag = magenta bold
-
 [color "status"]
 	added = yellow
 	changed = green
