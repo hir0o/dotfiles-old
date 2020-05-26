@@ -35,6 +35,8 @@ alias ll3='exa -alhF --git-ignore --group-directories-first --time-style=long-is
 ## docker {{
 alias d='docker'
 alias dc='docker-compose'
+alias dps='docker ps --format "{{.ID}}\t{{.Image}}\t{{.Status}}\t{{.Command}}\t{{.RunningFor}}"'
+alias de='docker exec -it `dps | peco | cut -f 1` /bin/bash' # dockerコンテナ内に入る
 # }}
 
 
@@ -96,9 +98,6 @@ alias sstart='mysql.server start'
 alias sst='mysql.server status'
 alias sstop='mysql.server stop'
 ## }}
-
-alias dps='docker ps --format "{{.ID}}\t{{.Image}}\t{{.Status}}\t{{.Command}}\t{{.RunningFor}}"'
-alias de='docker exec -it `dps | peco | cut -f 1` /bin/bash' # dockerコンテナ内に入る
 
 alias cg='cd $(ghq root)/$(ghq list | peco)' # ghqで管理しているリポジトリに移動する
 
