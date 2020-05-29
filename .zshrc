@@ -90,7 +90,7 @@ function gcom() {
     git add -A && git status && git commit -m $@;
 }
 # ghqで管理しているリポジトリに移動
-alias cg='cd $(ghq root)/$(ghq list | peco)'
+alias cg='cd $(ghq root)/$(ghq list | peco) && code .'
 # }}
 
 
