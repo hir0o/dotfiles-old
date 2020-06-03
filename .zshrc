@@ -51,18 +51,6 @@ alias rres='rails db:reset'
 ## git {{
 alias g='git'
 
-# 直前のコミットに一部ファイル修正/追加をする
-function grst() {
-    git reflog --date=local -n 10;
-    read cn"?type commit massage >> ";
-    git reset --hard ${cn};
-}
-# ghisで確認したコミットハッシュ値を引数にして、指定コミットのメッセージを修正する
-function grst() {
-    git reflog --date=local -n 10;
-    read cn"?type commit massage >> ";
-    git commit -amend ${cn};
-}
 # 変更を全てリセット
 function gres() {
     git checkout . && git clean -df .
@@ -90,7 +78,7 @@ function gcom() {
     git add -A && git status && git commit -m $@;
 }
 # ghqで管理しているリポジトリに移動
-alias cg='cd $(ghq root)/$(ghq list | peco) && code .'
+alias cg='cd $(ghq root)/$(ghq list | peco)'
 # }}
 
 
