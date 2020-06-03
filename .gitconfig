@@ -14,7 +14,7 @@
     bra = branch -a
     brd = !git branch | peco | xargs git branch -D
     cm  = commit -m
-    co  = branch  | peco | xargs git checkout
+    co = !"git branch --all | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
     cob = checkout -b
     cof = !git branch | peco | xargs git checkout
     df  = diff
