@@ -36,6 +36,7 @@
     prd  = pull-request
     prb = pull-request -b
     op = browse
+    fpp = ftp push
 [color]
     ui = true
     diff = auto
