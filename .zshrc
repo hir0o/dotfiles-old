@@ -68,7 +68,7 @@ function gcut() {
     git checkout -b ${nb} ${hn};
 }
 # ブランチを作成し移動
-function gcre() {
+function gfco() {
     read nb"?type branch name >> ";
     git branch ${nb};
     git checkout ${nb};
@@ -76,6 +76,10 @@ function gcre() {
 # commit
 function gcom() {
     git add -A && git status && git commit -m $@;
+}
+# git-ftpの初期設定
+function gfinii() {
+    echo ""
 }
 # ghqで管理しているリポジトリに移動
 alias cg='cd $(ghq root)/$(ghq list | peco)'

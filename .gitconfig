@@ -33,10 +33,10 @@
     rs  = reset
     rsh = reset --hard
     res = git checkout . && git clean -df .
-    prd  = pull-request
+    prm  = pull-request
     prb = pull-request -b
     op = browse
-    fpp = ftp push
+    fps = ftp push
 [color]
     ui = true
     diff = auto
