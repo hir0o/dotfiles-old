@@ -28,6 +28,7 @@
     st  = status
     ps  = !git push origin `git rev-parse --abbrev-ref HEAD`
     pl  = !git pull origin `git rev-parse --abbrev-ref HEAD`
+    psh = push heroku master
     rb  = rebase
     rf  = reflog --date=iso
     rs  = reset

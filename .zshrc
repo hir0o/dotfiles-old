@@ -5,8 +5,8 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # # パス
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-export PATH=$HOME/.pyenv/shims:$PATH
+export PATH="$HOME/.nodebrew/current/bin:$PATH"
+export PATH="$HOME/.pyenv/shims:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 export PATH="$HOME/.rbenv/shims:$PATH"
