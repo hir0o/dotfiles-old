@@ -73,9 +73,13 @@ function gfco() {
     git branch ${nb};
     git checkout ${nb};
 }
-# commit
-function gcom() {
+# commit -m
+function gcmm() {
     git add -A && git status && git commit -m $@;
+}
+# commit
+function gcm() {
+    git add -A && git status && git commit;
 }
 # git-ftpの初期設定
 function gfinii() {
