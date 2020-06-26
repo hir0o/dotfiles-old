@@ -66,5 +66,8 @@
     changed = green
     untracked = cyan
 
+[commit]
+	template = ~/.commi_template
+
 [ghq]
     root = ~/ghq/
