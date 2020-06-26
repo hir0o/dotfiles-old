@@ -1,10 +1,13 @@
 [user]
     name = shibuyahiroyuki
     email = mk.9.q.kyu@gmail.com
+
 [core]
     editor = vim
+
 [color]
     ui = true
+
 [alias]
     ad  = add
     ada = add -A
@@ -38,24 +41,30 @@
     prb = pull-request -b
     op = browse
     fps = ftp push
+    g   = !ghq get
+
 [color]
     ui = true
     diff = auto
     branch = auto
     status = auto
     showbranch = auto
+
 [color "branch"]
     local = green
     remote = red
     current = green reverse
+
 [color "diff"]
     old = red bold
     new = green bold
     meta = yellow bold
     frag = magenta bold
+
 [color "status"]
     added = yellow
     changed = green
     untracked = cyan
+
 [ghq]
     root = ~/ghq/

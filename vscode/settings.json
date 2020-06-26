@@ -1,0 +1,28 @@
+{
+    "window.zoomLevel": 1,
+    "todo-tree.tree.showScanModeButton": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "todo-tree.highlights.enabled": false,
+    "workbench.colorTheme": "Ayu Dark",
+    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+    "php-cs-fixer.lastDownload": 1592544990760,
+    "files.autoSave": "onFocusChange",
+    "editor.semanticTokenColorCustomizations": null,
+    "emmet.excludeLanguages": [
+        "markdown"
+    ],
+    "emmet.includeLanguages": {
+        "erb": "html",
+        "scss": "css"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "java.home": "/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "java.semanticHighlighting.enabled": true
+}

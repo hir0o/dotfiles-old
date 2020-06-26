@@ -1,3 +1,5 @@
+VSPATH="${HOME}/Library/Application Support/Code/User" && mkdir -p ${VSPATH}
+
 DOTPATH=~/ghq/github.com/mkmk4423/dotfiles
 
 for f in .??*
@@ -6,3 +8,5 @@ do
 
     ln -snfv "$DOTPATH/$f" "$HOME"/"$f"
 done
+
+ln -snfv "$DOTPATH/vscode/settings.json" "$VSPATH"/"settings.json"
