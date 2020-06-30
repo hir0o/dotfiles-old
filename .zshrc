@@ -2,8 +2,7 @@
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 
-# # パス
-# 追加したソフトやパッケージ用のコマンドのパス
+# パス
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
@@ -82,7 +81,7 @@ alias g='git'
 function git(){hub "$@"}
 # 変更を全てリセット
 function gres() {
-    git checkout . && git clean -df .
+    git checkout -- . && git clean -df .
 }
 # gitのカレントブランチ名を変更する
 function grename() {
@@ -116,7 +115,6 @@ function gfinii() {
 }
 # ghqで管理しているリポジトリに移動
 alias cg='cd $(ghq root)/$(ghq list | peco)'
-# }}
 
 
 ## ========== Mysql ==========
@@ -134,7 +132,6 @@ export FZF_DEFAULT_OPTS='--reverse --color fg:-1,bg:-1,hl:230,fg+:3,bg+:233,hl+:
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 
-
 ## ----------------------------------------
 ## p10k
 ## ----------------------------------------
@@ -142,6 +139,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 zstyle ':prezto:module:prompt' theme 'powerlevel10k'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 
 ## ----------------------------------------
 ## Gcloud

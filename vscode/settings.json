@@ -3,9 +3,8 @@
     "todo-tree.tree.showScanModeButton": false,
     "workbench.iconTheme": "material-icon-theme",
     "todo-tree.highlights.enabled": false,
-    "workbench.colorTheme": "Ayu Dark",
     "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-    "php-cs-fixer.lastDownload": 1592544990760,
+    "php-cs-fixer.lastDownload": 1593431528687,
     "files.autoSave": "onFocusChange",
     "editor.semanticTokenColorCustomizations": null,
     "emmet.excludeLanguages": [
@@ -24,5 +23,9 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "java.semanticHighlighting.enabled": true
+    "java.semanticHighlighting.enabled": true,
+    "csscomb.preset": "csscomb",
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Night Owl",
+    "files.trimTrailingWhitespace": true
 }

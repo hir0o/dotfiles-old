@@ -12,9 +12,10 @@
     ad  = add
     ada = add -A
     st  = status
-    rmc =git rm -r --cached .
+    rmc = git rm -r --cached .
     br  = branch
     bra = branch -a
+    brm = branch -m
     brd = !git branch | peco | xargs git branch -D
     cm  = commit -m
     co = !"git branch --all | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
