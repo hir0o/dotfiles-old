@@ -25,7 +25,22 @@
     },
     "java.semanticHighlighting.enabled": true,
     "csscomb.preset": "csscomb",
-    "editor.formatOnSave": true,
     "workbench.colorTheme": "Night Owl",
+    "files.associations": {
+        "*.vue": "vue"
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+        "language": "vue",
+        "autoFix": true
+        }
+    ],
+    "eslint.autoFixOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true
 }
