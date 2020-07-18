@@ -1,46 +1,67 @@
 {
-    "window.zoomLevel": 1,
-    "todo-tree.tree.showScanModeButton": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "todo-tree.highlights.enabled": false,
-    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-    "php-cs-fixer.lastDownload": 1593431528687,
-    "files.autoSave": "onFocusChange",
-    "editor.semanticTokenColorCustomizations": null,
-    "emmet.excludeLanguages": [
-        "markdown"
-    ],
-    "emmet.includeLanguages": {
-        "erb": "html",
-        "scss": "css"
-    },
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "java.home": "/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home",
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
-    },
-    "java.semanticHighlighting.enabled": true,
-    "csscomb.preset": "csscomb",
-    "workbench.colorTheme": "Night Owl",
-    "files.associations": {
-        "*.vue": "vue"
-    },
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        {
-        "language": "vue",
-        "autoFix": true
-        }
-    ],
-    "eslint.autoFixOnSave": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true
+  "window.zoomLevel": 1,
+  "todo-tree.tree.showScanModeButton": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "todo-tree.highlights.enabled": false,
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "php-cs-fixer.lastDownload": 1594713823511,
+  "files.autoSave": "onFocusChange",
+  "editor.semanticTokenColorCustomizations": null,
+  "emmet.excludeLanguages": ["markdown"],
+  "emmet.includeLanguages": {
+    "erb": "html",
+    "scss": "css"
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "java.home": "/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "java.semanticHighlighting.enabled": true,
+  "csscomb.preset": "csscomb",
+  "workbench.colorTheme": "Night Owl",
+  "files.associations": {
+    "*.vue": "vue",
+    "*.gs": "javascript"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
+  "eslint.autoFixOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  // インデントの設定
+  "editor.detectIndentation": false,
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[vue]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "cSpell.userWords": ["Tollero"],
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.gs": "javascript"
+  }
 }

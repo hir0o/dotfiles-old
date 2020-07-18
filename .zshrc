@@ -123,6 +123,13 @@ alias sstart='mysql.server start'
 alias sst='mysql.server status'
 alias sstop='mysql.server stop'
 
+## ========== Mac OS ==========
+# ブランチを切ってチェックアウトする
+function ssdir() {
+    read dir"?type screencapture directory >> ";
+    defaults write com.apple.screencapture location ${dir};killall SystemUIServer
+}
+
 
 ## ----------------------------------------
 ##	FZF
