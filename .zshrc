@@ -124,7 +124,7 @@ alias sst='mysql.server status'
 alias sstop='mysql.server stop'
 
 ## ========== Mac OS ==========
-# ブランチを切ってチェックアウトする
+# スクリーンショットの保存ディレクトリを変更
 function ssdir() {
     read dir"?type screencapture directory >> ";
     defaults write com.apple.screencapture location ${dir};killall SystemUIServer
