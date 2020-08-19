@@ -115,6 +115,8 @@ function gfinii() {
 }
 # ghqで管理しているリポジトリに移動
 alias cg='cd $(ghq root)/$(ghq list | peco)'
+# vscodeで開く
+alias ccg='code $(ghq root)/$(ghq list | peco)'
 
 
 ## ========== Mysql ==========
