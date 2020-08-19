@@ -4,7 +4,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "todo-tree.highlights.enabled": false,
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1594713823511,
+  "php-cs-fixer.lastDownload": 1596187764553,
   "files.autoSave": "onFocusChange",
   "editor.semanticTokenColorCustomizations": null,
   "emmet.excludeLanguages": ["markdown"],
@@ -60,8 +60,22 @@
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "cSpell.userWords": ["Tollero"],
-  "editor.formatOnSave": true,
   "files.associations": {
     "*.gs": "javascript"
-  }
+  },
+  "tabnine.experimentalAutoImports": true,
+
+  // るぼこっぷ
+  // If not specified searches for 'rubocop' executable available on PATH (default and recommended)
+  "ruby.rubocop.executePath": "",
+  // You can use specific path
+  // "ruby.rubocop.executePath": "/Users/you/.rbenv/shims/"
+  // "ruby.rubocop.executePath": "/Users/you/.rvm/gems/ruby-2.3.2/bin/"
+  // "ruby.rubocop.executePath": "D:/bin/Ruby22-x64/bin/"
+  // If not specified, it assumes a null value by default.
+  "ruby.rubocop.configFilePath": "/Users/shibuyahiroyuki/ghq/github.com/mkmk4423/dotfiles/.rubocop.yml",
+
+  // default true
+  "ruby.rubocop.onSave": true,
+  "editor.formatOnSave": true
 }

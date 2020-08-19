@@ -123,6 +123,11 @@ alias sstart='mysql.server start'
 alias sst='mysql.server status'
 alias sstop='mysql.server stop'
 
+## ========== npm ==========
+alias n='npm'
+alias ndev='npm run dev'
+alias nser='npm run serve'
+
 ## ========== Mac OS ==========
 # スクリーンショットの保存ディレクトリを変更
 function ssdir() {
