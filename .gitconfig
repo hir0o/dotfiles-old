@@ -40,7 +40,7 @@
     rsh = reset --hard
     res = git checkout . && git clean -df .
     prm  = pull-request
-    prb = pull-request -b
+    prb = pull-request -b | git branch --remotes | peco
     op = browse
     fps = ftp push
     g   = !ghq get

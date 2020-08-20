@@ -76,6 +76,5 @@
   "ruby.rubocop.configFilePath": "/Users/shibuyahiroyuki/ghq/github.com/mkmk4423/dotfiles/.rubocop.yml",
 
   // default true
-  "ruby.rubocop.onSave": true,
-  "editor.formatOnSave": true
+  "ruby.rubocop.onSave": true
 }
