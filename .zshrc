@@ -133,8 +133,8 @@ alias nser='npm run serve'
 ## ========== Mac OS ==========
 # スクリーンショットの保存ディレクトリを変更
 function ssdir() {
-    read dir"?type screencapture directory >> ";
-    defaults write com.apple.screencapture location ${dir};killall SystemUIServer
+  read dir"?type screencapture directory >> ";
+  defaults write com.apple.screencapture location ${dir};killall SystemUIServer
 }
 
 
