@@ -75,6 +75,9 @@ alias rs='rails server'
 alias rmig='rails db:migrate'
 alias rres='rails db:reset'
 
+## ========== Pythons ==========
+alias py='python'
+
 ## ========== Git ==========
 alias g='git'
 # ghqコマンドをgitで使える
