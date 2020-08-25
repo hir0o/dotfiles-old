@@ -75,7 +75,7 @@ alias rs='rails server'
 alias rmig='rails db:migrate'
 alias rres='rails db:reset'
 
-## ========== Pythons ==========
+## ========== Python ==========
 alias py='python'
 
 ## ========== Git ==========
