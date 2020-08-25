@@ -84,37 +84,37 @@ alias g='git'
 function git(){hub "$@"}
 # 変更を全てリセット
 function gres() {
-    git checkout -- . && git clean -df .
+  git checkout -- . && git clean -df .
 }
 # gitのカレントブランチ名を変更する
 function grename() {
-    read -p "type new branch name >> " nb;
-    cb = git branch --contains=HEAD;
-    git branch -m ${cb} ${nb};
+  read -p "type new branch name >> " nb;
+  cb = git branch --contains=HEAD;
+  git branch -m ${cb} ${nb};
 }
 # ブランチを切ってチェックアウトする
 function gcut() {
-    read -p "type old branch >> " hn;
-    read -p "type new branch name >> " nb;
-    git checkout -b ${nb} ${hn};
+  read -p "type old branch >> " hn;
+  read -p "type new branch name >> " nb;
+  git checkout -b ${nb} ${hn};
 }
 # ブランチを作成し移動
 function gfco() {
-    read nb"?type branch name >> ";
-    git branch ${nb};
-    git checkout ${nb};
+  read nb"?type branch name >> ";
+  git branch ${nb};
+  git checkout ${nb};
 }
 # commit -m
 function gcmm() {
-    git add -A && git status && git commit -m $@;
+  git add -A && git status && git commit -m $@;
 }
 # commit
 function gcm() {
-    git add -A && git status && git commit;
+  git add -A && git status && git commit;
 }
 # git-ftpの初期設定
 function gfinii() {
-    echo ""
+  echo ""
 }
 # ghqで管理しているリポジトリに移動
 alias cg='cd $(ghq root)/$(ghq list | peco)'
