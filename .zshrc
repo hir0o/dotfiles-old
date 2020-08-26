@@ -63,10 +63,14 @@ alias ll3='exa -alhF --git-ignore --group-directories-first --time-style=long-is
 alias d='docker'
 alias dlsc='docker container ls'
 alias dlsi='docker image ls'
-alias dc='docker-compose'
 alias dps='docker ps --format "{{.ID}}\t{{.Image}}\t{{.Status}}\t{{.Command}}\t{{.RunningFor}}"'
 alias de='docker exec -it `dps | peco | cut -f 1` /bin/bash' # dockerコンテナ内に入る
 
+## ========== Docker Compose ==========
+alias dc='docker-compose'
+alias dcb='docker-compose build'
+alias dcu='docker-compose up'
+alias dcbn='docker-compose build --no-cache'
 
 ## ========== Rails ==========
 alias r='rails'
