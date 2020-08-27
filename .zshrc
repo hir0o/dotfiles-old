@@ -120,6 +120,16 @@ function gcm() {
 function gfinii() {
   echo ""
 }
+# リポジトリ作成からpushまで
+function gcre() {
+    git init;
+    git add -A && git commit;
+    read name"?type repo name        : ";
+    read description"?type repo description : ";
+    hub create ${name} -p ${description};
+    git push --set-upstream origin master;
+    hub browse;
+}
 # ghqで管理しているリポジトリに移動
 alias cg='cd $(ghq root)/$(ghq list | peco)'
 # vscodeで開く
