@@ -12,8 +12,8 @@
     ad  = add
     ada = add -A
     st  = status
-    rmc = git rm -r --cached .
-    res = git checkout -- . && git clean -df .
+    rmc = !"git rm -r --cached ."
+    res = !"git checkout -- . && git clean -df ."
     br  = branch
     bra = branch -a
     brm = branch -m
