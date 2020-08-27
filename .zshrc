@@ -64,7 +64,7 @@ alias d='docker'
 alias dlsc='docker container ls'
 alias dlsi='docker image ls'
 alias dps='docker ps --format "{{.ID}}\t{{.Image}}\t{{.Status}}\t{{.Command}}\t{{.RunningFor}}"'
-alias de='docker exec -it `dps | peco | cut -f 1` /bin/bash' # dockerコンテナ内に入る
+alias de='docker exec -it `dps | fzf | cut -f 1` /bin/bash' # dockerコンテナ内に入る
 
 ## ========== Docker Compose ==========
 alias dc='docker-compose'
@@ -131,9 +131,9 @@ function gcre() {
     hub browse;
 }
 # ghqで管理しているリポジトリに移動
-alias cg='cd $(ghq root)/$(ghq list | peco)'
+alias cg='cd $(ghq root)/$(ghq list | fzf)'
 # vscodeで開く
-alias ccg='code $(ghq root)/$(ghq list | peco)'
+alias ccg='code $(ghq root)/$(ghq list | fzf)'
 
 
 ## ========== Mysql ==========
