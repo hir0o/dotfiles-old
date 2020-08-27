@@ -11,7 +11,7 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$HOME/.pyenv/shims:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-
+export DOTPATH=~/ghq/github.com/mkmk4423/dotfiles
 ## ----------------------------------------
 ##	ENV
 ## ----------------------------------------

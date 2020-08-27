@@ -1,4 +1,3 @@
-DOTPATH=~/ghq/github.com/mkmk4423/dotfiles
 VSPATH="${HOME}/Library/Application Support/Code/User" && mkdir -p ${VSPATH}
 
 
