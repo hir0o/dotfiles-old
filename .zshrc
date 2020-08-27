@@ -136,7 +136,7 @@ alias cg='cd $(ghq root)/$(ghq list | fzf)'
 # vscodeで開く
 alias ccg='code $(ghq root)/$(ghq list | fzf)'
 
-## ========== Aliases  ==========
+## ========== Aliases ==========
 alias vial='nvim `ls -d ${DOTPATH}/aliases/* | fzf --preview "bat --color=always --style=header,grid {}"`'
 alias sral='source `ls -d ${DOTPATH}/aliases/* | fzf --preview "bat --color=always --style=header,grid {}"`'
 
