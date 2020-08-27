@@ -57,14 +57,14 @@ alias rmds='fd .DS_Store -exec rm'
 alias ll='exa -alhF --git-ignore --group-directories-first --time-style=long-iso'
 alias ll2='exa -alhF --git-ignore --group-directories-first --time-style=long-iso -T -L=2 --ignore-glob=".git|node_modules"'
 alias ll3='exa -alhF --git-ignore --group-directories-first --time-style=long-iso -T -L=3 --ignore-glob=".git|node_modules"'
-
+alias bz="bat $DOTPATH/.zshrc"
 
 ## ========== Docker ==========
 alias d='docker'
 alias dlsc='docker container ls'
 alias dlsi='docker image ls'
 alias dps='docker ps --format "{{.ID}}\t{{.Image}}\t{{.Status}}\t{{.Command}}\t{{.RunningFor}}"'
-alias de='docker exec -it `dps | fzf | cut -f 1` /bin/bash' # dockerコンテナ内に入る
+alias de='docker exec -it `dps | fzf | cut -f 1` /bin/bash'
 
 ## ========== Docker Compose ==========
 alias dc='docker-compose'
