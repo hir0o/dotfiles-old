@@ -13,11 +13,13 @@
     ada = add -A
     st  = status
     rmc = git rm -r --cached .
+    res = git checkout -- . && git clean -df .
     br  = branch
     bra = branch -a
     brm = branch -m
     brd = !git branch | peco | xargs git branch -D
-    cm  = commit -m
+    cm  = commit
+    cmm = git add -A && git status && git commit -m
     coa = !"git branch --all | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
     co = !"git branch | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
     cob = checkout -b
