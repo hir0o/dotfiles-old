@@ -125,7 +125,7 @@ function gfinii() {
 # リポジトリ作成からpushまで
 function gcre() {
     git init;
-    git add -A && git commit;
+    git add -A && git commit -m ":tada: init";
     read name"?type repo name        : ";
     read description"?type repo description : ";
     hub create ${name} -p ${description};
