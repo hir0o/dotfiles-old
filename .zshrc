@@ -137,26 +137,6 @@ alias cg='cd $(ghq root)/$(ghq list | fzf)'
 # vscodeで開く
 alias ccg='code $(ghq root)/$(ghq list | fzf)'
 
-
-## ========== Mysql ==========
-alias scn='mycli -u root'
-alias sstart='mysql.server start'
-alias sst='mysql.server status'
-alias sstop='mysql.server stop'
-
-## ========== npm ==========
-alias n='npm'
-alias ndev='npm run dev'
-alias nser='npm run serve'
-
-## ========== Mac OS ==========
-# スクリーンショットの保存ディレクトリを変更
-function ssdir() {
-  read dir"?type screencapture directory >> ";
-  defaults write com.apple.screencapture location ${dir};killall SystemUIServer
-}
-
-
 ## ----------------------------------------
 ##	FZF
 ## ----------------------------------------
