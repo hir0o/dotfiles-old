@@ -57,7 +57,9 @@ alias rmds='fd .DS_Store -exec rm'
 alias ll='exa -alhF --git-ignore --group-directories-first --time-style=long-iso'
 alias ll2='exa -alhF --git-ignore --group-directories-first --time-style=long-iso -T -L=2 --ignore-glob=".git|node_modules"'
 alias ll3='exa -alhF --git-ignore --group-directories-first --time-style=long-iso -T -L=3 --ignore-glob=".git|node_modules"'
-alias bz="bat $DOTPATH/.zshrc"
+alias bz='bat ${DOTPATH}/.zshrc'
+alias vial='nvim `ls -d ${DOTPATH}/aliases/* | fzf --preview "bat {}"`'
+alias sral='source `ls -d ${DOTPATH}/aliases/* | fzf --preview "bat {}"`'
 
 ## ========== Docker ==========
 alias d='docker'
