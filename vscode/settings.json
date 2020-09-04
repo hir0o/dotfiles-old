@@ -76,5 +76,21 @@
   "ruby.rubocop.configFilePath": "/Users/shibuyahiroyuki/ghq/github.com/mkmk4423/dotfiles/.rubocop.yml",
 
   // default true
-  "ruby.rubocop.onSave": true
+  "ruby.rubocop.onSave": true,
+  "[go]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false
+  },
+  "go.formatTool": "goreturns",
+  "go.formatFlags": ["-w"],
+  "go.lintTool": "golint",
+  "go.lintOnSave": "package",
+  "go.vetOnSave": "package",
+  "go.buildOnSave": "package",
+  "go.testOnSave": false,
+  "go.gocodeAutoBuild": true,
+  "go.installDependenciesWhenBuilding": true
 }
