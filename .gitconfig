@@ -4,6 +4,7 @@
 
 [core]
   editor = vim
+  pager = delta
 
 [color]
   ui = true
@@ -22,7 +23,7 @@
   cm  = commit
   cmm = !"git add -A && git status && git commit -m"
   coa = !"git branch --all | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
-  co = !"git branch | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
+  co  = !"git branch | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
   cob = checkout -b
   cof = !git branch | peco | xargs git checkout
   df  = diff
@@ -42,9 +43,9 @@
   rs  = reset
   rsh = reset --hard
   res = git checkout . && git clean -df .
-  prm  = pull-request
+  prm = pull-request
   prb = pull-request -b
-  op = browse
+  op  = browse
   fps = ftp push
   g   = !ghq get
 
@@ -72,7 +73,18 @@
   untracked = cyan
 
 [commit]
-template = ~/.commi_template
+  template = ~/.commi_template
+
+[delta] # https://github.com/dandavison/delta
+  plus-color = "#012800"
+  minus-color = "#340001"
+  syntax-theme = Monokai Extended
+  side-by-side = true
+  line-numbers-left-format = ""
+  line-numbers-right-format = "│ "
+
+[interactive]
+  diffFilter = delta --color-only
 
 [ghq]
   root = ~/ghq/
