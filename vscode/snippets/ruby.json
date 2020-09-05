@@ -1,113 +1,108 @@
 {
-	// Place your snippets for ruby here. Each snippet is defined under a snippet name and has a prefix, body and
-	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
-	// same ids are connected.
-	// Example:
 	"パラメータ受け取るやつ": {
 		"prefix": "params.require",
 		"body": [
-			"params.require(:$1).permit(:$2)",
+			"params.require(:$1).permit(:$2)"
 		],
 		"description": "パラメータ受け取るやつ"
 	},
 	"redirect": {
 		"prefix": "redirect_to",
 		"body": [
-			"redirect_to ${1:path}, flash: { ${2:success}: '${3:message}' }",
+			"redirect_to ${1:path}, flash: { ${2:success}: '${3:message}' }"
 		],
 		"description": "リダイレクトするやつ"
 	},
 	"validate:presence": {
 		"prefix": "validates:presence",
 		"body": [
-			"validates :${1:colum_name}, presence: true",
+			"validates :${1:colum_name}, presence: true"
 		],
 		"description": "空のバリデーションするやつ"
 	},
 	"route:get": {
 		"prefix": "route:get",
 		"body": [
-			"get '/${1:models}/${2:path}', to: '${1:models}#${3:action}'${4:, as: '${path_alias}'}",
+			"get '/${1:models}/${2:path}', to: '${1:models}#${3:action}'${4:, as: '${path_alias}'}"
 		],
 		"description": "空のバリデーションするやつ"
 	},
 	"add_column": {
 		"prefix": "add_column",
 		"body": [
-			"add_column :${1:models}, :${2:column_name}, :${3:column_type}, ${4:null: ${5:false}}",
+			"add_column :${1:models}, :${2:column_name}, :${3:column_type}, ${4:null: ${5:false}}"
 		],
 		"description": "カラム追加するやつ"
 	},
 	"add_column:boolean": {
 		"prefix": "add_column:boolean",
 		"body": [
-			"add_column :${1:models}, :${2:column_name}, :boolean, null: ${3:false}, default: false",
+			"add_column :${1:models}, :${2:column_name}, :boolean, null: ${3:false}, default: false"
 		],
 		"description": "カラム追加するやつ"
 	},
 	"add_column:string": {
 		"prefix": "add_column:string",
 		"body": [
-			"add_column :${1:models}, :${2:column_name}, :string, null: ${3:false}",
+			"add_column :${1:models}, :${2:column_name}, :string, null: ${3:false}"
 		],
 		"description": "カラム追加するやつ"
 	},
 	"add_column:intager": {
 		"prefix": "add_column:intager",
 		"body": [
-			"add_column :${1:models}, :${2:column_name}, :intager, null: ${3:false}",
+			"add_column :${1:models}, :${2:column_name}, :intager, null: ${3:false}"
 		],
 		"description": "カラム追加するやつ"
 	},
 	"root path": {
 		"prefix": "root",
 		"body": [
-			"root '${1:controller_names}#${2:action}'",
+			"root '${1:controller_names}#${2:action}'"
 		],
 		"description": "ルートパス"
 	},
 	"resources": {
 		"prefix": "resources",
 		"body": [
-			"resources :${1:resourses}, :only: %i[$2]",
+			"resources :${1:resourses}, :only: %i[$2]"
 		],
 		"description": "resources"
 	},
 	"private": {
 		"prefix": "private",
 		"body": [
-			"private",
+			"private"
 		]
 	},
 	"integer": {
 		"prefix": "integer",
 		"body": [
-			"integer",
+			"integer"
 		]
 	},
 	"has_many": {
 		"prefix": "has_many",
 		"body": [
-			"has_many :${1:models}, ${2:dependent: :destroy}",
+			"has_many :${1:models}, ${2:dependent: :destroy}"
 		]
 	},
 	"has_one": {
 		"prefix": "has_one",
 		"body": [
-			"has_one :${1:model}, ${2:dependent: :destroy}",
+			"has_one :${1:model}, ${2:dependent: :destroy}"
 		]
 	},
 	"belongs_to": {
 		"prefix": "belongs_to",
 		"body": [
-			"belongs_to :${1:model}",
+			"belongs_to :${1:model}"
 		]
 	},
 	"remove_reference": {
 		"prefix": "remove_reference",
 		"body": [
-			"remove_reference :${1:tables}, :${2:column}, index: true, foreign_key: true",
+			"remove_reference :${1:tables}, :${2:column}, index: true, foreign_key: true"
 		]
 	},
 	"each_with_index": {

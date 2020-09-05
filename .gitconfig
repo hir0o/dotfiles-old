@@ -1,77 +1,78 @@
 [user]
-    name = shibuyahiroyuki
-    email = mk.9.q.kyu@gmail.com
+  name = shibuyahiroyuki
+  email = mk.9.q.kyu@gmail.com
 
 [core]
-    editor = vim
+  editor = vim
 
 [color]
-    ui = true
+  ui = true
 
 [alias]
-    ad  = add
-    ada = add -A
-    st  = status
-    rmc = !"git rm -r --cached ."
-    res = !"git checkout -- . && git clean -df ."
-    br  = branch
-    bra = branch -a
-    brm = branch -m
-    brd = !git branch | peco | xargs git branch -D
-    cm  = commit
-    cmm = !"git add -A && git status && git commit -m"
-    coa = !"git branch --all | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
-    co = !"git branch | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
-    cob = checkout -b
-    cof = !git branch | peco | xargs git checkout
-    df  = diff
-    dfh = diff HEAD
-    dft = difftool
-    lg  = log
-    lgp = log -p
-    lgs = log --stat
-    lgg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cs) %C(bold blue)<%an>%Creset' --abbrev-commit
-    mt  = mergetool
-    st  = status
-    ps  = !git push origin `git rev-parse --abbrev-ref HEAD`
-    pl  = !git pull origin `git rev-parse --abbrev-ref HEAD`
-    psh = push heroku master
-    rb  = rebase
-    rf  = reflog --date=iso
-    rs  = reset
-    rsh = reset --hard
-    res = git checkout . && git clean -df .
-    prm  = pull-request
-    prb = pull-request -b
-    op = browse
-    fps = ftp push
-    g   = !ghq get
+  #TODO: https://gist.github.com/miukoba/fc3c10a25c1c675c1e97
+  ad  = add
+  ada = add -A
+  st  = status
+  rmc = !"git rm -r --cached ."
+  res = !"git checkout -- . && git clean -df ."
+  br  = branch
+  bra = branch -a
+  brm = branch -m
+  brd = !git branch | peco | xargs git branch -D
+  cm  = commit
+  cmm = !"git add -A && git status && git commit -m"
+  coa = !"git branch --all | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
+  co = !"git branch | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
+  cob = checkout -b
+  cof = !git branch | peco | xargs git checkout
+  df  = diff
+  dfh = diff HEAD
+  dft = difftool
+  lg  = log
+  lgp = log -p
+  lgs = log --stat
+  lgg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cs) %C(bold blue)<%an>%Creset' --abbrev-commit
+  mt  = mergetool
+  st  = status
+  ps  = !git push origin `git rev-parse --abbrev-ref HEAD`
+  pl  = !git pull origin `git rev-parse --abbrev-ref HEAD`
+  psh = push heroku master
+  rb  = rebase
+  rf  = reflog --date=iso
+  rs  = reset
+  rsh = reset --hard
+  res = git checkout . && git clean -df .
+  prm  = pull-request
+  prb = pull-request -b
+  op = browse
+  fps = ftp push
+  g   = !ghq get
 
 [color]
-    ui = true
-    diff = auto
-    branch = auto
-    status = auto
-    showbranch = auto
+  ui = true
+  diff = auto
+  branch = auto
+  status = auto
+  showbranch = auto
 
 [color "branch"]
-    local = green
-    remote = red
-    current = green reverse
+  local = green
+  remote = red
+  current = green reverse
 
 [color "diff"]
-    old = red bold
-    new = green bold
-    meta = yellow bold
-    frag = magenta bold
+  old = red bold
+  new = green bold
+  meta = yellow bold
+  frag = magenta bold
 
 [color "status"]
-    added = yellow
-    changed = green
-    untracked = cyan
+  added = yellow
+  changed = green
+  untracked = cyan
 
 [commit]
-	template = ~/.commi_template
+template = ~/.commi_template
 
 [ghq]
-    root = ~/ghq/
+  root = ~/ghq/
