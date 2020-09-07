@@ -1,7 +1,4 @@
 
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-
-
 # パス
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
@@ -11,7 +8,9 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$HOME/.pyenv/shims:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+
 export DOTPATH=~/ghq/github.com/mkmk4423/dotfiles
+
 ## ----------------------------------------
 ##	ENV
 ## ----------------------------------------
@@ -130,3 +129,4 @@ zstyle ':prezto:module:prompt' theme 'powerlevel10k'
 if [ -f '/Users/shibuyahiroyuki/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/shibuyahiroyuki/google-cloud-sdk/path.zsh.inc'; fi
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/shibuyahiroyuki/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/shibuyahiroyuki/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="/Users/shibuyahiroyuki/git-fuzzy/bin:$PATH"
