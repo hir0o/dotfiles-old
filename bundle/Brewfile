@@ -52,7 +52,7 @@ cask "font-fontawesome"
 cask "font-hack-nerd-font"
 
 ## ========== Applications ==========
-cask "deepl"
+# cask "deepl"
 cask "slack"
 cask "alfred"
 cask "docker"
