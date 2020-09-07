@@ -211,10 +211,10 @@ Lint/UriEscapeUnescape:
   Enabled: true
 
 Lint/UselessAssignment:
-  Enabled: false
+  Enabled: true
 
 Lint/DeprecatedClassMethods:
-  Enabled: false
+  Enabled: true
 
 Style/ParenthesesAroundCondition:
   Enabled: true
@@ -227,22 +227,30 @@ Style/HashTransformValues:
 
 Style/RedundantBegin:
   Enabled: true
-aadasda
 
+Style/RedundantReturn:
+  Enabled: true
+  AllowMultipleReturnValues: true
 
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
-as
+Style/Semicolon:
+  Enabled: true
+  AllowAsExpressionSeparator: true
+
+# Prefer Foo.method over Foo::method
+Style/ColonMethodCall:
+  Enabled: true
+
+Style/TrivialAccessors:
+  Enabled: true
+
+Performance/FlatMap:
+  Enabled: true
+
+Performance/RedundantMerge:
+  Enabled: true
+
+Performance/StartWith:
+  Enabled: true
 
 Performance/EndWith:
   Enabled: true
