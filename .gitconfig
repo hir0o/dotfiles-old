@@ -14,12 +14,11 @@
   ad  = add
   ada = add -A
   st  = status
+  ss  = stash
   rmc = !"git rm -r --cached ."
   res = !"git checkout -- . && git clean -df ."
   br  = branch
-  bra = branch -a
-  brm = branch -m
-  brd = !git branch | peco | xargs git branch -D
+  brd = !git branch | fzf -m --print0 | tr -d ' ' | xargs -0 git branch -D
   cm  = commit
   cmm = !"git add -A && git status && git commit -m"
   coa = !"git branch --all | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
@@ -48,6 +47,12 @@
   op  = browse
   fps = ftp push
   g   = !ghq get
+  rmg = !rm -rf `ghq list -p | fzf`
+  opg = !hub browse `ghq list | fzf | cut -d "/" -f 2,3`
+  fst = fuzzy status
+  fbr = fuzzy branch
+  flg = fuzzy log
+  fss = fuzzy stash
 
 [color]
   ui = true
