@@ -1,4 +1,5 @@
 {
+  "editor.snippetSuggestions": "top", // ユーザースニペットを既存のスニペットより上に出す
   "window.zoomLevel": 1,
   "todo-tree.tree.showScanModeButton": false,
   "workbench.iconTheme": "material-icon-theme",
@@ -77,20 +78,43 @@
 
   // default true
   "ruby.rubocop.onSave": true,
-  "[go]": {
+	"[go]": {
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": true
+    },
     "editor.tabSize": 4,
-    "editor.insertSpaces": false,
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": false,
-    "editor.formatOnType": false
-  },
-  "go.formatTool": "goreturns",
-  "go.formatFlags": ["-w"],
-  "go.lintTool": "golint",
-  "go.lintOnSave": "package",
-  "go.vetOnSave": "package",
-  "go.buildOnSave": "package",
-  "go.testOnSave": false,
-  "go.gocodeAutoBuild": true,
-  "go.installDependenciesWhenBuilding": true
+    "editor.insertSpaces": true
+	},
+	"go.alternateTools": {
+		"go-langserver": "gopls"
+	},
+	"go.buildOnSave": "package",
+	"go.formatTool": "goimports",
+	"go.formatFlags": ["-w"],
+	"go.gocodeAutoBuild": true,
+	"go.installDependenciesWhenBuilding": true,
+	"go.languageServerExperimentalFeatures": {
+		"hover": true,
+		"format": true,
+		"rename": true,
+		"diagnostics": true,
+		"autoComplete": false, // ::
+		"signatureHelp": true,
+		"goToDefinition": true,
+		"findReferences": true,
+		"documentSymbols": true,
+		"workspaceSymbols": true,
+		"goToTypeDefinition": true,
+		"goToImplementation": true
+	},
+	"go.lintTool": "golint",
+	"go.lintOnSave": "package",
+	"gopls": {
+		"deepCompletion": true,
+		"usePlaceholders": false,
+		"completeUnimported": true
+	},
+	"go.testOnSave": false,
+	"go.useLanguageServer": true,
+	"go.vetOnSave": "package",
 }
