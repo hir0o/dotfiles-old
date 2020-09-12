@@ -24,7 +24,7 @@
   },
   "java.semanticHighlighting.enabled": true,
   "csscomb.preset": "csscomb",
-  "workbench.colorTheme": "Night Owl",
+  "workbench.colorTheme": "Ayu Dark",
   "files.associations": {
     "*.vue": "vue",
     "*.gs": "javascript"
@@ -44,7 +44,6 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-  // インデントの設定
   "editor.detectIndentation": false,
   "[javascript]": {
     "editor.tabSize": 2,
@@ -58,26 +57,6 @@
     "editor.tabSize": 2,
     "editor.insertSpaces": true
   },
-  "editor.tabSize": 2,
-  "editor.insertSpaces": true,
-  "cSpell.userWords": ["Tollero"],
-  "files.associations": {
-    "*.gs": "javascript"
-  },
-  "tabnine.experimentalAutoImports": true,
-
-  // るぼこっぷ
-  // If not specified searches for 'rubocop' executable available on PATH (default and recommended)
-  "ruby.rubocop.executePath": "",
-  // You can use specific path
-  // "ruby.rubocop.executePath": "/Users/you/.rbenv/shims/"
-  // "ruby.rubocop.executePath": "/Users/you/.rvm/gems/ruby-2.3.2/bin/"
-  // "ruby.rubocop.executePath": "D:/bin/Ruby22-x64/bin/"
-  // If not specified, it assumes a null value by default.
-  "ruby.rubocop.configFilePath": "/Users/shibuyahiroyuki/ghq/github.com/mkmk4423/dotfiles/.rubocop.yml",
-
-  // default true
-  "ruby.rubocop.onSave": true,
 	"[go]": {
 		"editor.codeActionsOnSave": {
 			"source.organizeImports": true
@@ -85,6 +64,13 @@
     "editor.tabSize": 4,
     "editor.insertSpaces": true
 	},
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "cSpell.userWords": ["Tollero"],
+  "files.associations": {
+    "*.gs": "javascript"
+  },
+  "tabnine.experimentalAutoImports": true,
 	"go.alternateTools": {
 		"go-langserver": "gopls"
 	},
@@ -98,7 +84,7 @@
 		"format": true,
 		"rename": true,
 		"diagnostics": true,
-		"autoComplete": false, // ::
+		"autoComplete": false,
 		"signatureHelp": true,
 		"goToDefinition": true,
 		"findReferences": true,
@@ -116,5 +102,5 @@
 	},
 	"go.testOnSave": false,
 	"go.useLanguageServer": true,
-	"go.vetOnSave": "package",
+  "go.vetOnSave": "package"
 }
