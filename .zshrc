@@ -14,7 +14,7 @@ export DOTPATH=~/ghq/github.com/mkmk4423/dotfiles
 ## ----------------------------------------
 ##	ENV
 ## ----------------------------------------
-export EDITOR=nvim
+# export EDITOR=nvim
 export TERM=xterm-256color
 export CVSEDITOR="${EDITOR}"
 export SVN_EDITOR="${EDITOR}"
@@ -51,11 +51,11 @@ setopt hist_ignore_all_dups # 同じコマンドをヒストリに残さない
 ## ----------------------------------------
 ## ========== General ==========
 mkcd() { mkdir $@; cd $@; }
+# alias vi='nvim' vim='nvim'
+alias srz='source ~/.zshrc'
 alias op='open ./'
 alias rmds='fd .DS_Store -exec rm'
-alias ll='exa -alhF --git-ignore --group-directories-first --time-style=long-iso'
-alias ll2='exa -alhF --git-ignore --group-directories-first --time-style=long-iso -T -L=2 --ignore-glob=".git|node_modules"'
-alias ll3='exa -alhF --git-ignore --group-directories-first --time-style=long-iso -T -L=3 --ignore-glob=".git|node_modules"'
+alias ll='exa -alhF --git-ignore --group-directories-first --time-style=long-iso --ignore-glob=".git|node_modules"'
 alias bat='bat --color=always --style=header,grid'
 alias bz='bat ${DOTPATH}/.zshrc'
 
@@ -100,6 +100,10 @@ function gcre() {
 alias cg='cd $(ghq root)/$(ghq list | fzf)'
 # vscodeで開く
 alias ccg='code $(ghq root)/$(ghq list | fzf)'
+function gres() {
+  git checkout -- . && git clean -df .
+}
+
 
 ## ========== Aliases ==========
 alias vial='nvim `ls -d ${DOTPATH}/aliases/* | fzf --preview "bat --color=always --style=header,grid {}"`'

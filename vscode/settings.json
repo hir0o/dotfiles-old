@@ -5,7 +5,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "todo-tree.highlights.enabled": false,
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1596187764553,
+  "php-cs-fixer.lastDownload": 1600164444175,
   "files.autoSave": "onFocusChange",
   "editor.semanticTokenColorCustomizations": null,
   "emmet.excludeLanguages": ["markdown"],
@@ -24,7 +24,6 @@
   },
   "java.semanticHighlighting.enabled": true,
   "csscomb.preset": "csscomb",
-  "workbench.colorTheme": "Night Owl",
   "files.associations": {
     "*.vue": "vue",
     "*.gs": "javascript"
@@ -44,7 +43,6 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-  // インデントの設定
   "editor.detectIndentation": false,
   "[javascript]": {
     "editor.tabSize": 2,
@@ -58,6 +56,13 @@
     "editor.tabSize": 2,
     "editor.insertSpaces": true
   },
+  "[go]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "cSpell.userWords": ["Tollero"],
@@ -65,56 +70,40 @@
     "*.gs": "javascript"
   },
   "tabnine.experimentalAutoImports": true,
-
-  // るぼこっぷ
-  // If not specified searches for 'rubocop' executable available on PATH (default and recommended)
-  "ruby.rubocop.executePath": "",
-  // You can use specific path
-  // "ruby.rubocop.executePath": "/Users/you/.rbenv/shims/"
-  // "ruby.rubocop.executePath": "/Users/you/.rvm/gems/ruby-2.3.2/bin/"
-  // "ruby.rubocop.executePath": "D:/bin/Ruby22-x64/bin/"
-  // If not specified, it assumes a null value by default.
-  "ruby.rubocop.configFilePath": "/Users/shibuyahiroyuki/ghq/github.com/mkmk4423/dotfiles/.rubocop.yml",
-
-  // default true
-  "ruby.rubocop.onSave": true,
-	"[go]": {
-		"editor.codeActionsOnSave": {
-			"source.organizeImports": true
-    },
-    "editor.tabSize": 4,
-    "editor.insertSpaces": true
-	},
-	"go.alternateTools": {
-		"go-langserver": "gopls"
-	},
-	"go.buildOnSave": "package",
-	"go.formatTool": "goimports",
-	"go.formatFlags": ["-w"],
-	"go.gocodeAutoBuild": true,
-	"go.installDependenciesWhenBuilding": true,
-	"go.languageServerExperimentalFeatures": {
-		"hover": true,
-		"format": true,
-		"rename": true,
-		"diagnostics": true,
-		"autoComplete": false, // ::
-		"signatureHelp": true,
-		"goToDefinition": true,
-		"findReferences": true,
-		"documentSymbols": true,
-		"workspaceSymbols": true,
-		"goToTypeDefinition": true,
-		"goToImplementation": true
-	},
-	"go.lintTool": "golint",
-	"go.lintOnSave": "package",
-	"gopls": {
-		"deepCompletion": true,
-		"usePlaceholders": false,
-		"completeUnimported": true
-	},
-	"go.testOnSave": false,
-	"go.useLanguageServer": true,
-	"go.vetOnSave": "package",
+  "go.alternateTools": {
+    "go-langserver": "gopls"
+  },
+  "go.buildOnSave": "package",
+  "go.formatTool": "goimports",
+  "go.formatFlags": ["-w"],
+  "go.gocodeAutoBuild": true,
+  "go.installDependenciesWhenBuilding": true,
+  "go.languageServerExperimentalFeatures": {
+    "hover": true,
+    "format": true,
+    "rename": true,
+    "diagnostics": true,
+    "autoComplete": false,
+    "signatureHelp": true,
+    "goToDefinition": true,
+    "findReferences": true,
+    "documentSymbols": true,
+    "workspaceSymbols": true,
+    "goToTypeDefinition": true,
+    "goToImplementation": true
+  },
+  "go.lintTool": "golint",
+  "go.lintOnSave": "package",
+  "gopls": {
+    "deepCompletion": true,
+    "usePlaceholders": false,
+    "completeUnimported": true
+  },
+  "go.testOnSave": false,
+  "go.useLanguageServer": true,
+  "go.vetOnSave": "package",
+  "editor.formatOnSave": true,
+  "workbench.colorTheme": "Visual Studio Dark",
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true
 }

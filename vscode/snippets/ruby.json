@@ -25,7 +25,6 @@
 		"body": [
 			"get '/${1:models}/${2:path}', to: '${1:models}#${3:action}'${4:, as: '${path_alias}'}"
 		],
-		"description": "空のバリデーションするやつ"
 	},
 	"add_column": {
 		"prefix": "add_column",
@@ -65,7 +64,7 @@
 	"resources": {
 		"prefix": "resources",
 		"body": [
-			"resources :${1:resourses}, :only: %i[$2]"
+			"resources :${1:resourses}, only: %i[$2]"
 		],
 		"description": "resources"
 	},
@@ -73,6 +72,18 @@
 		"prefix": "private",
 		"body": [
 			"private"
+		]
+	},
+	"current_user": {
+		"prefix": "current_user",
+		"body": [
+			"current_user"
+		]
+	},
+	"flash": {
+		"prefix": "flash",
+		"body": [
+			"flash.now[:$1] = $2"
 		]
 	},
 	"integer": {
@@ -120,5 +131,18 @@
       "\t$2",
       "end"
 		]
-	}
+  },
+  "def:create": {
+    "prefix": "def:create",
+    "body": [
+      "def create",
+      "\t@${1:model} = ${2:Model}.new(${1:model}_params)",
+      "\tif @${1:model}.save",
+      "\t\t$3",
+      "\telse",
+      "\t\trender ${4::new}",
+      "\tend",
+      "end"
+    ]
+  }
 }

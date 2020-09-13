@@ -16,7 +16,6 @@
   st  = status
   ss  = stash
   rmc = !"git rm -r --cached ."
-  res = !"git checkout -- . && git clean -df ."
   br  = branch
   brd = !git branch | fzf -m --print0 | tr -d ' ' | xargs -0 git branch -D
   cm  = commit
