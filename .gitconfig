@@ -41,12 +41,13 @@
   rs  = reset
   rsh = reset --hard
   res = git checkout . && git clean -df .
-  prm = pr create
-  prb = pr create --base
+  prm = pull-request
+  prb = pull-request -b
   op  = browse
   fps = ftp push
   g   = !ghq get
   rmg = !rm -rf `ghq list -p | fzf`
+  opg = !hub browse `ghq list | fzf | cut -d "/" -f 2,3`
   fst = fuzzy status
   fbr = fuzzy branch
   flg = fuzzy log

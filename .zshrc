@@ -84,8 +84,8 @@ alias py='python'
 
 ## ========== Git ==========
 alias g='git'
-# ghコマンドをgitで使える
-function git(){gh "$@"}
+# ghqコマンドをgitで使える
+function git(){hub "$@"}
 # リポジトリ作成からpushまで
 function gcre() {
     git init;
