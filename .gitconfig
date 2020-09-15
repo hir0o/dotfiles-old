@@ -10,7 +10,6 @@
   ui = true
 
 [alias]
-  #TODO: https://gist.github.com/miukoba/fc3c10a25c1c675c1e97
   ad  = add
   ada = add -A
   st  = status
