@@ -105,5 +105,4 @@
   "editor.formatOnSave": true,
   "workbench.colorTheme": "Visual Studio Dark",
   "liveServer.settings.donotVerifyTags": true,
-  "liveServer.settings.donotShowInfoMsg": true
 }
