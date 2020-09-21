@@ -1,7 +1,21 @@
 {
   "Template": {
     "prefix": ["template"],
-    "body": ["package main", "", "func main() {", "\t$1", "}"]
+    "body": [
+      "package main",
+      "",
+      "func main() {",
+      "\t$1",
+      "}"
+    ]
+  },
+  "Print": {
+    "prefix": ["print"],
+    "body": ["fmt.Println($1)"]
+  },
+  "Printf": {
+    "prefix": ["printf"],
+    "body": ["fmt.Printf(\"%T\", $1)"]
   },
   "FindMin": {
     "prefix": ["findmin"],
@@ -34,14 +48,6 @@
       "file.Read(data)",
       "fmt.Println(string(data))"
     ]
-  },
-  "Print": {
-    "prefix": ["print"],
-    "body": ["fmt.Println($1)"]
-  },
-  "Printf": {
-    "prefix": ["printf"],
-    "body": ["fmt.Printf(\"%T\", $1)"]
   },
   "HttpRequest": {
     "prefix": ["httprequest"],

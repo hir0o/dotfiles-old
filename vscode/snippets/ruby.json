@@ -36,7 +36,7 @@
 	"add_column:boolean": {
 		"prefix": "add_column:boolean",
 		"body": [
-			"add_column :${1:models}, :${2:column_name}, :boolean, null: ${3:false}, default: false"
+			"add_column :${1:models}, :${2:column_name}, :boolean, null: ${3:false}, default:  ${3:false}"
 		],
 		"description": "カラム追加するやつ"
 	},
@@ -141,6 +141,18 @@
       "\t\t$3",
       "\telse",
       "\t\trender ${4::new}",
+      "\tend",
+      "end"
+    ]
+  },
+  "def:update": {
+    "prefix": "def:update",
+    "body": [
+      "def update",
+      "\tif @${1:model}.update(${1:model}_params)",
+      "\t\t$3",
+      "\telse",
+      "\t\trender ${4::edit}",
       "\tend",
       "end"
     ]

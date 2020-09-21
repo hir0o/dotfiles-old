@@ -15,7 +15,7 @@
   },
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "java.home": "/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home",
+  "java.home": "/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home",
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
@@ -102,7 +102,6 @@
   "go.testOnSave": false,
   "go.useLanguageServer": true,
   "go.vetOnSave": "package",
-  "editor.formatOnSave": true,
-  "workbench.colorTheme": "Visual Studio Dark",
-  "liveServer.settings.donotVerifyTags": true,
+  "workbench.colorTheme": "Ayu Dark Bordered",
+  "liveServer.settings.donotVerifyTags": true
 }

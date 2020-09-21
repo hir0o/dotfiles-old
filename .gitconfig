@@ -39,7 +39,6 @@
   rf  = reflog --date=iso
   rs  = reset
   rsh = reset --hard
-  res = git checkout . && git clean -df .
   prm = pull-request
   prb = pull-request -b
   op  = browse
