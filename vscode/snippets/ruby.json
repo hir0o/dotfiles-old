@@ -24,7 +24,7 @@
 		"prefix": "route:get",
 		"body": [
 			"get '/${1:models}/${2:path}', to: '${1:models}#${3:action}'${4:, as: '${path_alias}'}"
-		],
+		]
 	},
 	"add_column": {
 		"prefix": "add_column",

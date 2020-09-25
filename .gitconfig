@@ -17,7 +17,7 @@
   rmc = !"git rm -r --cached ."
   br  = branch
   brd = !git branch | fzf -m --print0 | tr -d ' ' | xargs -0 git branch -D
-  cm  = commit
+  cm  = commit --verbose
   cmm = !"git add -A && git status && git commit -m"
   coa = !"git branch --all | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
   co  = !"git branch | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
