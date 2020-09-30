@@ -104,6 +104,8 @@ function gres() {
   git checkout -- . && git clean -df .
 }
 
+## ========== VScode ==========
+alias vc='code'
 
 ## ========== Aliases ==========
 alias vial='nvim `ls -d ${DOTPATH}/aliases/* | fzf --preview "bat --color=always --style=header,grid {}"`'
