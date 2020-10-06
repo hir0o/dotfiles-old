@@ -54,7 +54,7 @@ mkcd() { mkdir $@; cd $@; }
 # alias vi='nvim' vim='nvim'
 alias srz='source ~/.zshrc'
 alias op='open ./'
-alias rmds='fd .DS_Store -exec rm'
+alias rmds='find . -name '.DS_Store' -type f -ls -delete'
 alias ll='exa -alhF --git-ignore --group-directories-first --time-style=long-iso --ignore-glob=".git|node_modules"'
 alias bat='bat --color=always --style=header,grid'
 alias bz='bat ${DOTPATH}/.zshrc'
