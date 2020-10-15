@@ -3,7 +3,7 @@
   email = mk.9.q.kyu@gmail.com
 
 [core]
-  editor = vim
+  editor = nvim
   pager = delta
 
 [color]
@@ -74,8 +74,8 @@
   changed = green
   untracked = cyan
 
-[commit]
-  template = ~/.commi_template
+#[commit]
+# template = ~/.commi_template
 
 [delta] # https://github.com/dandavison/delta
   plus-color = "#012800"

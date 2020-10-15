@@ -5,7 +5,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "todo-tree.highlights.enabled": false,
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1600164444175,
+  "php-cs-fixer.lastDownload": 1602234204528,
   "files.autoSave": "onFocusChange",
   "editor.semanticTokenColorCustomizations": null,
   "emmet.excludeLanguages": ["markdown"],
@@ -103,5 +103,6 @@
   "go.useLanguageServer": true,
   "go.vetOnSave": "package",
   "workbench.colorTheme": "Ayu Dark Bordered",
-  "liveServer.settings.donotVerifyTags": true
+  "liveServer.settings.donotVerifyTags": true,
+  "java.refactor.renameFromFileExplorer": "autoApply"
 }
