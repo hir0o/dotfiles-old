@@ -5,7 +5,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "todo-tree.highlights.enabled": false,
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1602234204528,
+  "php-cs-fixer.lastDownload": 1603449952973,
   "files.autoSave": "onFocusChange",
   "editor.semanticTokenColorCustomizations": null,
   "emmet.excludeLanguages": ["markdown"],
