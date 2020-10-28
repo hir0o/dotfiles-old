@@ -50,6 +50,7 @@
   fbr = fuzzy branch
   flg = fuzzy log
   fss = fuzzy stash
+  fh = fetch
 
 [color]
   ui = true
