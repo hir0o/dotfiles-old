@@ -31,6 +31,7 @@
   lgs = log --stat
   lgg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cs) %C(bold blue)<%an>%Creset' --abbrev-commit
   mt  = mergetool
+  mg  = merge
   st  = status
   ps  = !git push origin `git rev-parse --abbrev-ref HEAD`
   pl  = !git pull origin `git rev-parse --abbrev-ref HEAD`
@@ -91,3 +92,8 @@
 
 [ghq]
   root = ~/ghq/
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

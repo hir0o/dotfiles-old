@@ -5,7 +5,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "todo-tree.highlights.enabled": false,
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1603449952973,
+  "php-cs-fixer.lastDownload": 1605514365128,
   "files.autoSave": "onFocusChange",
   "editor.semanticTokenColorCustomizations": null,
   "emmet.excludeLanguages": ["markdown"],
@@ -63,8 +63,7 @@
     "editor.tabSize": 4,
     "editor.insertSpaces": true
   },
-  "editor.tabSize": 2,
-  "editor.insertSpaces": true,
+	"editor.tabSize": 2,
   "cSpell.userWords": ["Tollero"],
   "files.associations": {
     "*.gs": "javascript"
@@ -102,8 +101,12 @@
   "go.testOnSave": false,
   "go.useLanguageServer": true,
   "go.vetOnSave": "package",
-  "workbench.colorTheme": "Ayu Dark Bordered",
+  "workbench.colorTheme": "Ayu Mirage Bordered",
   "liveServer.settings.donotVerifyTags": true,
   "java.refactor.renameFromFileExplorer": "autoApply",
-  "editor.formatOnSave": true
+  "liveServer.settings.donotShowInfoMsg": true,
+  "telemetry.enableTelemetry": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettire.semi": true,
+  "prettire.singleQuote": true
 }
