@@ -1,13 +1,6 @@
 [user]
-  name = shibuyahiroyuki
+	name = mkmk4423
   email = mk.9.q.kyu@gmail.com
-
-[core]
-  editor = nvim
-  pager = delta
-
-[color]
-  ui = true
 
 [alias]
   ad  = add
@@ -53,6 +46,13 @@
   fss = fuzzy stash
   fh = fetch
 
+[core]
+  editor = nvim
+  pager = delta
+
+[color]
+  ui = true
+
 [color]
   ui = true
   diff = auto
@@ -76,8 +76,9 @@
   changed = green
   untracked = cyan
 
-#[commit]
-# template = ~/.commi_template
+[commit]
+  # gpgsign = true
+  template = ~/.commi_template
 
 [delta] # https://github.com/dandavison/delta
   plus-color = "#012800"

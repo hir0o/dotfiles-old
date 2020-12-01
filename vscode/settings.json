@@ -5,7 +5,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "todo-tree.highlights.enabled": false,
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1605514365128,
+  "php-cs-fixer.lastDownload": 1606725739803,
   "files.autoSave": "onFocusChange",
   "editor.semanticTokenColorCustomizations": null,
   "emmet.excludeLanguages": ["markdown"],
@@ -101,12 +101,13 @@
   "go.testOnSave": false,
   "go.useLanguageServer": true,
   "go.vetOnSave": "package",
-  "workbench.colorTheme": "Ayu Mirage Bordered",
+  "workbench.colorTheme": "Ayu Dark Bordered",
   "liveServer.settings.donotVerifyTags": true,
   "java.refactor.renameFromFileExplorer": "autoApply",
   "liveServer.settings.donotShowInfoMsg": true,
   "telemetry.enableTelemetry": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettire.semi": true,
-  "prettire.singleQuote": true
+  "prettire.singleQuote": true,
+  "editor.formatOnSave": true
 }

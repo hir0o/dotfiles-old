@@ -14,7 +14,7 @@ export DOTPATH=~/ghq/github.com/mkmk4423/dotfiles
 ## ----------------------------------------
 ##	ENV
 ## ----------------------------------------
-# export EDITOR=nvim
+export EDITOR=nvim
 export TERM=xterm-256color
 export CVSEDITOR="${EDITOR}"
 export SVN_EDITOR="${EDITOR}"

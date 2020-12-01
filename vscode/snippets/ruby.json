@@ -156,5 +156,9 @@
       "\tend",
       "end"
     ]
+  },
+  "javascript_pack_tag": {
+    "prefix": "javascript_pack_tag",
+    "body": "javascript_pack_tag '$1'"
   }
 }

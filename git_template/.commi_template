@@ -1,11 +1,11 @@
-# ==== Messages ====
-# Add      新規 ファイル・機能 追加
-# Delete   削除
-# Update   機能修正、既存機能追加（バグではない)
-# Clean    リファクタリング
-# Remove   削除など
-# Fix      バグ修正
-# Upgrade  バージョンアップ
+# Add
+# Delete
+# Feature
+# Fix
+# Refactor
+# Update
+# Doc
+# Merge
 # Initial Commit
 #
 # <Type>: <Task Name>
