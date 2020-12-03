@@ -8,7 +8,7 @@
   st  = status
   ss  = stash
   rmc = !"git rm -r --cached ."
-  br  = branch
+  br  = branch -av
   brd = !git branch | fzf -m --print0 | tr -d ' ' | xargs -0 git branch -D
   cm  = commit --verbose
   cmm = !"git add -A && git status && git commit -m"
@@ -34,8 +34,9 @@
   rs  = reset
   rsh = reset --hard
   prm = pull-request
-  prb = pull-request -b
-  op  = browse
+  prb = pull-request `git br | fzf`
+  op  = !hub browse
+  opg = !hub browse `ghq list | fzf | cut -d "/" -f 2,3`
   fps = ftp push
   g   = !ghq get
   rmg = !rm -rf `ghq list -p | fzf`
@@ -81,12 +82,15 @@
   template = ~/.commi_template
 
 [delta] # https://github.com/dandavison/delta
-  plus-color = "#012800"
-  minus-color = "#340001"
-  syntax-theme = Monokai Extended
+  line-numbers = true
+	hunk-header-style = omit
+	file-style = "#338ECF" ul
+	file-decoration-style = none
+	syntax-theme = Monokai Extended
+	whitespace-error-style = 22 reverse
+	line-numbers-left-style = "#3D424D"
+	line-numbers-right-style = "#3D424D"
   side-by-side = true
-  line-numbers-left-format = ""
-  line-numbers-right-format = "│ "
 
 [interactive]
   diffFilter = delta --color-only

@@ -63,7 +63,7 @@
     "editor.tabSize": 4,
     "editor.insertSpaces": true
   },
-	"editor.tabSize": 2,
+  "editor.tabSize": 2,
   "cSpell.userWords": ["Tollero"],
   "files.associations": {
     "*.gs": "javascript"
@@ -107,7 +107,5 @@
   "liveServer.settings.donotShowInfoMsg": true,
   "telemetry.enableTelemetry": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettire.semi": true,
-  "prettire.singleQuote": true,
   "editor.formatOnSave": true
 }
