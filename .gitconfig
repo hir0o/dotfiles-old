@@ -22,7 +22,7 @@
   lg  = log
   lgp = log -p
   lgs = log --stat
-  lgg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cs) %C(bold blue)<%an>%Creset' --abbrev-commit
+  lgg = !git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   mt  = mergetool
   mg  = merge
   st  = status
@@ -34,13 +34,12 @@
   rs  = reset
   rsh = reset --hard
   prm = pull-request
-  prb = pull-request `git br | fzf`
-  op  = !hub browse
+  prb = pull-request -b
+  op  = browse
   opg = !hub browse `ghq list | fzf | cut -d "/" -f 2,3`
   fps = ftp push
   g   = !ghq get
   rmg = !rm -rf `ghq list -p | fzf`
-  opg = !hub browse `ghq list | fzf | cut -d "/" -f 2,3`
   fst = fuzzy status
   fbr = fuzzy branch
   flg = fuzzy log
