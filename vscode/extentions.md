@@ -49,3 +49,5 @@ wingrunr21.vscode-ruby-0.27.0
 Ruby のハイライター
 // zignd.html-css-class-completion-1.19.0
 css を HTML で補完する．sass とか対応してなさそうだから入れない．
+Java Extension Pack
+java の環境

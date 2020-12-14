@@ -1,5 +1,5 @@
 [user]
-	name = mkmk4423
+  name = mkmk4423
   email = mk.9.q.kyu@gmail.com
 
 [alias]
@@ -82,13 +82,13 @@
 
 [delta] # https://github.com/dandavison/delta
   line-numbers = true
-	hunk-header-style = omit
-	file-style = "#338ECF" ul
-	file-decoration-style = none
-	syntax-theme = Monokai Extended
-	whitespace-error-style = 22 reverse
-	line-numbers-left-style = "#3D424D"
-	line-numbers-right-style = "#3D424D"
+  hunk-header-style = omit
+  file-style = "#338ECF" ul
+  file-decoration-style = none
+  syntax-theme = Monokai Extended
+  whitespace-error-style = 22 reverse
+  line-numbers-left-style = "#3D424D"
+  line-numbers-right-style = "#3D424D"
   side-by-side = true
 
 [interactive]

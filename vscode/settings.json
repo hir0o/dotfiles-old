@@ -105,6 +105,5 @@
   "java.refactor.renameFromFileExplorer": "autoApply",
   "liveServer.settings.donotShowInfoMsg": true,
   "telemetry.enableTelemetry": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
