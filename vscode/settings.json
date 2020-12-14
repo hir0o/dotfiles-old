@@ -4,14 +4,13 @@
   "todo-tree.tree.showScanModeButton": false,
   "workbench.iconTheme": "material-icon-theme",
   "todo-tree.highlights.enabled": false,
-  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1606725739803,
   "files.autoSave": "onFocusChange",
   "editor.semanticTokenColorCustomizations": null,
   "emmet.excludeLanguages": ["markdown"],
   "emmet.includeLanguages": {
     "erb": "html",
-    "scss": "css"
+    "scss": "css",
+    "javascript": "javascriptreact"
   },
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
