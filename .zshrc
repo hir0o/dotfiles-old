@@ -52,12 +52,13 @@ setopt hist_ignore_all_dups # 同じコマンドをヒストリに残さない
 ## ========== General ==========
 mkcd() { mkdir $@; cd $@; }
 # alias vi='nvim' vim='nvim'
+alias vz='nvim ${DOTPATH}/.zshrc'
 alias srz='source ~/.zshrc'
 alias op='open ./'
 alias rmds='find . -name '.DS_Store' -type f -ls -delete'
 alias ll='exa -alhF --git-ignore --group-directories-first --time-style=long-iso --ignore-glob=".git|node_modules"'
 alias bat='bat --color=always --style=header,grid'
-alias bz='bat ${DOTPATH}/.zshrc'
+alias cl='cd $(ls | fzf)'
 
 ## ========== Docker ==========
 alias d='docker'
@@ -84,9 +85,7 @@ alias py='python'
 
 ## ========== Git ==========
 alias g='git'
-# ghqコマンドをgitで使える
 function git(){hub "$@"}
-# リポジトリ作成からpushまで
 function gcre() {
     git init;
     git add -A && git commit -m ":tada: init";
@@ -96,12 +95,16 @@ function gcre() {
     git push --set-upstream origin master;
     hub browse;
 }
-# ghqで管理しているリポジトリに移動
 alias cg='cd $(ghq root)/$(ghq list | fzf)'
-# vscodeで開く
 alias ccg='code $(ghq root)/$(ghq list | fzf)'
 function gres() {
   git checkout -- . && git clean -df .
+}
+function cm() {
+  prefix=$(cat $DOTPATH/prefixes | fzf)
+  echo "prefix is           : $prefix  "
+  read commi"?type commit content : ";
+  git commit -m "$prefix: $commi"
 }
 
 ## ========== VScode ==========
