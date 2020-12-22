@@ -33,8 +33,7 @@
   rf  = reflog --date=iso
   rs  = reset
   rsh = reset --hard
-  prm = pull-request
-  prb = pull-request -b $(git branch | fzf)
+  brd = !git branch | fzf -m --print0 | tr -d ' ' | xargs -0 pull-request -b
   op  = browse
   opg = !hub browse `ghq list | fzf | cut -d "/" -f 2,3`
   fps = ftp push
