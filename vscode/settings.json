@@ -1,13 +1,11 @@
 {
-  "editor.snippetSuggestions": "top", // ユーザースニペットを既存のスニペットより上に出す
-  "window.zoomLevel": 1,
-  "todo-tree.tree.showScanModeButton": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "todo-tree.highlights.enabled": false,
-  "files.autoSave": "onFocusChange",
+  // "editor.snippetSuggestions": "top", // ユーザースニペットを既存のスニペットより上に出す
+  "window.zoomLevel": 1,              // 拡大率
+  "workbench.iconTheme": "ayu",       // icon テーマ
+  "files.autoSave": "onFocusChange",  // オートセーブのタイミング
   "editor.semanticTokenColorCustomizations": null,
-  "emmet.excludeLanguages": ["markdown"],
-  "emmet.includeLanguages": {
+  "emmet.excludeLanguages": ["markdown"], // emmetを適用しない
+  "emmet.includeLanguages": {             // emmetを適用する
     "erb": "html",
     "scss": "css",
     "javascript": "javascriptreact"
@@ -27,41 +25,19 @@
     "*.vue": "vue",
     "*.gs": "javascript"
   },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    {
-      "language": "vue",
-      "autoFix": true
-    }
-  ],
+  // "eslint.validate": [
+  //   "javascript",
+  //   "javascriptreact",
+  //   {
+  //     "language": "vue",
+  //     "autoFix": true
+  //   }
+  // ],
   "eslint.autoFixOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "editor.detectIndentation": false,
-  "[javascript]": {
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
-  },
-  "[vue]": {
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
-  },
-  "[json]": {
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
-  },
-  "[go]": {
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true
-    },
-    "editor.tabSize": 4,
-    "editor.insertSpaces": true
-  },
   "editor.tabSize": 2,
   "cSpell.userWords": ["Tollero"],
   "files.associations": {
@@ -100,11 +76,24 @@
   "go.testOnSave": false,
   "go.useLanguageServer": true,
   "go.vetOnSave": "package",
-  "workbench.colorTheme": "Ayu Dark Bordered",
+  "workbench.colorTheme": "One Dark Pro",
   "liveServer.settings.donotVerifyTags": true,
   "java.refactor.renameFromFileExplorer": "autoApply",
   "liveServer.settings.donotShowInfoMsg": true,
   "telemetry.enableTelemetry": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "workbench.startupEditor": "newUntitledFile"
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.startupEditor": "newUntitledFile",
+
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["html", "javascriptreact", "typescriptreact"],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "tailwindCSS.includeLanguages": {
+    "typescriptreact": ["html", "javascriptreact", "typescriptreact"]
+  }
 }

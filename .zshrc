@@ -59,6 +59,7 @@ alias rmds='find . -name '.DS_Store' -type f -ls -delete'
 alias ll='exa -alhF --git-ignore --group-directories-first --time-style=long-iso --ignore-glob=".git|node_modules"'
 alias bat='bat --color=always --style=header,grid'
 alias cl='cd $(ls | fzf)'
+alias opw='open ${HOME}/workspace'
 
 ## ========== Docker ==========
 alias d='docker'
@@ -106,6 +107,13 @@ function cm() {
   read commi"?type commit content : ";
   git commit -m "$prefix: $commi"
 }
+function cma() {
+  git add *
+  prefix=$(cat $DOTPATH/prefixes | fzf)
+  echo "prefix is           : $prefix  "
+  read commi"?type commit content : ";
+  git commit -m "$prefix: $commi"
+}
 
 ## ========== VScode ==========
 alias vc='code'
@@ -143,3 +151,5 @@ if [ -f '/Users/shibuyahiroyuki/google-cloud-sdk/path.zsh.inc' ]; then . '/Users
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/shibuyahiroyuki/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/shibuyahiroyuki/google-cloud-sdk/completion.zsh.inc'; fi
 export PATH="/Users/shibuyahiroyuki/git-fuzzy/bin:$PATH"
+
+setopt nonomatch
