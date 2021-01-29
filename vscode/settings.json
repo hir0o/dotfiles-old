@@ -1,7 +1,7 @@
 {
   // "editor.snippetSuggestions": "top", // ユーザースニペットを既存のスニペットより上に出す
-  "window.zoomLevel": 1,              // 拡大率
-  "workbench.iconTheme": "ayu",       // icon テーマ
+  "window.zoomLevel": 0,              // 拡大率
+  "workbench.iconTheme": "material-icon-theme",       // icon テーマ
   "files.autoSave": "onFocusChange",  // オートセーブのタイミング
   "editor.semanticTokenColorCustomizations": null,
   "emmet.excludeLanguages": ["markdown"], // emmetを適用しない
