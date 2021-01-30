@@ -133,26 +133,20 @@ alias sral='source `ls -d ${DOTPATH}/aliases/* | fzf --preview "bat --color=alwa
 ## ========== Other ==========
 alias raund='openssl rand -base64 12 | fold -w 6 | head -1 | pbcopy'
 
-## ----------------------------------------
-##	FZF
-## ----------------------------------------
+## ========== FZF ==========
 export FZF_DEFAULT_COMMAND="rg --files --hidden -g '!.git' -g '!node_modules' --max-columns 200"
 export FZF_DEFAULT_OPTS='--reverse --color fg:-1,bg:-1,hl:230,fg+:3,bg+:233,hl+:229 --color info:150,prompt:110,spinner:150,pointer:167,marker:174'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 
-## ----------------------------------------
-## p10k
-## ----------------------------------------
+## ========== p10k ==========
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 zstyle ':prezto:module:prompt' theme 'powerlevel10k'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
-## ----------------------------------------
-## Gcloud
-## ----------------------------------------
+## ========== Gcloud ==========
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/shibuyahiroyuki/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/shibuyahiroyuki/google-cloud-sdk/path.zsh.inc'; fi
 # The next line enables shell command completion for gcloud.
