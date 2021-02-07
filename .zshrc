@@ -103,8 +103,8 @@ function gcre() {
     git push --set-upstream origin master;
     hub browse;
 }
-alias cg='cd $(ghq root)/$(ghq list | fzf)'
-alias ccg='code $(ghq root)/$(ghq list | fzf)'
+alias cg='cd $(ghq root)/$(ghq list | fzf --preview "bat --color=always --style=header,grid --line-range :80 $(ghq root)/{}/README.*")'
+alias ccg='code $(ghq root)/$(ghq list | fzf --preview "bat --color=always --style=header,grid --line-range :80 $(ghq root)/{}/README.*")'
 function gres() {
   git checkout -- . && git clean -df .
 }
