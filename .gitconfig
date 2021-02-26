@@ -1,5 +1,5 @@
 [user]
-  name = mkmk4423
+  name = hir0o
   email = mk.9.q.kyu@gmail.com
 
 [alias]
@@ -7,13 +7,13 @@
   ada = add -A
   st  = status
   ss  = stash
-  rmc = !"git rm -r --cached ."
+  rmc = rm -r --cached .
   br  = branch -av
   brd = !git branch -D `git branch | fzf`
   cm  = commit --verbose
   cmm = !"git add -A && git status && git commit -m"
   coa = !"git branch --all | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
-  co  = !"git branch | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
+  co  = !"git checkout `git branch | fzf`"
   cob = checkout -b
   cof = !git branch | peco | xargs git checkout
   df  = diff
@@ -34,8 +34,9 @@
   rs  = reset
   rsh = reset --hard
   cre = !gh repo create
-  pr = !gh pr create -B $(git branch | fzf)
+  pr  = !gh pr create -B $(git branch | fzf)
   pdf = !gh pr diff `gh pr list | fzf | cut -f 1`
+  pmg = !gh pr merge
   op  = !gh repo view --web
   opg = !gh repo view `ghq list | fzf | cut -d "/" -f 2,3` --web
   opi = !gh issue view `gh issue list | fzf | cut -f 1` --web
