@@ -158,3 +158,4 @@ source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ## zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+eval "$(anyenv init -)"

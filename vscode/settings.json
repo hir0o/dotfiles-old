@@ -1,7 +1,5 @@
 {
-  // "editor.snippetSuggestions": "top", // ユーザースニペットを既存のスニペットより上に出す
-  "window.zoomLevel": 0,              // 拡大率
-  "workbench.iconTheme": "material-icon-theme",       // icon テーマ
+  "workbench.iconTheme": "material-icon-theme", // icon テーマ
   "files.autoSave": "onFocusChange",  // オートセーブのタイミング
   "editor.semanticTokenColorCustomizations": null,
   "emmet.excludeLanguages": ["markdown"], // emmetを適用しない
@@ -10,6 +8,41 @@
     "scss": "css",
     "javascript": "javascriptreact"
   },
+  // eslint TODO: slimで起動しちゃう
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": false,    // ファイル保存時にESLintでフォーマット
+    "source.fixAll.stylelint": false // ファイル保存時にstylelintでフォーマット
+  },
+  "eslint.packageManager": "yarn",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+
+  //prateter
+  "prettier.eslintIntegration": true, // ファイル保存時にPrettierでフォーマット
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[graphql]": {
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true
+  },
+
+  // stylelint
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "java.home": "/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home",
@@ -41,9 +74,6 @@
   "editor.detectIndentation": false,
   "editor.tabSize": 2,
   "cSpell.userWords": ["Tollero"],
-  "files.associations": {
-    "*.gs": "javascript"
-  },
   "tabnine.experimentalAutoImports": true,
   "go.alternateTools": {
     "go-langserver": "gopls"
@@ -77,21 +107,12 @@
   "go.testOnSave": false,
   "go.useLanguageServer": true,
   "go.vetOnSave": "package",
-  "workbench.colorTheme": "Ayu Dark Bordered",
+  "workbench.colorTheme": "One Dark Pro",
   "liveServer.settings.donotVerifyTags": true,
   "java.refactor.renameFromFileExplorer": "autoApply",
   "liveServer.settings.donotShowInfoMsg": true,
   "telemetry.enableTelemetry": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.eslintIntegration": true,
-  "editor.formatOnSave": true, // ファイル保存時にPrettierでフォーマット
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true // ファイル保存時にESLintでフォーマット
-  },
   "workbench.startupEditor": "newUntitledFile",
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false,
   "stylelint.enable": true,
   "tailwindCSS.includeLanguages": {
     "typescriptreact": ["html", "javascriptreact", "typescriptreact"]
