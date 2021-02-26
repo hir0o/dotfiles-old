@@ -16,6 +16,7 @@
   co  = !"git branch | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
   cob = checkout -b
   cof = !git branch | peco | xargs git checkout
+  cre = !gh repo create
   df  = diff
   dfh = diff HEAD
   dft = difftool
@@ -33,9 +34,9 @@
   rf  = reflog --date=iso
   rs  = reset
   rsh = reset --hard
-  cpr  = !hub pull-request -b $(git branch | fzf)
-  op  = browse
-  opg = !hub browse `ghq list | fzf | cut -d "/" -f 2,3`
+  cpr = !hub pull-request -b $(git branch | fzf)
+  op  = !gh repo view --web
+  opg = !gh repo view -w `ghq list | fzf | cut -d "/" -f 2,3`
   fps = ftp push
   g   = !ghq get
   rmg = !rm -rf `ghq list -p | fzf`

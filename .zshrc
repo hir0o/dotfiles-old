@@ -93,16 +93,6 @@ alias py='python'
 
 ## ========== Git ==========
 alias g='git'
-function git(){hub "$@"}
-function gcre() {
-    git init;
-    git add -A && git commit -m ":tada: init";
-    read name"?type repo name        : ";
-    read description"?type repo description : ";
-    hub create ${name} -p ${description};
-    git push --set-upstream origin master;
-    hub browse;
-}
 alias cg='cd $(ghq root)/$(ghq list | fzf --preview "bat --color=always --style=header,grid --line-range :80 $(ghq root)/{}/README.*")'
 alias ccg='code $(ghq root)/$(ghq list | fzf --preview "bat --color=always --style=header,grid --line-range :80 $(ghq root)/{}/README.*")'
 function gres() {
