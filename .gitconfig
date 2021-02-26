@@ -36,8 +36,8 @@
   cre = !gh repo create
   cpr = !gh pr create -B $(git branch | fzf)
   op  = !gh repo view --web
-  opg = !gh repo view `ghq list | fzf | cut -d "/" -f 2,3` -w
-  opi = !gh issue view `gh issue list | fzf` --web
+  opg = !gh repo view `ghq list | fzf | cut -d "/" -f 2,3` --web
+  opi = !gh issue view `gh issue list | fzf | cut -f 1` --web
   opp = !gh pr view `gh pr list | fzf` --web
   fps = ftp push
   g   = !ghq get
