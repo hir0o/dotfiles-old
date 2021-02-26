@@ -9,7 +9,7 @@
   ss  = stash
   rmc = !"git rm -r --cached ."
   br  = branch -av
-  brd = !git branch | fzf -m --print0 | tr -d ' ' | xargs -0 git branch -D
+  brd = !git branch -D `git branch | fzf`
   cm  = commit --verbose
   cmm = !"git add -A && git status && git commit -m"
   coa = !"git branch --all | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
@@ -34,11 +34,12 @@
   rs  = reset
   rsh = reset --hard
   cre = !gh repo create
-  cpr = !gh pr create -B $(git branch | fzf)
+  pr = !gh pr create -B $(git branch | fzf)
+  pdf = !gh pr diff `gh pr list | fzf | cut -f 1`
   op  = !gh repo view --web
   opg = !gh repo view `ghq list | fzf | cut -d "/" -f 2,3` --web
   opi = !gh issue view `gh issue list | fzf | cut -f 1` --web
-  opp = !gh pr view `gh pr list | fzf` --web
+  opp = !gh pr view `gh pr list | fzf | cut -f 1` --web
   fps = ftp push
   g   = !ghq get
   rmg = !rm -rf `ghq list -p | fzf`
