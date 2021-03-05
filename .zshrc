@@ -141,7 +141,10 @@ zstyle ':prezto:module:prompt' theme 'powerlevel10k'
 if [ -f '/Users/shibuyahiroyuki/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/shibuyahiroyuki/google-cloud-sdk/path.zsh.inc'; fi
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/shibuyahiroyuki/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/shibuyahiroyuki/google-cloud-sdk/completion.zsh.inc'; fi
+
+## ========== Fuzzy ==========
 export PATH="/Users/shibuyahiroyuki/git-fuzzy/bin:$PATH"
+export GIT_FUZZY_STATUS_ADD_KEY='Ctrl-A'
 
 ## zsh-syntax-highlighting
 source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
