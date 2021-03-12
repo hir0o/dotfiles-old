@@ -8,8 +8,9 @@
   st  = status
   ss  = stash
   rmc = rm -r --cached .
-  br  = branch -av
+  br  = branch
   brd = !git branch -D `git branch | fzf`
+  brda= !git branch -D `git branch | sed '/*/d' | tr '\n' ' '`
   cm  = commit --verbose
   cmm = !"git add -A && git status && git commit -m"
   coa = !"git branch --all | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
