@@ -26,7 +26,7 @@
   lgg = !git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   mt  = mergetool
   mg  = merge
-  mgl = !git merge `git branch | fzf`
+  mgb = !git merge `git branch | fzf`
   st  = status
   ps  = !git push origin `git rev-parse --abbrev-ref HEAD`
   pl  = !git pull origin `git rev-parse --abbrev-ref HEAD`
