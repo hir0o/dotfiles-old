@@ -13,5 +13,4 @@ set termguicolors   " enable true colors support
 let ayucolor="dark" " for mirage version of theme
 colorscheme ayu
 
-"スペースfmtでFormat
 nmap <silent> <space>fmt <Plug>(coc-format)

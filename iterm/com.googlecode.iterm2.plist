@@ -400,7 +400,7 @@
 			<key>Blur</key>
 			<false/>
 			<key>Blur Radius</key>
-			<real>8.4036841687817265</real>
+			<real>20.078886421319798</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -518,6 +518,8 @@
 			<false/>
 			<key>Idle Code</key>
 			<integer>0</integer>
+			<key>Initial Use Transparency</key>
+			<true/>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -886,7 +888,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.090656725888324866</real>
+			<real>0.23608224936548222</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>

@@ -67,6 +67,7 @@ alias ll='exa -alhF --git-ignore --group-directories-first --time-style=long-iso
 alias bat='bat --color=always --style=header,grid'
 alias cl='cd $(ls | fzf)'
 alias opw='open ${HOME}/workspace'
+alias dcnt='find . -type f -depth 1 | wc -l'
 
 ## ========== Docker ==========
 alias d='docker'
@@ -111,9 +112,15 @@ function cma() {
   read commi"?type commit content : ";
   git commit -m "$prefix: $commi"
 }
+function cob() {
+  branch=$(cat $DOTPATH/branchs | fzf)
+  echo "branch is           : $branch  "
+  read branch"? : ";
+  git commit -m "$branch: $commi"
+}
 
 ## ========== VScode ==========
-alias vc='code'
+alias vc='code .'
 
 ## ========== Aliases ==========
 alias vial='nvim `ls -d ${DOTPATH}/aliases/* | fzf --preview "bat --color=always --style=header,grid {}"`'

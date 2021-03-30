@@ -1,14 +1,13 @@
 {
-
   // ========== Theme ==========
   "workbench.iconTheme": "material-icon-theme", // icon テーマ
-  "files.autoSave": "onFocusChange",  // オートセーブのタイミング
   "editor.semanticTokenColorCustomizations": null,
   "workbench.colorTheme": "One Dark Pro",
 
   // ========== Emmet ==========
   "emmet.excludeLanguages": ["markdown"], // emmetを適用しない
-  "emmet.includeLanguages": {             // emmetを適用する
+  "emmet.includeLanguages": {
+    // emmetを適用する
     "erb": "html",
     "scss": "css",
     "javascript": "javascriptreact"
@@ -16,7 +15,7 @@
 
   // ========== Formatter ==========
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,    // ファイル保存時にESLintでフォーマット
+    "source.fixAll.eslint": true, // ファイル保存時にESLintでフォーマット
     "source.fixAll.stylelint": true // ファイル保存時にstylelintでフォーマット
   },
   "eslint.packageManager": "yarn",
@@ -59,12 +58,18 @@
   "less.validate": false,
   "scss.validate": false,
 
+  // ========== Common ==========
+  // "files.autoSave": "off", // オートセーブのタイミング
+  "files.autoSave": "onFocusChange",
+
   // ========== LiveSassCompile ==========
-  "liveSassCompile.settings.formats": [{
-    "format": "expanded",
-    "extensionName": ".css",
-    "savePath": "/css/"
-  }],
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css/"
+    }
+  ],
 
   // ========== Java ==========
   "editor.suggestSelection": "first",
@@ -133,5 +138,6 @@
   "stylelint.enable": true,
   "tailwindCSS.includeLanguages": {
     "typescriptreact": ["html", "javascriptreact", "typescriptreact"]
-  }
+  },
+  "diffEditor.ignoreTrimWhitespace": false
 }
