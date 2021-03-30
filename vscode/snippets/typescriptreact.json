@@ -2,9 +2,9 @@
   "function component": {
     "prefix": "fcom",
     "body": [
-      "import React from 'react';",
+      "import { FC } from 'react';",
       "",
-      "const ${1:ComponentName}: React.FC = () => {",
+      "const ${1:ComponentName}: FC = () => {",
       "\treturn (",
       "\t\t$2",
       "\t)",
