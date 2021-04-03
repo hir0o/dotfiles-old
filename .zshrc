@@ -68,6 +68,7 @@ alias bat='bat --color=always --style=header,grid'
 alias cl='cd $(ls | fzf)'
 alias opw='open ${HOME}/workspace'
 alias dcnt='find . -type f -depth 1 | wc -l'
+alias diff2='diff -w'
 
 ## ========== Docker ==========
 alias d='docker'
@@ -118,9 +119,20 @@ function cob() {
   read branch"? : ";
   git commit -m "$branch: $commi"
 }
+function repo-create() {
+  cp . "~/ghq/test/`git remote -v | grep push | cut -d "/" -f 5,2 | tr -d '/' | tr -d '(push)'`";
+  cd ~/ghq/test/`git remote -v | grep push | cut -d "/" -f 5,2 | tr -d '/' | tr -d '(push)'`;
+}
 
 ## ========== VScode ==========
-alias vc='code .'
+alias vs='code .'
+
+## ========== Yarn ==========
+alias y='yarn'
+alias ya='yarn add'
+alias yad='yarn add -D'
+alias yd='yarn dev'
+alias ys='yarn start'
 
 ## ========== Aliases ==========
 alias vial='nvim `ls -d ${DOTPATH}/aliases/* | fzf --preview "bat --color=always --style=header,grid {}"`'
