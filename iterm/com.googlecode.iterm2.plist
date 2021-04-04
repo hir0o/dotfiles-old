@@ -944,6 +944,8 @@
 	</dict>
 	<key>SeparateWindowTitlePerTab</key>
 	<false/>
+	<key>ShowFullScreenTabBar</key>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>ToolbeltTools</key>
