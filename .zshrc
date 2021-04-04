@@ -164,6 +164,7 @@ if [ -f '/Users/shibuyahiroyuki/google-cloud-sdk/completion.zsh.inc' ]; then . '
 ## ========== Fuzzy ==========
 export PATH="/Users/shibuyahiroyuki/git-fuzzy/bin:$PATH"
 export GIT_FUZZY_STATUS_ADD_KEY='Ctrl-A'
+export GIT_FUZZY_STATUS_RESET_KEY='Ctrl-R'
 
 ## zsh-syntax-highlighting
 source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
