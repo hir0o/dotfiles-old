@@ -1,19 +1,28 @@
+tap "caskroom/cask"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+tap "homebrew/services"
+tap "koekeishiya/formulae"
+tap "rcmdnk/rcmdnkpac"
+tap "sanemat/font"
+brew "anyenv"
+brew "automake"
 brew "bat"
-brew "python@3.8", link: true
 brew "composer"
 brew "exa"
 brew "fd"
+brew "pkg-config"
 brew "unbound"
 brew "gobject-introspection"
+brew "harfbuzz"
 brew "libass"
 brew "srt"
 brew "ffmpeg"
+brew "fish"
 brew "node"
 brew "fx"
 brew "fzf"
@@ -26,6 +35,7 @@ brew "go"
 brew "grep"
 brew "gron"
 brew "hub"
+brew "python@3.8"
 brew "imagemagick"
 brew "jq"
 brew "mas"
@@ -37,10 +47,12 @@ brew "nodebrew"
 brew "openjdk@11"
 brew "peco"
 brew "pyenv"
+brew "ruby-build"
 brew "rbenv"
 brew "ripgrep"
 brew "ruby"
 brew "shellcheck"
+brew "spotify-tui"
 brew "tig"
 brew "tldr"
 brew "tmux"
@@ -51,36 +63,54 @@ brew "yarn"
 brew "zsh"
 brew "zsh-completions"
 brew "heroku/brew/heroku"
-cask "adobe-creative-cloud"
-cask "alfred"
-cask "appcleaner"
+brew "sanemat/font/ricty"
+cask "adobe-creative-cloud", args: { appdir: "/Applications" }
+cask "alfred", args: { appdir: "/Applications" }
+cask "alt-tab"
+cask "appcleaner", args: { appdir: "/Applications" }
+cask "biscuit"
 cask "chatwork"
 cask "clipy"
-cask "cyberduck"
-cask "docker"
+cask "cyberduck", args: { appdir: "/Applications" }
+cask "discord"
+cask "diskwave"
+cask "docker", args: { appdir: "/Applications" }
 cask "evernote"
-cask "font-fontawesome"
-cask "font-hack-nerd-font"
+cask "flux"
+cask "font-fontawesome", args: { appdir: "/Applications" }
+cask "font-hack-nerd-font", args: { appdir: "/Applications" }
 cask "github"
-cask "google-chrome"
+cask "google-chrome", args: { appdir: "/Applications" }
+cask "gyazo"
 cask "hyper"
+cask "iglance"
+cask "iterm2"
 cask "java11"
 cask "kap"
-cask "kindle"
-cask "notion"
-cask "postman"
-cask "rectangle"
-cask "skitch"
-cask "slack"
+cask "kindle", args: { appdir: "/Applications" }
+cask "ngrok"
+cask "notion", args: { appdir: "/Applications" }
+cask "postman", args: { appdir: "/Applications" }
+cask "rectangle", args: { appdir: "/Applications" }
+cask "skitch", args: { appdir: "/Applications" }
+cask "slack", args: { appdir: "/Applications" }
 cask "spotify"
 cask "tableplus"
 cask "vagrant"
 cask "virtualbox"
 cask "visual-studio-code"
-cask "zoomus"
+cask "xquartz"
+cask "zoom"
+mas "Be Focused", id: 973134470
+mas "Bear", id: 1091189122
 mas "BetterSnapTool", id: 417375580
 mas "CopyClip", id: 595191960
+mas "Habitify", id: 1111447047
 mas "LINE", id: 539883307
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
+mas "MKPlayer", id: 1335612105
+mas "Numbers", id: 409203825
+mas "SQLPro for MySQL", id: 899174769
+mas "カウントダウンタイマー Countdown Timer", id: 1150771803
