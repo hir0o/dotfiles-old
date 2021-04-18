@@ -6,7 +6,10 @@
   ad  = add
   ada = add -A
   st  = status
-  ss  = stash
+  ss  = stash save # ss "message"
+  sl  = stash list | cut -d ":" -f 1 | fzf --preview 'git stash show -p --color=always {}'
+  sp  = stash pop `git stash list | cut -d ":" -f 1 | fzf --preview 'git stash show -p --color=always {}'`
+  sd  = stash drop `git stash list | cut -d ":" -f 1 | fzf --preview 'git stash show -p --color=always {}'`
   rmc = rm -r --cached .
   br  = branch
   brd = !git branch -D `git branch | fzf`
@@ -43,6 +46,7 @@
   opg = !gh repo view `ghq list | fzf | cut -d "/" -f 2,3` --web
   opi = !gh issue view `gh issue list | fzf | cut -f 1` --web
   opp = !gh pr view `gh pr list | fzf | cut -f 1` --web
+  # opcp = 今いるブランチのPRをopenしたい
   fps = ftp push
   g   = !ghq get
   rmg = !rm -rf `ghq list -p | fzf`
