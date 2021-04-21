@@ -61,6 +61,7 @@ mkcd() { mkdir $@; cd $@; }
 # alias vi='nvim' vim='nvim'
 alias vz='nvim ${DOTPATH}/.zshrc'
 alias srz='source ~/.zshrc'
+alias ...='cd ../../'
 alias op='open ./'
 alias rmds='find . -name '.DS_Store' -type f -ls -delete'
 alias ll='exa -alhF --git-ignore --group-directories-first --time-style=long-iso --ignore-glob=".git|node_modules"'
@@ -69,6 +70,14 @@ alias cl='cd $(ls | fzf)'
 alias opw='open ${HOME}/workspace'
 alias dcnt='find . -type f -depth 1 | wc -l'
 alias diff2='diff -w'
+alias -g N='; notify'
+notify() {
+  if [ "$?" = 0 ]; then
+    say -v Samantha "success" && osascript -e 'display notification "成功！"'
+  else
+    say -v Samantha "failure" && osascript -e 'display notification "失敗！"'
+  fi
+}
 
 ## ========== Docker ==========
 alias d='docker'
@@ -91,7 +100,7 @@ alias rmig='rails db:migrate'
 alias rres='rails db:reset'
 
 ## ========== Python ==========
-alias py='python'
+alias py='python3'
 
 ## ========== Git ==========
 alias g='git'
