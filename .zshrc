@@ -148,8 +148,9 @@ alias vial='nvim `ls -d ${DOTPATH}/aliases/* | fzf --preview "bat --color=always
 alias sral='source `ls -d ${DOTPATH}/aliases/* | fzf --preview "bat --color=always --style=header,grid {}"`'
 
 
-## ========== Other ==========
-alias raund='openssl rand -base64 12 | fold -w 6 | head -1 | pbcopy'
+## ----------------------------------------
+## Other
+## ----------------------------------------
 
 ## ========== FZF ==========
 export FZF_DEFAULT_COMMAND="rg --files --hidden -g '!.git' -g '!node_modules' --max-columns 200"
@@ -175,9 +176,12 @@ export PATH="/Users/shibuyahiroyuki/git-fuzzy/bin:$PATH"
 export GIT_FUZZY_STATUS_ADD_KEY='Ctrl-A'
 export GIT_FUZZY_STATUS_RESET_KEY='Ctrl-R'
 
-## zsh-syntax-highlighting
+## ========== zsh-syntax-highlighting ==========
 source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-## zsh-autosuggestions
+## ========== zsh-autosuggestions ==========
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(anyenv init -)"
+
+## ========== FIG ==========
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh#
