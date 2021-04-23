@@ -71,6 +71,11 @@
     }
   ],
 
+  // ========== Vim ==========
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": [ "<C-d>" ], "after": [ "g", "b" ] } // マルチカーソル,
+  ],
+
   // ========== Java ==========
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -139,5 +144,11 @@
   "tailwindCSS.includeLanguages": {
     "typescriptreact": ["html", "javascriptreact", "typescriptreact"]
   },
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ]
 }
