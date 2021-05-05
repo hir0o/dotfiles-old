@@ -95,7 +95,7 @@
   hunk-header-style = omit
   file-style = "#338ECF" ul
   file-decoration-style = none
-  syntax-theme = Monokai Extended
+  syntax-theme = Dracula
   whitespace-error-style = 22 reverse
   line-numbers-left-style = "#3D424D"
   line-numbers-right-style = "#3D424D"

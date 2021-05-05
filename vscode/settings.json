@@ -57,6 +57,15 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.includeLanguages": {
+    "javascriptreact": "html",
+    "typescriptreact": "html",
+    "plaintext": "html"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
 
   // ========== Common ==========
   // "files.autoSave": "off", // オートセーブのタイミング
@@ -73,7 +82,7 @@
 
   // ========== Vim ==========
   "vim.normalModeKeyBindingsNonRecursive": [
-    { "before": [ "<C-d>" ], "after": [ "g", "b" ] } // マルチカーソル,
+    { "before": ["<C-d>"], "after": ["g", "b"] } // マルチカーソル,
   ],
 
   // ========== Java ==========
@@ -100,6 +109,14 @@
   "editor.tabSize": 2,
   "cSpell.userWords": ["Tollero"],
   "tabnine.experimentalAutoImports": true,
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.java$",
+        "cmd": "google-java-format --replace ${file}"
+      }
+    ]
+  },
 
   // ========== Go ==========
   /*
@@ -141,14 +158,13 @@
   "telemetry.enableTelemetry": false,
   "workbench.startupEditor": "newUntitledFile",
   "stylelint.enable": true,
-  "tailwindCSS.includeLanguages": {
-    "typescriptreact": ["html", "javascriptreact", "typescriptreact"]
-  },
   "diffEditor.ignoreTrimWhitespace": false,
   "workbench.editorAssociations": [
     {
       "viewType": "jupyter.notebook.ipynb",
       "filenamePattern": "*.ipynb"
     }
-  ]
+  ],
+  "editor.accessibilitySupport": "off",
+  "editor.formatOnSave": true
 }
