@@ -1,23 +1,17 @@
 {
   "Require": {
     "prefix": "req",
-    "body": [
-      "const ${1:xxx} = require('${1:xxx}')"
-    ],
+    "body": ["const ${1:xxx} = require('${1:xxx}')"],
     "description": "requireするやつ"
   },
   "atoms": {
     "prefix": "ima",
-    "body": [
-      "import $1 from '~/components/atoms/$1'"
-    ],
+    "body": ["import $1 from '~/components/atoms/$1'"],
     "description": "コンポーネントインポートするやつ"
   },
   "molecules": {
     "prefix": "imm",
-    "body": [
-      "import $1 from '~/components/molecules/$1'"
-    ],
+    "body": ["import $1 from '~/components/molecules/$1'"],
     "description": "コンポーネントインポートするやつ"
   },
   "プロップス": {
@@ -26,9 +20,14 @@
       "$1: {",
       "\ttype: $2",
       "\trequired: $3",
-      "\tdefault: $4",
+      "\t${4:tdefault: $5}",
       "}"
     ],
+    "description": "プロップスをいい感じにする"
+  },
+  "n回繰り返す": {
+    "prefix": "narr",
+    "body": ["[...Array(${1:n}).keys()]${2:.map((i) => i + 1)}"],
     "description": "プロップスをいい感じにする"
   }
 }
