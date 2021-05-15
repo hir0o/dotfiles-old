@@ -34,24 +34,6 @@
   // ========== Prateter ==========
   "prettier.eslintIntegration": true, // ファイル保存時にPrettierでフォーマット
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[vue]": {
-    "editor.formatOnSave": true
-  },
-  "[javascript]": {
-    "editor.formatOnSave": true
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": true
-  },
-  "[json]": {
-    "editor.formatOnSave": true
-  },
-  "[typescript]": {
-    "editor.formatOnSave": true
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": true
-  },
 
   // ========== Stylelint ==========
   "css.validate": false,
