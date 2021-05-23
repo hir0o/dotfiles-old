@@ -28,6 +28,6 @@
   "n回繰り返す": {
     "prefix": "narr",
     "body": ["[...Array(${1:n}).keys()]${2:.map((i) => i + 1)}"],
-    "description": "プロップスをいい感じにする"
+    "description": "配列作る"
   }
 }

@@ -12,5 +12,9 @@
       "",
       "export default ${1:ComponentName};"
     ]
+  },
+  "props type": {
+    "prefix": "pt",
+    "body": ["type PropsType = {$1}"]
   }
 }

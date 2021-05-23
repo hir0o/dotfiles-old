@@ -20,15 +20,12 @@
   coa = !"git branch --all | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
   co  = !"git checkout `git branch | fzf`"
   cob = checkout -b
-  cof = !git branch | peco | xargs git checkout
   df  = diff
   dfh = diff HEAD
-  dft = difftool
   lg  = log
   lgp = log -p
   lgs = log --stat
   lgg = !git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  mt  = mergetool
   mg  = merge
   mgb = !git merge `git branch | fzf`
   st  = status

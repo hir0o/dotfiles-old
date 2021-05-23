@@ -6,7 +6,6 @@
 | ---------- | ---------------------------------- | --------------------------------------------------------------------------------- |
 | fd         | `ind の強化版                      | [github](https://github.com/sharkdp/fd)                                           |
 | fx         | json ファイルを見やすくする        | [github](https://github.com/antonmedv/fx)                                         |
-| fx         | json ファイルを見やすくする        | [github](https://github.com/antonmedv/fx)                                         |
 | jq         | json ファイルを扱いやすくする      | [github](https://stedolan.github.io/jq/)                                          |
 | bat        | cat の強化版                       | [日本語ドキュメント](https://github.com/sharkdp/bat/blob/master/doc/README-ja.md) |
 | exa        | ls の強化版                        | [github](https://github.com/ogham/exa)                                            |
