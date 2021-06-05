@@ -63,10 +63,31 @@
   ],
 
   // ========== Vim ==========
+  // ノーマルモード
   "vim.normalModeKeyBindingsNonRecursive": [
     { "before": ["<C-d>"], "after": ["g", "b"] } // マルチカーソル,
+    // { "before": []}
+  ],
+  // "vim.leader": "<space>",
+  // インサートモード
+  "vim.insertModeKeyBindings": [
+    { "before": ["j", "j"], "after": ["<Esc>"] }
+    // {
+    //   "before": ["leader", "w"],
+    //   "after": [],
+    //   "commands": [
+    //     {
+    //       "command": "workbench.action.files.save",
+    //       "args": []
+    //     }
+    //   ]
+    // }
   ],
 
+  // "command": "workbench.action.focusSideBar",
+  // "command": "workbench.action.terminal.focus",
+  // "command": "workbench.action.focusFirstEditorGroup",
+  // "command": "workbench.action.focusFirstEditorGroup",
   // ========== Java ==========
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
