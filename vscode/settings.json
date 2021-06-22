@@ -15,8 +15,8 @@
 
   // ========== Formatter ==========
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true, // ファイル保存時にESLintでフォーマット
-    "source.fixAll.stylelint": true // ファイル保存時にstylelintでフォーマット
+    "source.fixAll.eslint": false, // ファイル保存時にESLintでフォーマット
+    "source.fixAll.stylelint": false // ファイル保存時にstylelintでフォーマット
   },
   "eslint.packageManager": "yarn",
   "typescript.enablePromptUseWorkspaceTsdk": true,
@@ -32,8 +32,8 @@
   "eslint.autoFixOnSave": true,
 
   // ========== Prateter ==========
-  "prettier.eslintIntegration": true, // ファイル保存時にPrettierでフォーマット
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.eslintIntegration": false, // ファイル保存時にPrettierでフォーマット
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode", TODO:
 
   // ========== Stylelint ==========
   "css.validate": false,
@@ -156,18 +156,27 @@
   "go.useLanguageServer": true,
   "go.vetOnSave": "package",
   */
+
+    // ========== markdown ==========
+  "[markdown]":  {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": true,
+    "editor.snippetSuggestions": "top"
+  },
+
   "liveServer.settings.donotVerifyTags": true,
   "liveServer.settings.donotShowInfoMsg": true,
   "telemetry.enableTelemetry": false,
   "workbench.startupEditor": "newUntitledFile",
   "stylelint.enable": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": {
+		"*.ipynb": "jupyter.notebook.ipynb"
+	},
   "editor.accessibilitySupport": "off",
-  "editor.formatOnSave": true
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": true, //
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off"
 }

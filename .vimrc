@@ -14,3 +14,5 @@ let ayucolor="dark" " for mirage version of theme
 colorscheme ayu
 
 nmap <silent> <space>fmt <Plug>(coc-format)
+nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
+inoremap <silent> jj <ESC>
