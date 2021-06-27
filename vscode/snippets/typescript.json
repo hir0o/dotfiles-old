@@ -12,5 +12,33 @@
 			"}"
 		],
     "description": "for"
+  },
+  "findSumOfDigits": {
+    "prefix": "SumOfDigits",
+    "body": [
+      "let sum = 0;",
+      "while (num > 0) {",
+      "\tsum += Math.floor(num % 10);",
+      "\tnum = Math.floor(num / 10);",
+      "}"
+    ],
+    "description": "各桁の合計を返す"
+  },
+  "objectBuket": {
+    "prefix": "objectBuket",
+    "body": [
+      "const buket = {}",
+      "nums.forEach((num) => {",
+      "\tbuket[num] = (buket[num] || 0) + 1;",
+      "});"
+    ],
+    "description": "オブジェクトを使ったバケット"
+  },
+  "arrauyInit": {
+    "prefix": "arrauyInit",
+    "body": [
+      "const ${1:arr}: number[] = Array(${2:len}).fill(0)"
+    ],
+    "description": "配列の初期化"
   }
 }
