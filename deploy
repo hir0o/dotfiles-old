@@ -1,4 +1,6 @@
-export DOTPATH=~/ghq/github.com/mkmk4423/dotfiles
+#!/bin/sh
+
+export DOTPATH=$(cd $(dirname ${BASH_SOURCE:-$0}); pwd)
 VSPATH="${HOME}/Library/Application Support/Code/User"
 
 for f in .??*
