@@ -1,12 +1,28 @@
 {
   "function component": {
-    "prefix": "fcom",
+    "prefix": "fc",
     "body": [
-      "import { FC } from 'react';",
+      "import { VFC } from 'react';",
       "",
-      "const ${1:ComponentName}: FC = () => {",
+      "const ${1:ComponentName}: VFC = () => {",
       "\treturn (",
       "\t\t$2",
+      "\t)",
+      "};",
+      "",
+      "export default ${1:ComponentName};"
+    ]
+  },
+  "function component with props": {
+    "prefix": "fcp",
+    "body": [
+      "import { VFC } from 'react';",
+      "",
+      "type PropsType = {$2}",
+      "",
+      "const ${1:ComponentName}: VFC<PropsType> = ({$3}) => {",
+      "\treturn (",
+      "\t\t$4",
       "\t)",
       "};",
       "",
