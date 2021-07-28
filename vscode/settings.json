@@ -15,8 +15,8 @@
 
   // ========== Formatter ==========
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": false, // ファイル保存時にESLintでフォーマット
-    "source.fixAll.stylelint": false // ファイル保存時にstylelintでフォーマット
+    "source.fixAll.eslint": true, // ファイル保存時にESLintでフォーマット
+    "source.fixAll.stylelint": true // ファイル保存時にstylelintでフォーマット
   },
   "eslint.packageManager": "yarn",
   "typescript.enablePromptUseWorkspaceTsdk": true,
@@ -32,8 +32,8 @@
   "eslint.autoFixOnSave": true,
 
   // ========== Prateter ==========
-  "prettier.eslintIntegration": false, // ファイル保存時にPrettierでフォーマット
-  //   "editor.defaultFormatter": "esbenp.prettier-vscode", TODO:
+  "prettier.eslintIntegration": true, // ファイル保存時にPrettierでフォーマット
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   // ========== Stylelint ==========
   "css.validate": false,
@@ -89,37 +89,37 @@
   // "command": "workbench.action.focusFirstEditorGroup",
   // "command": "workbench.action.focusFirstEditorGroup",
   // ========== Java ==========
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "java.home": "/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home",
-  "java.refactor.renameFromFileExplorer": "autoApply",
-  "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-  "java.semanticHighlighting.enabled": true,
-  "csscomb.preset": "csscomb",
-  "files.associations": {
-    "*.vue": "vue",
-    "*.gs": "javascript"
-  },
-  "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
-  "editor.detectIndentation": false,
-  "editor.tabSize": 2,
-  "cSpell.userWords": ["Tollero"],
-  "tabnine.experimentalAutoImports": true,
-  "emeraldwalk.runonsave": {
-    "commands": [
-      {
-        "match": "\\.java$",
-        "cmd": "google-java-format --replace ${file}"
-      }
-    ]
-  },
+  // "editor.suggestSelection": "first",
+  // "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  // "java.home": "/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home",
+  // "java.refactor.renameFromFileExplorer": "autoApply",
+  // "files.exclude": {
+  //   "**/.classpath": true,
+  //   "**/.project": true,
+  //   "**/.settings": true,
+  //   "**/.factorypath": true
+  // },
+  // "java.semanticHighlighting.enabled": true,
+  // "csscomb.preset": "csscomb",
+  // "files.associations": {
+  //   "*.vue": "vue",
+  //   "*.gs": "javascript"
+  // },
+  // "files.trimFinalNewlines": true,
+  // "files.trimTrailingWhitespace": true,
+  // "files.insertFinalNewline": true,
+  // "editor.detectIndentation": false,
+  // "editor.tabSize": 2,
+  // "cSpell.userWords": ["Tollero"],
+  // "tabnine.experimentalAutoImports": true,
+  // "emeraldwalk.runonsave": {
+  //   "commands": [
+  //     {
+  //       "match": "\\.java$",
+  //       "cmd": "google-java-format --replace ${file}"
+  //     }
+  //   ]
+  // },
 
   // ========== Go ==========
   /*
@@ -157,8 +157,8 @@
   "go.vetOnSave": "package",
   */
 
-    // ========== markdown ==========
-  "[markdown]":  {
+  // ========== markdown ==========
+  "[markdown]": {
     "editor.wordWrap": "on",
     "editor.quickSuggestions": true,
     "editor.snippetSuggestions": "top"
@@ -169,14 +169,25 @@
   "telemetry.enableTelemetry": false,
   "workbench.startupEditor": "newUntitledFile",
   "stylelint.enable": true,
-  "diffEditor.ignoreTrimWhitespace": false,
   "workbench.editorAssociations": {
-		"*.ipynb": "jupyter.notebook.ipynb"
-	},
+    "*.ipynb": "jupyter.notebook.ipynb",
+    "*.plist": "default"
+  },
   "editor.accessibilitySupport": "off",
   "editor.cursorStyle": "line",
   "editor.insertSpaces": true, //
   "editor.lineNumbers": "on",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-  "editor.wordWrap": "off"
+  "editor.wordWrap": "off",
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWw7ZWxlY3RyaWNhbFwiLFwiY3VzdG9tTGlicmFyaWVzXCI6W1wiTC5zY3JhdGNocGFkXCJdLFwicGx1Z2luc1wiOltdLFwicmVjZW50Q29sb3JzXCI6W10sXCJmb3JtYXRXaWR0aFwiOjAsXCJjcmVhdGVUYXJnZXRcIjpmYWxzZSxcInBhZ2VGb3JtYXRcIjp7XCJ4XCI6MCxcInlcIjowLFwid2lkdGhcIjo4MjcsXCJoZWlnaHRcIjoxMTY5fSxcInNlYXJjaFwiOnRydWUsXCJzaG93U3RhcnRTY3JlZW5cIjp0cnVlLFwiZ3JpZENvbG9yXCI6XCIjZDBkMGQwXCIsXCJkYXJrR3JpZENvbG9yXCI6XCIjNmU2ZTZlXCIsXCJhdXRvc2F2ZVwiOnRydWUsXCJyZXNpemVJbWFnZXNcIjpudWxsLFwib3BlbkNvdW50ZXJcIjowLFwidmVyc2lvblwiOjE4LFwidW5pdFwiOjEsXCJpc1J1bGVyT25cIjpmYWxzZSxcInVpXCI6XCJcIn0ifQ=="
 }

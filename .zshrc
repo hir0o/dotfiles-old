@@ -38,6 +38,12 @@ export LANG="${LANGUAGE}"
 export LC_ALL="${LANGUAGE}"
 export LC_CTYPE="${LANGUAGE}"
 
+## ----------------------------------------
+##
+## ----------------------------------------
+export SAVEHIST=100000      # historyの上限
+export HISTSIZE=100000      # historyの上限
+
 
 ## ----------------------------------------
 ##	Setopt
@@ -52,8 +58,6 @@ setopt list_packed          # 補完候補を詰めて表示
 setopt share_history        # 同時に起動したzshの間でヒストリを共有する
 setopt hist_ignore_dups     # 直前と同じコマンドの場合は履歴に追加しない
 setopt hist_ignore_all_dups # 同じコマンドをヒストリに残さない
-export SAVEHIST=100000      # historyの上限
-export HISTSIZE=100000      # historyの上限
 
 ## ----------------------------------------
 ## Alias
@@ -110,6 +114,7 @@ alias g='git'
 alias cg='cd $(ghq root)/$(ghq list | fzf --preview "bat --color=always --style=header,grid --line-range :80 $(ghq root)/{}/README.*")'
 alias cgp='cd `ls -d ~/projects/*/* | sed "/\./d" | fzf --preview "bat --color=always --style=header,grid --line-range :80 {}/README.*"`'
 alias ccg='code $(ghq root)/$(ghq list | fzf --preview "bat --color=always --style=header,grid --line-range :80 $(ghq root)/{}/README.*")'
+alias :="cg"
 function gres() {
   git checkout -- . && git clean -df .
 }

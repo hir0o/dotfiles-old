@@ -26,5 +26,14 @@
       "",
       "なし"
     ]
+  },
+  "image": {
+    "prefix": "image",
+    "body": [
+      "<div style=\"text-align:center\">",
+      "\t<img src=\"$1\" width=\"50%\" align=\"center\">",
+      "\t<p><strong>図${2:n} $3</strong></p>",
+      "</div>"
+    ]
   }
 }
