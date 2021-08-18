@@ -13,6 +13,27 @@
       "export default ${1:ComponentName};"
     ]
   },
+  "function component with linaria": {
+    "prefix": "fcs",
+    "body": [
+      "import { VFC } from 'react';",
+      "import { styled } from 'linaria/lib/react';",
+      "",
+      "const ${1:ComponentName}: VFC = () => {",
+      "\treturn (",
+      "\t\t<Styled${1:ComponentName}>",
+      "\t\t\t$4",
+      "\t\t</Styled${1:ComponentName}>",
+      "\t)",
+      "};",
+      "",
+      "const Styled${1:ComponentName} = styled.$2`",
+      "\t$3",
+      "`",
+      "",
+      "export default ${1:ComponentName};"
+    ]
+  },
   "function component with props": {
     "prefix": "fcp",
     "body": [
