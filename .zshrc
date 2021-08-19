@@ -85,6 +85,7 @@ notify() {
     say -v Samantha "failure" && osascript -e 'display notification "失敗！"'
   fi
 }
+alias edd='vim $(ghq root)/github.com/mkmk4423/dotfiles'
 
 ## ========== Docker ==========
 alias d='docker'
