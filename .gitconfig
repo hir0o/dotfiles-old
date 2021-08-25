@@ -54,6 +54,7 @@
   fss = fuzzy stash
   fh = fetch
   reb = rebase -i
+  cin = !"gibo dump $(gibo list | fzf) >> .gitignore"
 
 [core]
   editor = nvim
