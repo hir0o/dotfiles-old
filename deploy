@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+# install homebrew
+if [ ! -f /usr/local/bin/brew ]; then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+brew bundle -v --file="${PWD}/bundle/Brewfile"
+
+sudo stow -v -d "${PWD}/packages" -t $HOME zsh vim tmux p10k git

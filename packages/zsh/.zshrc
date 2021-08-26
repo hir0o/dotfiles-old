@@ -5,8 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-
-# パス
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
@@ -16,7 +14,8 @@ export PATH="$HOME/.pyenv/shims:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export NODE_PATH="$HOME/.anyenv/envs/nodenv/versions/14.15.5/lib/node_modules"
-
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
 export DOTPATH=~/ghq/github.com/mkmk4423/dotfiles
 
 ## ----------------------------------------
@@ -93,3 +92,14 @@ source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ## ========== zsh-autosuggestions ==========
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(anyenv init -)"
+
+
+## ========== tmux ==========
+tmux ls > /dev/null
+if [ $? -eq 1 -a -z "$TMUX" ]; then
+    exec tmux
+elif [ -z "$TMUX" ] ; then
+    exec tmux attach
+else
+    echo "sessions should be nested with care."
+fi

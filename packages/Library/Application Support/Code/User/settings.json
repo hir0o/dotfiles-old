@@ -122,40 +122,38 @@
   // },
 
   // ========== Go ==========
-  /*
-  "go.alternateTools": {
-    "go-langserver": "gopls"
-  },
-  "go.buildOnSave": "package",
-  "go.formatTool": "goimports",
-  "go.formatFlags": ["-w"],
-  "go.gocodeAutoBuild": true,
-  "go.installDependenciesWhenBuilding": true,
-  "go.languageServerExperimentalFeatures": {
-    "hover": true,
-    "format": true,
-    "rename": true,
-    "diagnostics": true,
-    "autoComplete": false,
-    "signatureHelp": true,
-    "goToDefinition": true,
-    "findReferences": true,
-    "documentSymbols": true,
-    "workspaceSymbols": true,
-    "goToTypeDefinition": true,
-    "goToImplementation": true
-  },
-  "go.lintTool": "golint",
-  "go.lintOnSave": "package",
-  "gopls": {
-    "deepCompletion": true,
-    "usePlaceholders": false,
-    "completeUnimported": true
-  },
-  "go.testOnSave": false,
-  "go.useLanguageServer": true,
-  "go.vetOnSave": "package",
-  */
+  // "go.alternateTools": {
+  //   "go-langserver": "gopls"
+  // },
+  // "go.buildOnSave": "package",
+  // "go.formatTool": "goimports",
+  // "go.formatFlags": ["-w"],
+  // "go.gocodeAutoBuild": true,
+  // "go.installDependenciesWhenBuilding": true,
+  // "go.languageServerExperimentalFeatures": {
+  //   "hover": true,
+  //   "format": true,
+  //   "rename": true,
+  //   "diagnostics": true,
+  //   "autoComplete": false,
+  //   "signatureHelp": true,
+  //   "goToDefinition": true,
+  //   "findReferences": true,
+  //   "documentSymbols": true,
+  //   "workspaceSymbols": true,
+  //   "goToTypeDefinition": true,
+  //   "goToImplementation": true
+  // },
+  // "go.lintTool": "golint",
+  // "go.lintOnSave": "package",
+  // "gopls": {
+  //   "deepCompletion": true,
+  //   "usePlaceholders": false,
+  //   "completeUnimported": true
+  // },
+  // "go.testOnSave": false,
+  // "go.useLanguageServer": true,
+  // "go.vetOnSave": "package",
 
   // ========== markdown ==========
   "[markdown]": {
@@ -181,22 +179,24 @@
   "editor.wordWrap": "off",
   "editor.inlineSuggest.enabled": true,
   "github.copilot.enable": {
-    "*": true,
+    "*": false,
     "yaml": false,
     "plaintext": false,
-    "markdown": false
+    "markdown": false,
+    "typescriptreact": true
   },
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWw7ZWxlY3RyaWNhbFwiLFwiY3VzdG9tTGlicmFyaWVzXCI6W1wiTC5zY3JhdGNocGFkXCJdLFwicGx1Z2luc1wiOltdLFwicmVjZW50Q29sb3JzXCI6W10sXCJmb3JtYXRXaWR0aFwiOjAsXCJjcmVhdGVUYXJnZXRcIjpmYWxzZSxcInBhZ2VGb3JtYXRcIjp7XCJ4XCI6MCxcInlcIjowLFwid2lkdGhcIjo4MjcsXCJoZWlnaHRcIjoxMTY5fSxcInNlYXJjaFwiOnRydWUsXCJzaG93U3RhcnRTY3JlZW5cIjp0cnVlLFwiZ3JpZENvbG9yXCI6XCIjZDBkMGQwXCIsXCJkYXJrR3JpZENvbG9yXCI6XCIjNmU2ZTZlXCIsXCJhdXRvc2F2ZVwiOnRydWUsXCJyZXNpemVJbWFnZXNcIjpudWxsLFwib3BlbkNvdW50ZXJcIjowLFwidmVyc2lvblwiOjE4LFwidW5pdFwiOjEsXCJpc1J1bGVyT25cIjpmYWxzZSxcInVpXCI6XCJcIn0ifQ==",
   "editor.fontFamily": "\"HackGen35Nerd Console\"",
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1628478727589,
-  "editor.formatOnSave": true,
+  "php-cs-fixer.lastDownload": 1629368872932,
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
     "**/.settings": true,
     "**/.factorypath": true
-  }
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.formatOnSave": true
 }
