@@ -36,13 +36,14 @@ brew "srt"
 brew "ffmpeg"
 brew "fish"
 brew "pango"
-brew "node"
 brew "fx"
 brew "fzf"
 brew "gh"
 brew "ghq"
+brew "gibo"
 brew "git"
 brew "git-delta"
+brew "git-ftp"
 brew "git-secrets"
 brew "gnu-time"
 brew "go"
@@ -56,10 +57,12 @@ brew "imagemagick"
 brew "jq"
 brew "librsvg"
 brew "lsd"
+brew "luajit"
 brew "mas"
 brew "mycli"
 brew "mysql"
 brew "neofetch"
+brew "tree-sitter", args: ["HEAD"]
 brew "neovim"
 brew "nodebrew"
 brew "openjdk@11"
@@ -70,13 +73,13 @@ brew "rbenv"
 brew "ripgrep"
 brew "shellcheck"
 brew "spotify-tui"
+brew "stow"
 brew "terminal-notifier"
 brew "tig"
 brew "tldr"
 brew "tmux"
 brew "translate-shell"
 brew "tree"
-brew "vim"
 brew "wget"
 brew "yarn"
 brew "youtube-dl"
@@ -139,12 +142,12 @@ mas "Be Focused", id: 973134470
 mas "BetterSnapTool", id: 417375580
 mas "CopyClip", id: 595191960
 mas "Habitify", id: 1111447047
+mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
 mas "MKPlayer", id: 1335612105
 mas "Numbers", id: 409203825
-mas "SQLPro for MySQL", id: 899174769
 mas "Todoist", id: 585829637
 mas "カウントダウンタイマー Countdown Timer", id: 1150771803
