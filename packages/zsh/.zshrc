@@ -16,7 +16,7 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 export NODE_PATH="$HOME/.anyenv/envs/nodenv/versions/14.15.5/lib/node_modules"
 export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
-export DOTPATH=~/ghq/github.com/mkmk4423/dotfiles
+export DOTPATH=~/ghq/github.com/hir0o/dotfiles
 
 ## ----------------------------------------
 ##	ENV
@@ -75,10 +75,10 @@ alias bat='bat --color=always --style=header,grid'
 alias cl='cd $(ls -d */ | fzf)'
 alias edd='vim $(ghq root)/github.com/mkmk4423/dotfiles'
 
-source "$PWD/aliases/rails.zsh"
-source "$PWD/aliases/git.zsh"
-source "$PWD/aliases/vscode.zsh"
-source "$PWD/aliases/aliase.zsh"
+source "$DOTPATH/aliases/rails.zsh"
+source "$DOTPATH/aliases/git.zsh"
+source "$DOTPATH/aliases/vscode.zsh"
+source "$DOTPATH/aliases/aliase.zsh"
 
 
 ## ----------------------------------------
