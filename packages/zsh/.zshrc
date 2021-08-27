@@ -1,14 +1,3 @@
-export PATH="$HOME/bin:$PATH"
-export PATH="/usr/local/bin:$PATH"
-export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
-export PATH="$HOME/.nodebrew/current/bin:$PATH"
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export PATH="$HOME/.pyenv/shims:$PATH"
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-export NODE_PATH="$HOME/.anyenv/envs/nodenv/versions/14.15.5/lib/node_modules"
-export GOPATH="$HOME/go"
-export PATH="$GOPATH/bin:$PATH"
 export DOTPATH=~/ghq/github.com/hir0o/dotfiles
 
 ## ----------------------------------------
