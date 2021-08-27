@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
@@ -74,11 +67,19 @@ alias ll='exa -alhF --icons --git-ignore --group-directories-first --time-style=
 alias bat='bat --color=always --style=header,grid'
 alias cl='cd $(ls -d */ | fzf)'
 alias edd='vim $(ghq root)/github.com/mkmk4423/dotfiles'
+alias tma='tmux a'
 
-source "$DOTPATH/aliases/rails.zsh"
-source "$DOTPATH/aliases/git.zsh"
-source "$DOTPATH/aliases/vscode.zsh"
 source "$DOTPATH/aliases/aliase.zsh"
+# source "$DOTPATH/aliases/docker.zsh"
+# source "$DOTPATH/aliases/ffmpg.zsh"
+source "$DOTPATH/aliases/git.zsh"
+# source "$DOTPATH/aliases/go.zsh"
+# source "$DOTPATH/aliases/heroku.zsh"
+# source "$DOTPATH/aliases/mysql.zsh"
+# source "$DOTPATH/aliases/npm.zsh"
+# source "$DOTPATH/aliases/rails.zsh"
+# source "$DOTPATH/aliases/system.zsh"
+source "$DOTPATH/aliases/vscode.zsh"
 
 
 ## ----------------------------------------
@@ -114,15 +115,6 @@ source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ## ========== zsh-autosuggestions ==========
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+## ========== anyenv ==========
 eval "$(anyenv init -)"
-
-
-## ========== tmux ==========
-tmux ls > /dev/null
-if [ $? -eq 1 -a -z "$TMUX" ]; then
-    exec tmux
-elif [ -z "$TMUX" ] ; then
-    exec tmux attach
-else
-    echo "sessions should be nested with care."
-fi
