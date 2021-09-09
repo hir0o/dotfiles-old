@@ -107,3 +107,5 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ## ========== anyenv ==========
 eval "$(anyenv init -)"
+export PATH="$HOME/.anyenv/bin:$PATH"
+
