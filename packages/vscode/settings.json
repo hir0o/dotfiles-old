@@ -198,5 +198,6 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.formatOnSave": true
 }

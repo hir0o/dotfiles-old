@@ -57,6 +57,7 @@ alias bat='bat --color=always --style=header,grid'
 alias cl='cd $(ls -d */ | fzf)'
 alias edd='vim $(ghq root)/github.com/mkmk4423/dotfiles'
 alias tma='tmux a || tmux'
+alias py='python3'
 
 source "$DOTPATH/aliases/aliase.zsh"
 # source "$DOTPATH/aliases/docker.zsh"
