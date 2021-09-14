@@ -172,6 +172,7 @@
     "*.ipynb": "jupyter.notebook.ipynb",
     "*.plist": "default"
   },
+  "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
   "editor.cursorStyle": "line",
   "editor.insertSpaces": true, //
@@ -200,4 +201,5 @@
   },
   "security.workspace.trust.untrustedFiles": "open",
   "editor.formatOnSave": true
+  // "prettier.documentSelectors": ["markdown"]
 }

@@ -2,12 +2,12 @@
   {
     "key": "ctrl+h",
     "command": "workbench.action.focusSideBar",
-    "when": "editorTextFocus"
+    "when": "!filesExplorerFocus"
   },
   {
     "key": "ctrl+j",
     "command": "workbench.action.terminal.focus",
-    "when": "editorTextFocus"
+    "when": "!filesExplorerFocus"
   },
   {
     "key": "ctrl+l",
@@ -36,5 +36,20 @@
   {
     "key": "cmd+p",
     "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+[Semicolon]",
+    "command": "keybindings.editor.clearSearchResults",
+    "when": "inKeybindings && inKeybindingsSearch"
+  },
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+cmd+n",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus"
   }
 ]
