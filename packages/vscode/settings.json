@@ -199,7 +199,6 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "security.workspace.trust.untrustedFiles": "open",
-  "editor.formatOnSave": true
+  "security.workspace.trust.untrustedFiles": "open"
   // "prettier.documentSelectors": ["markdown"]
 }
