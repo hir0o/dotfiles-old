@@ -73,6 +73,7 @@ brew "ripgrep"
 brew "ruby-build"
 brew "shellcheck"
 brew "spotify-tui"
+brew "starship"
 brew "stow"
 brew "terminal-notifier"
 brew "tig"
@@ -105,6 +106,7 @@ cask "cyberduck", args: { appdir: "/Applications" }
 cask "discord"
 cask "diskwave"
 cask "docker", args: { appdir: "/Applications" }
+cask "epoccam"
 cask "evernote"
 cask "figma"
 cask "firefox"
@@ -124,10 +126,13 @@ cask "iterm2"
 cask "java11"
 cask "kap"
 cask "kindle", args: { appdir: "/Applications" }
+cask "line-bot-designer"
 cask "microsoft-auto-update"
 cask "microsoft-edge"
 cask "ngrok"
 cask "notion", args: { appdir: "/Applications" }
+cask "obsidian"
+cask "omnifocus"
 cask "postman", args: { appdir: "/Applications" }
 cask "rectangle", args: { appdir: "/Applications" }
 cask "selfcontrol"
