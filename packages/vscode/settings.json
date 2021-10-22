@@ -1,14 +1,20 @@
 {
   // ========== Theme ==========
   "workbench.iconTheme": "material-icon-theme", // icon テーマ
+  // "material-icon-theme.folders.color": "#224249",
+  "material-icon-theme.folders.theme": "classic",
+  "material-icon-theme.saturation": 0.6,
   "editor.semanticTokenColorCustomizations": null,
   "workbench.colorTheme": "One Dark Pro",
   "editor.bracketPairColorization.enabled": true,
+  "editor.fontFamily": "\"HackGen35Nerd Console\"",
+  "editor.cursorBlinking": "solid", // [blink, smooth, solid, expand]  // カーソル の点滅
 
   // ========== Emmet ==========
   "emmet.excludeLanguages": ["markdown"], // emmetを適用しない
   "emmet.includeLanguages": {
     // emmetを適用する
+    "php": "html",
     "erb": "html",
     "scss": "css",
     "javascript": "javascriptreact"
@@ -16,45 +22,39 @@
 
   // ========== Formatter ==========
   "editor.codeActionsOnSave": {
+    "source.organizeImports": true, // importを自動で追加
     "source.fixAll.eslint": true, // ファイル保存時にESLintでフォーマット
     "source.fixAll.stylelint": true // ファイル保存時にstylelintでフォーマット
   },
   "eslint.packageManager": "yarn",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "eslint.validate": [
+    // eslint適応するやつ
     "javascript",
     "javascriptreact",
     "typescriptreact",
-    {
-      "language": "vue",
-      "autoFix": true
-    }
+    "vue"
   ],
   "eslint.autoFixOnSave": true,
 
-  // ========== Prateter ==========
+  // Prateter
   "prettier.eslintIntegration": true, // ファイル保存時にPrettierでフォーマット
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
-  // ========== Stylelint ==========
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false,
-  "tailwindCSS.emmetCompletions": true,
-  "tailwindCSS.includeLanguages": {
-    "javascriptreact": "html",
-    "typescriptreact": "html",
-    "plaintext": "html"
-  },
-  "editor.quickSuggestions": {
-    "strings": true
+  // Common
+  "editor.formatOnSave": true,
+  // "files.autoSave": "off",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 100,
+
+  // Specific
+  "[markdown]": {
+    "editor.formatOnSave": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": true
   },
 
-  // ========== Common ==========
-  // "files.autoSave": "off", // オートセーブのタイミング
-  "files.autoSave": "onFocusChange",
-
-  // ========== LiveSassCompile ==========
+  // ========== LiveSassCompile ==========Li
   "liveSassCompile.settings.formats": [
     {
       "format": "expanded",
@@ -71,115 +71,35 @@
   ],
   // "vim.leader": "<space>",
   // インサートモード
-  "vim.insertModeKeyBindings": [
-    { "before": ["j", "j"], "after": ["<Esc>"] }
-    // {
-    //   "before": ["leader", "w"],
-    //   "after": [],
-    //   "commands": [
-    //     {
-    //       "command": "workbench.action.files.save",
-    //       "args": []
-    //     }
-    //   ]
-    // }
-  ],
+  "vim.insertModeKeyBindings": [{ "before": ["j", "j"], "after": ["<Esc>"] }],
 
-  // "command": "workbench.action.focusSideBar",
-  // "command": "workbench.action.terminal.focus",
-  // "command": "workbench.action.focusFirstEditorGroup",
-  // "command": "workbench.action.focusFirstEditorGroup",
-  // ========== Java ==========
-  // "editor.suggestSelection": "first",
-  // "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  // "java.home": "/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home",
-  // "java.refactor.renameFromFileExplorer": "autoApply",
-  // "files.exclude": {
-  //   "**/.classpath": true,
-  //   "**/.project": true,
-  //   "**/.settings": true,
-  //   "**/.factorypath": true
-  // },
-  // "java.semanticHighlighting.enabled": true,
-  // "csscomb.preset": "csscomb",
-  // "files.associations": {
-  //   "*.vue": "vue",
-  //   "*.gs": "javascript"
-  // },
-  // "files.trimFinalNewlines": true,
-  // "files.trimTrailingWhitespace": true,
-  // "files.insertFinalNewline": true,
-  // "editor.detectIndentation": false,
-  // "editor.tabSize": 2,
-  // "cSpell.userWords": ["Tollero"],
-  // "tabnine.experimentalAutoImports": true,
-  // "emeraldwalk.runonsave": {
-  //   "commands": [
-  //     {
-  //       "match": "\\.java$",
-  //       "cmd": "google-java-format --replace ${file}"
-  //     }
-  //   ]
-  // },
-
-  // ========== Go ==========
-  // "go.alternateTools": {
-  //   "go-langserver": "gopls"
-  // },
-  // "go.buildOnSave": "package",
-  // "go.formatTool": "goimports",
-  // "go.formatFlags": ["-w"],
-  // "go.gocodeAutoBuild": true,
-  // "go.installDependenciesWhenBuilding": true,
-  // "go.languageServerExperimentalFeatures": {
-  //   "hover": true,
-  //   "format": true,
-  //   "rename": true,
-  //   "diagnostics": true,
-  //   "autoComplete": false,
-  //   "signatureHelp": true,
-  //   "goToDefinition": true,
-  //   "findReferences": true,
-  //   "documentSymbols": true,
-  //   "workspaceSymbols": true,
-  //   "goToTypeDefinition": true,
-  //   "goToImplementation": true
-  // },
-  // "go.lintTool": "golint",
-  // "go.lintOnSave": "package",
-  // "gopls": {
-  //   "deepCompletion": true,
-  //   "usePlaceholders": false,
-  //   "completeUnimported": true
-  // },
-  // "go.testOnSave": false,
-  // "go.useLanguageServer": true,
-  // "go.vetOnSave": "package",
-
-  // ========== markdown ==========
-  "[markdown]": {
-    "editor.wordWrap": "on",
-    "editor.quickSuggestions": true,
-    "editor.snippetSuggestions": "top"
+  // 補完
+  "editor.acceptSuggestionOnEnter": "on", // エンターで補完しない
+  "editor.detectIndentation": true, // editor.tabSizeを開いてるファイルに合わせる
+  "editor.quickSuggestions": {
+    // 補完候補を出す場所
+    "other": true,
+    "strings": true,
+    "comments": true
   },
-
-  "liveServer.settings.donotVerifyTags": true,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "telemetry.enableTelemetry": false,
-  "workbench.startupEditor": "newUntitledFile",
-  "stylelint.enable": true,
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb",
-    "*.plist": "default"
-  },
-  "editor.acceptSuggestionOnEnter": "off",
-  "editor.accessibilitySupport": "off",
-  "editor.cursorStyle": "line",
-  "editor.insertSpaces": true, //
-  "editor.lineNumbers": "on",
-  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-  "editor.wordWrap": "off",
-  "editor.inlineSuggest.enabled": true,
+  "editor.formatOnPaste": true, // ペーストしたテキストをフォーマットする
+  "editor.formatOnType": true, // 入力したテキストをフォーマットする
+  "editor.insertSpaces": true, // インデントをスペースにする
+  "editor.linkedEditing": true, // 閉じタグを自動で編集する
+  "editor.matchBrackets": true, // 対応するカッコを強調する
+  "editor.minimap.enabled": false, // ミニマップの表示
+  "explorer.confirmDelete": false, // ファイルを削除するときに確認する
+  "explorer.confirmDragAndDrop": false, // ファイルを移動するときに確認する
+  "explorer.compactFolders": false, // フォルダ階層をまとめない
+  "files.insertFinalNewline": false, // 末尾に改行を自動で入れる
+  "files.trimFinalNewlines": true, // 末尾の改行を削除する
+  "files.trimTrailingWhitespace": true, // 末尾の空白を削除する
+  "terminal.integrated.cursorStyle": "line", // ターミナルのカーソル
+  "editor.cursorStyle": "line", // エディタのカーソル
+  "editor.lineNumbers": "on", // 行数の表示
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?", // ダブルクリックで選択して欲しくない文字
+  "editor.wordWrap": "on", // 文字の折り返し
+  "editor.tabSize": 2, // タブサイズ
   "github.copilot.enable": {
     "*": false,
     "yaml": false,
@@ -187,18 +107,13 @@
     "markdown": false,
     "typescriptreact": true
   },
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWw7ZWxlY3RyaWNhbFwiLFwiY3VzdG9tTGlicmFyaWVzXCI6W1wiTC5zY3JhdGNocGFkXCJdLFwicGx1Z2luc1wiOltdLFwicmVjZW50Q29sb3JzXCI6W10sXCJmb3JtYXRXaWR0aFwiOjAsXCJjcmVhdGVUYXJnZXRcIjpmYWxzZSxcInBhZ2VGb3JtYXRcIjp7XCJ4XCI6MCxcInlcIjowLFwid2lkdGhcIjo4MjcsXCJoZWlnaHRcIjoxMTY5fSxcInNlYXJjaFwiOnRydWUsXCJzaG93U3RhcnRTY3JlZW5cIjp0cnVlLFwiZ3JpZENvbG9yXCI6XCIjZDBkMGQwXCIsXCJkYXJrR3JpZENvbG9yXCI6XCIjNmU2ZTZlXCIsXCJhdXRvc2F2ZVwiOnRydWUsXCJyZXNpemVJbWFnZXNcIjpudWxsLFwib3BlbkNvdW50ZXJcIjowLFwidmVyc2lvblwiOjE4LFwidW5pdFwiOjEsXCJpc1J1bGVyT25cIjpmYWxzZSxcInVpXCI6XCJcIn0ifQ==",
-  "editor.fontFamily": "\"HackGen35Nerd Console\"",
-  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1630725189770,
-  "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-  "security.workspace.trust.untrustedFiles": "open"
-  // "prettier.documentSelectors": ["markdown"]
+
+  // Suggest
+  "editor.suggestSelection": "recentlyUsed", // サジェストのどの位置から選択するか。
+  "editor.snippetSuggestions": "top", // ユーザースニペットを上に持ってくる
+  "editor.tabCompletion": "on", // Tabでスニペットを挿入するかどうか
+  "security.workspace.trust.untrustedFiles": "open",
+  "files.autoGuessEncoding": true // オートエンコード
+
+  // src: https://atmarkit.itmedia.co.jp/ait/articles/1708/23/news026.html
 }
