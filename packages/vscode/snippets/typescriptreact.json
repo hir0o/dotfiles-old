@@ -16,8 +16,8 @@
   "function component with linaria": {
     "prefix": "fcs",
     "body": [
-      "import { VFC } from 'react';",
-      "import { styled } from 'linaria/lib/react';",
+      "import React, { VFC } from 'react';",
+      "import styled from 'styled-components';",
       "",
       "const ${1:ComponentName}: VFC = () => {",
       "\treturn (",
