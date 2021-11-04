@@ -2,7 +2,7 @@
   {
     "key": "ctrl+h",
     "command": "workbench.action.focusSideBar",
-    "when": "!filesExplorerFocus"
+    "when": "!filesExplorerFocus || terminalFocus"
   },
   {
     "key": "ctrl+j",
@@ -32,12 +32,12 @@
   {
     "key": "[Semicolon] f",
     "command": "workbench.action.quickOpen",
-    "when": "editorTextFocus && vim.mode == 'Normal'" 
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
-  {
-    "key": "cmd+p",
-    "command": "-workbench.action.quickOpen"
-  },
+  // {
+  //   "key": "cmd+p",
+  //   "command": " "
+  // },
   {
     "key": "ctrl+[Semicolon]",
     "command": "keybindings.editor.clearSearchResults",
