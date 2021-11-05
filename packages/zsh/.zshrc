@@ -51,7 +51,7 @@ alias rmds='find . -name '.DS_Store' -type f -ls -delete'
 alias ll='exa -alhF --icons --group-directories-first --time-style=long-iso'
 alias bat='bat --color=always --style=header,grid'
 alias cl='cd $(ls -d */ | fzf)'
-alias edd='vim $(ghq root)/github.com/mkmk4423/dotfiles'
+alias edd='vim $(ghq root)/github.com/hir0o/dotfiles'
 alias tma='tmux a || tmux'
 alias py='python3'
 
@@ -105,4 +105,3 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 ## ========== anyenv ==========
 eval "$(anyenv init -)"
 export PATH="$HOME/.anyenv/bin:$PATH"
-
