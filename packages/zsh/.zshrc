@@ -81,14 +81,11 @@ export FZF_DEFAULT_OPTS='--reverse --color fg:-1,bg:-1,hl:230,fg+:3,bg+:233,hl+:
 ## ========== p10k ==========
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 zstyle ':prezto:module:prompt' theme 'powerlevel10k'
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
 ## ========== Gcloud ==========
-# The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/shibuyahiroyuki/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/shibuyahiroyuki/google-cloud-sdk/path.zsh.inc'; fi
-# The next line enables shell command completion for gcloud.
 if [ -f '/Users/shibuyahiroyuki/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/shibuyahiroyuki/google-cloud-sdk/completion.zsh.inc'; fi
 
 ## ========== Fuzzy ==========
