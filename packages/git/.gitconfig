@@ -12,6 +12,7 @@
   spc = !"git stash list | grep `git rev-parse --abbrev-ref HEAD | cut -d  "/" -f 2` | fzf --preview 'git stash show -p --color=always' | xargs git stash pop"
   sd  = !"git stash drop `git stash list | cut -d ":" -f 1 | fzf --preview 'git stash show -p --color=always {}'`"
   rmc = rm -r --cached .
+  rmc = !"git checkout -- . && git clean -df ."
   br  = branch
   brd = !git branch -D `git branch | fzf`
   brda= !git branch -D `git branch | sed '/*/d' | tr '\n' ' '`
@@ -27,6 +28,7 @@
   lgs = log --stat
   lgg = !git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   mg  = merge
+  mgab= merge --abort
   mgb = !git merge `git branch | fzf`
   st  = status
   ps  = !git push origin `git rev-parse --abbrev-ref HEAD`

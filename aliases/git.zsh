@@ -3,6 +3,3 @@ alias cg='cd $(ghq root)/$(ghq list | fzf --preview "bat --color=always --style=
 alias cgp='cd `ls -d ~/projects/*/* | sed "/\./d" | fzf --preview "bat --color=always --style=header,grid --line-range :80 {}/README.*"`'
 alias ccg='code $(ghq root)/$(ghq list | fzf --preview "bat --color=always --style=header,grid --line-range :80 $(ghq root)/{}/README.*")'
 alias :="cg"
-function gres() {
-  git checkout -- . && git clean -df .
-}
