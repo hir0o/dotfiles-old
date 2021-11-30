@@ -5,10 +5,10 @@
   "material-icon-theme.folders.theme": "classic",
   "material-icon-theme.saturation": 0.6,
   "editor.semanticTokenColorCustomizations": null,
-  "workbench.colorTheme": "One Dark Pro",
   "editor.bracketPairColorization.enabled": true,
   "editor.fontFamily": "\"HackGen35Nerd Console\"",
   "editor.cursorBlinking": "solid", // [blink, smooth, solid, expand]  // カーソル の点滅
+  "editor.guides.bracketPairs": false,
 
   // ========== Emmet ==========
   "emmet.excludeLanguages": ["markdown"], // emmetを適用しない
@@ -22,9 +22,9 @@
 
   // ========== Formatter ==========
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true, // importを自動で追加
-    "source.fixAll.eslint": true, // ファイル保存時にESLintでフォーマット
-    "source.fixAll.stylelint": true // ファイル保存時にstylelintでフォーマット
+    "source.organizeImports": false, // importを自動で追加
+    "source.fixAll.eslint": false, // ファイル保存時にESLintでフォーマット
+    "source.fixAll.stylelint": false // ファイル保存時にstylelintでフォーマット
   },
   "eslint.packageManager": "yarn",
   "typescript.enablePromptUseWorkspaceTsdk": true,
@@ -39,12 +39,7 @@
 
   // Prateter
   "prettier.eslintIntegration": true, // ファイル保存時にPrettierでフォーマット
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-
-  // Common
-  "editor.formatOnSave": true,
-  // "files.autoSave": "off",
-  "files.autoSave": "afterDelay",
+  "editor.defaultFormatter": "HookyQR.beautify",
   "files.autoSaveDelay": 100,
 
   // Specific
@@ -81,8 +76,7 @@
     "other": true,
     "strings": true,
     "comments": true
-  },
-  "editor.formatOnPaste": true, // ペーストしたテキストをフォーマットする
+  }, // ペーストしたテキストをフォーマットする
   "editor.formatOnType": true, // 入力したテキストをフォーマットする
   "editor.insertSpaces": true, // インデントをスペースにする
   "editor.linkedEditing": true, // 閉じタグを自動で編集する
@@ -109,11 +103,27 @@
   },
 
   // Suggest
-  "editor.suggestSelection": "recentlyUsed", // サジェストのどの位置から選択するか。
+  "editor.suggestSelection": "first", // サジェストのどの位置から選択するか。
   "editor.snippetSuggestions": "top", // ユーザースニペットを上に持ってくる
   "editor.tabCompletion": "on", // Tabでスニペットを挿入するかどうか
   "security.workspace.trust.untrustedFiles": "open",
-  "files.autoGuessEncoding": true // オートエンコード
+  "files.autoGuessEncoding": true,
+  "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.formatOnSave": true, // オートエンコード
 
   // src: https://atmarkit.itmedia.co.jp/ait/articles/1708/23/news026.html
+
+  "beautify.language": {
+    "js": {
+      "type": ["javascript", "json"],
+      "filename": [".jshintrc", ".jsbeautifyrc"]
+      // "ext": ["js", "json"]
+      // ^^ to set extensions to be beautified using the javascript beautifier
+    },
+    "css": ["css", "scss"],
+    "html": ["htm", "html", "erb"] //"erb"を追加
+    // ^^ providing just an array sets the VS Code file type
+  }
 }
