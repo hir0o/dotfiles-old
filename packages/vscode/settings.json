@@ -1,9 +1,9 @@
 {
   // ========== Theme ==========
   "workbench.iconTheme": "material-icon-theme", // icon テーマ
-  // "material-icon-theme.folders.color": "#224249",
+  "material-icon-theme.folders.color": "#224249",
   "material-icon-theme.folders.theme": "classic",
-  "material-icon-theme.saturation": 0.6,
+  "material-icon-theme.saturation": 0.2,
   "editor.semanticTokenColorCustomizations": null,
   "editor.bracketPairColorization.enabled": true,
   "editor.fontFamily": "\"HackGen35Nerd Console\"",
@@ -27,20 +27,18 @@
     "source.fixAll.stylelint": false // ファイル保存時にstylelintでフォーマット
   },
   "eslint.packageManager": "yarn",
-  "typescript.enablePromptUseWorkspaceTsdk": true,
   "eslint.validate": [
     // eslint適応するやつ
     "javascript",
     "javascriptreact",
-    "typescriptreact",
-    "vue"
+    "typescript",
+    "typescriptreact"
   ],
   "eslint.autoFixOnSave": true,
 
   // Prateter
   "prettier.eslintIntegration": true, // ファイル保存時にPrettierでフォーマット
-  "editor.defaultFormatter": "HookyQR.beautify",
-  "files.autoSaveDelay": 100,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   // Specific
   "[markdown]": {
@@ -91,11 +89,10 @@
   "terminal.integrated.cursorStyle": "line", // ターミナルのカーソル
   "editor.cursorStyle": "line", // エディタのカーソル
   "editor.lineNumbers": "on", // 行数の表示
-  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?", // ダブルクリックで選択して欲しくない文字
-  "editor.wordWrap": "on", // 文字の折り返し
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?", // 文字の折り返し
   "editor.tabSize": 2, // タブサイズ
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "yaml": false,
     "plaintext": false,
     "markdown": false,
@@ -109,9 +106,7 @@
   "security.workspace.trust.untrustedFiles": "open",
   "files.autoGuessEncoding": true,
   "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.colorTheme": "One Dark Pro",
-  "editor.formatOnSave": true, // オートエンコード
+  "workbench.colorTheme": "One Dark Pro", // オートエンコード
 
   // src: https://atmarkit.itmedia.co.jp/ait/articles/1708/23/news026.html
 
@@ -125,5 +120,7 @@
     "css": ["css", "scss"],
     "html": ["htm", "html", "erb"] //"erb"を追加
     // ^^ providing just an array sets the VS Code file type
-  }
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.formatOnSave": true
 }

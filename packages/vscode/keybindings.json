@@ -52,5 +52,13 @@
     "key": "ctrl+cmd+n",
     "command": "explorer.newFolder",
     "when": "filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+s v",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "cmd+\\",
+    "command": "-workbench.action.splitEditor"
   }
 ]
