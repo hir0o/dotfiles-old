@@ -1,28 +1,23 @@
 [
   {
-    "key": "ctrl+h",
-    "command": "workbench.action.focusSideBar",
+    "key": "ctrl+s f",
+    "command": "workbench.view.explorer",
     "when": "!filesExplorerFocus || terminalFocus"
   },
   {
-    "key": "ctrl+j",
+    "key": "ctrl+s t",
     "command": "workbench.action.terminal.focus",
     "when": "!filesExplorerFocus"
   },
   {
-    "key": "ctrl+l",
+    "key": "ctrl+s l",
     "command": "workbench.action.focusFirstEditorGroup",
     "when": "!editorTextFocus"
   },
   {
-    "key": "ctrl+k",
-    "command": "workbench.action.focusFirstEditorGroup",
-    "when": "terminalFocus"
-  },
-  {
     "key": "[Semicolon] r",
     "command": "workbench.action.terminal.searchWorkspace",
-    "when": "editorTextFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus && vim.mode == 'Normal' || filesExplorerFocus"
   },
   {
     "key": "shift+cmd+f",
@@ -33,15 +28,6 @@
     "key": "[Semicolon] f",
     "command": "workbench.action.quickOpen",
     "when": "editorTextFocus && vim.mode == 'Normal'"
-  },
-  // {
-  //   "key": "cmd+p",
-  //   "command": " "
-  // },
-  {
-    "key": "ctrl+[Semicolon]",
-    "command": "keybindings.editor.clearSearchResults",
-    "when": "inKeybindings && inKeybindingsSearch"
   },
   {
     "key": "cmd+n",
@@ -60,5 +46,60 @@
   {
     "key": "cmd+\\",
     "command": "-workbench.action.splitEditor"
+  },
+  {
+    "key": "ctrl+s s",
+    "command": "workbench.action.splitEditorOrthogonal",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+k cmd+\\",
+    "command": "-workbench.action.splitEditorOrthogonal"
+  },
+  {
+    "key": "ctrl+s h",
+    "command": "workbench.action.focusLeftGroup",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+k cmd+left",
+    "command": "-workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "ctrl+s l",
+    "command": "workbench.action.focusRightGroup",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+k cmd+right",
+    "command": "-workbench.action.focusRightGroup"
+  },
+  {
+    "key": "ctrl+s j",
+    "command": "workbench.action.focusBelowGroup",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+k cmd+down",
+    "command": "-workbench.action.focusBelowGroup"
+  },
+  {
+    "key": "ctrl+ k",
+    "command": "workbench.action.focusAboveGroup",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+k cmd+up",
+    "command": "-workbench.action.focusAboveGroup"
+  },
+  {
+    "key": "ctrl+s shift+l",
+    "command": "workbench.action.increaseViewWidth",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+s shift+m",
+    "command": "workbench.action.decreaseViewWidth",
+    "when": "editorFocus"
   }
 ]
