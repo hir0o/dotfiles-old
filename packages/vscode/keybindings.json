@@ -2,18 +2,28 @@
   {
     "key": "ctrl+s f",
     "command": "workbench.view.explorer",
-    "when": "!filesExplorerFocus || terminalFocus"
+    "when": "!filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+s h",
+    "command": "workbench.action.focusSideBar",
+    "when": "!filesExplorerFocus"
   },
   {
     "key": "ctrl+s t",
     "command": "workbench.action.terminal.focus",
-    "when": "!filesExplorerFocus"
+    "when": "!terminalFocus"
   },
   {
     "key": "ctrl+s l",
     "command": "workbench.action.focusFirstEditorGroup",
-    "when": "!editorTextFocus"
+    "when": "!editorTextFocus && !terminalFocus"
   },
+  {
+    "key": "ctrl+s l",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminalFocus"
+  }, // terminalからeditorに行くときに、ターミナルを閉じるため
   {
     "key": "[Semicolon] r",
     "command": "workbench.action.terminal.searchWorkspace",
