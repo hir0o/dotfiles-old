@@ -55,6 +55,7 @@ alias edd='vim $(ghq root)/github.com/hir0o/dotfiles'
 alias tma='tmux a || tmux'
 alias py='python3'
 alias b='bat'
+alias vim='nvim'
 
 source "$DOTPATH/aliases/aliase.zsh"
 # source "$DOTPATH/aliases/docker.zsh"
@@ -82,7 +83,7 @@ export FZF_DEFAULT_OPTS='--reverse --color fg:-1,bg:-1,hl:230,fg+:3,bg+:233,hl+:
 ## ========== p10k ==========
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 zstyle ':prezto:module:prompt' theme 'powerlevel10k'
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[ -f ~/.p10k.zsh ] && source ~/.p10k.zsh
 
 
 ## ========== Gcloud ==========
@@ -95,10 +96,10 @@ export GIT_FUZZY_STATUS_ADD_KEY='Ctrl-A'
 export GIT_FUZZY_STATUS_RESET_KEY='Ctrl-R'
 
 ## ========== zsh-syntax-highlighting ==========
-source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[ -f ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ## ========== zsh-autosuggestions ==========
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+[ -f ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ] && source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ## ========== anyenv ==========
 eval "$(anyenv init -)"
