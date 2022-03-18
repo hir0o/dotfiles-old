@@ -1,14 +1,17 @@
 {
   // ========== Theme ==========
-  "workbench.iconTheme": "material-icon-theme", // icon テーマ
+  "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.folders.color": "#224249",
   "material-icon-theme.folders.theme": "classic",
-  "material-icon-theme.saturation": 0.2,
+  "material-icon-theme.saturation": 0.5,
   "editor.semanticTokenColorCustomizations": null,
   "editor.bracketPairColorization.enabled": true,
   "editor.fontFamily": "\"HackGen35Nerd Console\"",
   "editor.cursorBlinking": "solid", // [blink, smooth, solid, expand]  // カーソル の点滅
   "editor.guides.bracketPairs": false,
+  "workbench.colorCustomizations": {
+    "tab.activeBackground": "#068bb3"
+  },
 
   // ========== Emmet ==========
   "emmet.excludeLanguages": ["markdown"], // emmetを適用しない
@@ -23,7 +26,7 @@
   // ========== Formatter ==========
   "editor.codeActionsOnSave": {
     "source.organizeImports": false, // importを自動で追加
-    "source.fixAll.eslint": false, // ファイル保存時にESLintでフォーマット
+    "source.fixAll.eslint": true, // ファイル保存時にESLintでフォーマット
     "source.fixAll.stylelint": false // ファイル保存時にstylelintでフォーマット
   },
   "eslint.packageManager": "yarn",
@@ -34,10 +37,8 @@
     "typescript",
     "typescriptreact"
   ],
-  "eslint.autoFixOnSave": true,
 
   // Prateter
-  "prettier.eslintIntegration": true, // ファイル保存時にPrettierでフォーマット
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   // Specific
@@ -47,14 +48,8 @@
     "editor.quickSuggestions": true
   },
 
-  // ========== LiveSassCompile ==========Li
-  "liveSassCompile.settings.formats": [
-    {
-      "format": "expanded",
-      "extensionName": ".css",
-      "savePath": "/css/"
-    }
-  ],
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterNames.enabled": "all",
 
   // ========== Vim ==========
   // ノーマルモード
@@ -64,7 +59,8 @@
   ],
   // "vim.leader": "<space>",
   // インサートモード
-  "vim.insertModeKeyBindings": [{ "before": ["j", "j"], "after": ["<Esc>"] }],
+  // "vim.insertModeKeyBindings": [{ "before": ["j", "j"], "after": ["<Esc>"] }],
+  "vim.surround": true,
 
   // 補完
   "editor.acceptSuggestionOnEnter": "on", // エンターで補完しない
@@ -82,7 +78,7 @@
   "editor.minimap.enabled": false, // ミニマップの表示
   "explorer.confirmDelete": false, // ファイルを削除するときに確認する
   "explorer.confirmDragAndDrop": false, // ファイルを移動するときに確認する
-  "explorer.compactFolders": false, // フォルダ階層をまとめない
+  "explorer.compactFolders": true, // フォルダ階層をまとめない
   "files.insertFinalNewline": false, // 末尾に改行を自動で入れる
   "files.trimFinalNewlines": true, // 末尾の改行を削除する
   "files.trimTrailingWhitespace": true, // 末尾の空白を削除する
@@ -108,8 +104,6 @@
   "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
   "workbench.colorTheme": "One Dark Pro", // オートエンコード
 
-  // src: https://atmarkit.itmedia.co.jp/ait/articles/1708/23/news026.html
-
   "beautify.language": {
     "js": {
       "type": ["javascript", "json"],
@@ -121,6 +115,6 @@
     "html": ["htm", "html", "erb"] //"erb"を追加
     // ^^ providing just an array sets the VS Code file type
   },
-  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.inlineSuggest.enabled": true,
   "editor.formatOnSave": true
 }
