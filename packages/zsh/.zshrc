@@ -47,7 +47,6 @@ alias ...='cd ../../'
 alias op='open ./'
 alias oplg='open https://github.com/hir0o/log/issues'
 alias rmds='find . -name '.DS_Store' -type f -ls -delete'
-# alias ll='exa -alhF --icons --git-ignore --group-directories-first --time-style=long-iso --ignore-glob=".git|node_modules"'
 alias ll='exa -alhF --icons --group-directories-first --time-style=long-iso'
 alias bat='bat --color=always --style=header,grid'
 alias cl='cd $(ls -d */ | fzf)'
@@ -87,8 +86,8 @@ zstyle ':prezto:module:prompt' theme 'powerlevel10k'
 
 
 ## ========== Gcloud ==========
-# if [ -f '/Users/shibuyahiroyuki/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/shibuyahiroyuki/google-cloud-sdk/path.zsh.inc'; fi
-# if [ -f '/Users/shibuyahiroyuki/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/shibuyahiroyuki/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/shibuyahiroyuki/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/shibuyahiroyuki/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/shibuyahiroyuki/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/shibuyahiroyuki/google-cloud-sdk/completion.zsh.inc'; fi
 
 ## ========== Fuzzy ==========
 export PATH="/Users/shibuyahiroyuki/git-fuzzy/bin:$PATH"
