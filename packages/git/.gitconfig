@@ -5,6 +5,7 @@
 [alias]
   ad  = add
   ada = add -A
+  am  = commit --amend
   st  = status
   ss  = stash -u
   sl  = !"git stash list | cut -d ":" -f 1 | fzf --preview 'git stash show -p --color=always {}'"

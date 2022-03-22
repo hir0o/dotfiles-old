@@ -111,5 +111,20 @@
     "key": "ctrl+s shift+m",
     "command": "workbench.action.decreaseViewWidth",
     "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+s ctrl+s",
+    "command": "workbench.action.files.save",
+    "when": "editorFocus"
   }
+  // {
+  //   "key": "tab",
+  //   "command": "workbench.action.nextEditor",
+  //   "when": "editorFocus"
+  // },
+  // {
+  //   "key": "shift+tab",
+  //   "command": "workbench.action.previousEditor",
+  //   "when": "editorFocus"
+  // }
 ]

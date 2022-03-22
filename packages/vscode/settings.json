@@ -1,16 +1,29 @@
 {
   // ========== Theme ==========
+  "workbench.colorTheme": "elly",
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.folders.color": "#224249",
   "material-icon-theme.folders.theme": "classic",
   "material-icon-theme.saturation": 0.5,
-  "editor.semanticTokenColorCustomizations": null,
+  "editor.semanticTokenColorCustomizations": {
+    "comment": {
+      "foreground": "#479b47",
+      "fontStyle": "italic"
+    }
+  },
   "editor.bracketPairColorization.enabled": true,
   "editor.fontFamily": "\"HackGen35Nerd Console\"",
   "editor.cursorBlinking": "solid", // [blink, smooth, solid, expand]  // カーソル の点滅
   "editor.guides.bracketPairs": false,
   "workbench.colorCustomizations": {
-    "tab.activeBackground": "#068bb3"
+    "terminal.tab.activeBorder": "#ff0000",
+    "editorBracketHighlight.foreground1": "#B48EAD",
+    "editorBracketHighlight.foreground2": "#A3BE8C",
+    "editorBracketHighlight.foreground3": "#EBCB8B",
+    "editorBracketHighlight.foreground4": "#D08770",
+    "editorBracketHighlight.foreground5": "#BF616A",
+    "editorBracketHighlight.foreground6": "#abb2c0",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#db6165"
   },
 
   // ========== Emmet ==========
@@ -48,18 +61,15 @@
     "editor.quickSuggestions": true
   },
 
-  "javascript.inlayHints.parameterNames.enabled": "all",
-  "typescript.inlayHints.parameterNames.enabled": "all",
+  // 引数名とか表紙するやつ
+  // "javascript.inlayHints.parameterNames.enabled": "all",
+  // "typescript.inlayHints.parameterNames.enabled": "all",
 
   // ========== Vim ==========
   // ノーマルモード
   "vim.normalModeKeyBindingsNonRecursive": [
     { "before": ["<C-d>"], "after": ["g", "b"] } // マルチカーソル,
-    // { "before": []}
   ],
-  // "vim.leader": "<space>",
-  // インサートモード
-  // "vim.insertModeKeyBindings": [{ "before": ["j", "j"], "after": ["<Esc>"] }],
   "vim.surround": true,
 
   // 補完
@@ -74,7 +84,7 @@
   "editor.formatOnType": true, // 入力したテキストをフォーマットする
   "editor.insertSpaces": true, // インデントをスペースにする
   "editor.linkedEditing": true, // 閉じタグを自動で編集する
-  "editor.matchBrackets": true, // 対応するカッコを強調する
+  "editor.matchBrackets": "always", // 対応するカッコを強調する
   "editor.minimap.enabled": false, // ミニマップの表示
   "explorer.confirmDelete": false, // ファイルを削除するときに確認する
   "explorer.confirmDragAndDrop": false, // ファイルを移動するときに確認する
@@ -102,19 +112,8 @@
   "security.workspace.trust.untrustedFiles": "open",
   "files.autoGuessEncoding": true,
   "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
-  "workbench.colorTheme": "One Dark Pro", // オートエンコード
 
-  "beautify.language": {
-    "js": {
-      "type": ["javascript", "json"],
-      "filename": [".jshintrc", ".jsbeautifyrc"]
-      // "ext": ["js", "json"]
-      // ^^ to set extensions to be beautified using the javascript beautifier
-    },
-    "css": ["css", "scss"],
-    "html": ["htm", "html", "erb"] //"erb"を追加
-    // ^^ providing just an array sets the VS Code file type
-  },
   "editor.inlineSuggest.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.formatOnSave": true
 }
