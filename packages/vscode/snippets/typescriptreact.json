@@ -89,5 +89,9 @@
       "\t/>",
       ");"
     ]
+  },
+  "state action type": {
+    "prefix": "set state type",
+    "body": ["Dispatch<SetStateAction<${0:type}>>"]
   }
 }
