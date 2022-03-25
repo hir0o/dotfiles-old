@@ -37,7 +37,7 @@
   {
     "key": "[Semicolon] f",
     "command": "workbench.action.quickOpen",
-    "when": "editorTextFocus && vim.mode == 'Normal'"
+    "when": "vim.mode != 'Insert'"
   },
   {
     "key": "cmd+p",
@@ -244,9 +244,9 @@
   {
     "key": "cmd+f",
     "command": "-workbench.action.terminal.focusFind"
-  },
-  {
-    "key": "cmd+f",
-    "command": "-actions.find"
   }
+  // {
+  //   "key": "cmd+f",
+  //   "command": "-actions.find"
+  // }
 ]
