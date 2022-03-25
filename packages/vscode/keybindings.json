@@ -40,31 +40,28 @@
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
+    "key": "cmd+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
     "key": "cmd+n",
     "command": "explorer.newFile",
     "when": "filesExplorerFocus"
   },
   {
-    "key": "ctrl+cmd+n",
+    "key": "cmd+f",
     "command": "explorer.newFolder",
     "when": "filesExplorerFocus"
   },
+
   {
     "key": "ctrl+s v",
     "command": "workbench.action.splitEditor"
   },
   {
-    "key": "cmd+\\",
-    "command": "-workbench.action.splitEditor"
-  },
-  {
     "key": "ctrl+s s",
     "command": "workbench.action.splitEditorOrthogonal",
     "when": "editorFocus"
-  },
-  {
-    "key": "cmd+k cmd+\\",
-    "command": "-workbench.action.splitEditorOrthogonal"
   },
   {
     "key": "ctrl+s h",
@@ -116,15 +113,140 @@
     "key": "ctrl+s ctrl+s",
     "command": "workbench.action.files.save",
     "when": "editorFocus"
+  },
+  {
+    "key": "cmd+s",
+    "command": "-workbench.action.files.save"
+  },
+  {
+    "key": "up",
+    "command": "-extension.vim_up"
+  },
+  {
+    "key": "up",
+    "command": "-cursorUp"
+  },
+  {
+    "key": "down",
+    "command": "-extension.vim_down"
+  },
+  {
+    "key": "down",
+    "command": "-cursorDown"
+  },
+  {
+    "key": "left",
+    "command": "-extens-cursorLeftion.vim_left"
+  },
+  {
+    "ke": "left",
+    "command": "-cursorLeft"
+  },
+  {
+    "ke": "right",
+    "command": "-extension.vim_right"
+  },
+  {
+    "ke": "right",
+    "command": "-cursorRight"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-cursorUp"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-cursorDown"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+    "when": "!activeEditorGroupEmpty"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+    "when": "!activeEditorGroupEmpty"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+    "when": "!activeEditorGroupEmpty"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+    "when": "!activeEditorGroupEmpty"
+  },
+  // タブ移動
+  {
+    "key": "ctrl+shift+n",
+    "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
+    "when": "inEditorsPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
+    "when": "inEditorsPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
+    "when": "inEditorsPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "-workbench.action.quickOpenNavigatePreviousInEditorPicker",
+    "when": "inEditorsPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+cmd+[",
+    "command": "workbench.action.moveEditorLeftInGroup"
+  },
+  {
+    "key": "ctrl+cmd+]",
+    "command": "workbench.action.moveEditorRightInGroup"
+  },
+  {
+    "key": "shift+cmd+[",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  {
+    "key": "shift+cmd+[",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "shift+cmd+]",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  {
+    "key": "shift+cmd+]",
+    "command": "workbench.action.nextEditor"
+  },
+  // 階層リンク
+  {
+    "key": "shift+cmd+.",
+    "command": "-breadcrumbs.focusAndSelect",
+    "when": "breadcrumbsPossible"
+  },
+  {
+    "key": "shift+cmd+enter",
+    "command": "breadcrumbs.focusAndSelect",
+    "when": "breadcrumbsPossible"
+  },
+  {
+    "key": "/",
+    "command": "workbench.action.terminal.focusFind",
+    "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "cmd+f",
+    "command": "-workbench.action.terminal.focusFind"
+  },
+  {
+    "key": "cmd+f",
+    "command": "-actions.find"
   }
-  // {
-  //   "key": "tab",
-  //   "command": "workbench.action.nextEditor",
-  //   "when": "editorFocus"
-  // },
-  // {
-  //   "key": "shift+tab",
-  //   "command": "workbench.action.previousEditor",
-  //   "when": "editorFocus"
-  // }
 ]
