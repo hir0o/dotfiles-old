@@ -4,13 +4,13 @@
     "body": [
       "import { VFC } from 'react';",
       "",
-      "const ${1:ComponentName}: VFC = () => {",
+      "const ${1:${TM_FILENAME_BASE:ComponentName}}: VFC = () => {",
       "\treturn (",
       "\t\t$2",
       "\t)",
       "};",
       "",
-      "export default ${1:ComponentName};"
+      "export default ${1:${TM_FILENAME_BASE:ComponentName}};"
     ]
   },
   "function component with linaria": {

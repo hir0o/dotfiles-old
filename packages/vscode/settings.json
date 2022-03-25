@@ -17,6 +17,7 @@
   "editor.guides.bracketPairs": false,
   "workbench.colorCustomizations": {
     "terminal.tab.activeBorder": "#ff0000",
+    "tab.activeBorderTop": "#ff0000",
     "editorBracketHighlight.foreground1": "#B48EAD",
     "editorBracketHighlight.foreground2": "#A3BE8C",
     "editorBracketHighlight.foreground3": "#EBCB8B",
@@ -102,7 +103,8 @@
     "yaml": false,
     "plaintext": false,
     "markdown": false,
-    "typescriptreact": true
+    "typescriptreact": true,
+    "haskell": false
   },
 
   // Suggest
@@ -115,5 +117,6 @@
 
   "editor.inlineSuggest.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "workbench.startupEditor": "none"
 }

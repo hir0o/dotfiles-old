@@ -244,9 +244,33 @@
   {
     "key": "cmd+f",
     "command": "-workbench.action.terminal.focusFind"
-  }
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
   // {
   //   "key": "cmd+f",
   //   "command": "-actions.find"
   // }
+  {
+    "key": "ctrl+shift+p",
+    "command": "workbench.action.openSnippets"
+  }
 ]
