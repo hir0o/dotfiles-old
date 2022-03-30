@@ -228,19 +228,14 @@
   // 階層リンク
   {
     "key": "shift+cmd+.",
-    "command": "-breadcrumbs.focusAndSelect",
-    "when": "breadcrumbsPossible"
-  },
-  {
-    "key": "shift+cmd+enter",
     "command": "breadcrumbs.focusAndSelect",
     "when": "breadcrumbsPossible"
   },
-  {
-    "key": "/",
-    "command": "workbench.action.terminal.focusFind",
-    "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-  },
+  // {
+  //   "key": "shift+cmd+enter",
+  //   "command": "breadcrumbs.focusAndSelect",
+  //   "when": "breadcrumbsPossible"
+  // },
   {
     "key": "cmd+f",
     "command": "-workbench.action.terminal.focusFind"
@@ -272,5 +267,60 @@
   {
     "key": "ctrl+shift+p",
     "command": "workbench.action.openSnippets"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "acceptSelectedSuggestion",
+    "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-acceptSelectedSuggestion",
+    "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "acceptAlternativeSelectedSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "shift+enter",
+    "command": "-acceptAlternativeSelectedSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "; c",
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "f2",
+    "command": "-editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   }
 ]
