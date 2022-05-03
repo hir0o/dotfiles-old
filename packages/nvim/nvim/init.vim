@@ -97,10 +97,6 @@ au BufNewFile,BufRead *.tsx setf typescriptreact
 " Markdown
 au BufNewFile,BufRead *.md set filetype=markdown
 au BufNewFile,BufRead *.mdx set filetype=markdown
-" Flow
-au BufNewFile,BufRead *.flow set filetype=javascript
-" Fish
-au BufNewFile,BufRead *.fish set filetype=fish
 
 set suffixesadd=.js,.es,.jsx,.json,.css,.less,.sass,.styl,.php,.py,.md
 
@@ -113,17 +109,6 @@ autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
 " Imports "{{{
 " ---------------------------------------------------------------------
 runtime ./plug.vim
-if has("unix")
-  let s:uname = system("uname -s")
-  " Do Mac stuff
-  if s:uname == "Darwin\n"
-    runtime ./macos.vim
-  endif
-endif
-if has('win32')
-  runtime ./windows.vim
-endif
-
 runtime ./maps.vim
 "}}}
 
@@ -138,8 +123,8 @@ if exists("&termguicolors") && exists("&winblend")
   set wildoptions=pum
   set pumblend=5
   set background=dark
-  " Use NeoSolarized
   colorscheme elly
+  set termguicolors
 endif
 
 "}}}
