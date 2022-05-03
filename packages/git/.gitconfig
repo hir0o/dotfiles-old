@@ -9,7 +9,7 @@
   st  = status
   ss  = stash -u
   sl  = !"git stash list | cut -d ":" -f 1 | fzf --preview 'git stash show -p --color=always {}'"
-  sp  = !"git stash pop `git stash list | cut -d ":" -f 1 | fzf --preview 'git stash show -p --color=always {}'`"
+  sp  = !"git stash apply `git stash list | cut -d ":" -f 1 | fzf --preview 'git stash show -p --color=always {}'`"
   spc = !"git stash list | grep `git rev-parse --abbrev-ref HEAD | cut -d  "/" -f 2` | fzf --preview 'git stash show -p --color=always' | xargs git stash pop"
   sd  = !"git stash drop `git stash list | cut -d ":" -f 1 | fzf --preview 'git stash show -p --color=always {}'`"
   rmc = rm -r --cached .
@@ -19,7 +19,7 @@
   brda= !git branch -D `git branch | sed '/*/d' | tr '\n' ' '`
   cm  = commit --verbose
   cmm = !"git add -A && git status && git commit -m"
-  coa = !"git branch --all | tr -d '* ' | grep -v -e '->' | peco | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
+  coa = !"git branch --all | tr -d '* ' | grep -v -e '->' | fzf | sed -e 's+remotes/[^/]*/++g' | xargs git checkout"
   co  = !"git checkout `git branch | fzf`"
   cob = checkout -b
   df  = diff
@@ -58,6 +58,9 @@
   fh = fetch
   reb = rebase -i
   cin = !"gibo dump $(gibo list | fzf) >> .gitignore"
+  # 直前のcommitの取り消し
+  # https://qiita.com/shuntaro_tamura/items/06281261d893acf049ed
+  cmdl= git reset --soft HEAD^
 
 [core]
   editor = nvim
