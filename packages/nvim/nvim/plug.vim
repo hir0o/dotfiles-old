@@ -22,6 +22,14 @@ if has("nvim")
   Plug 'hrsh7th/nvim-cmp'
   Plug 'hrsh7th/cmp-vsnip'
   Plug 'hrsh7th/vim-vsnip'
+  " defx
+  Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'kristijanhusak/defx-git'
+  Plug 'kristijanhusak/defx-icons'
+  " tig
+  Plug 'iberianpig/tig-explorer.vim'
+
+  Plug 'skanehira/translate.vim'
 endif
 
 call plug#end()
