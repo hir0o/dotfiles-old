@@ -15,6 +15,8 @@ nnoremap dw vb"_d
 " Select all
 nmap <C-a> gg<S-v>G
 
+nmap <silent>sq :<C-u>q <CR>
+
 " Save with root permission
 command! W w !sudo tee > /dev/null %
 
