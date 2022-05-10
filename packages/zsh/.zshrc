@@ -55,6 +55,7 @@ alias tma='tmux a || tmux'
 alias py='python3'
 alias b='bat'
 alias vim='nvim'
+alias opap='ls /Applications | fzf | xargs open -a'
 alias memo="vim + ~/Documents/memo.txt"
 
 source "$DOTPATH/aliases/aliase.zsh"
