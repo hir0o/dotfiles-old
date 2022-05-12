@@ -15,7 +15,7 @@
   rmc = rm -r --cached .
   rmc = !"git checkout -- . && git clean -df ."
   br  = branch
-  brd = !git branch -D `git branch | fzf`
+  brd = !git branch -D `git branch | fzf -m`
   brda= !git branch -D `git branch | sed '/*/d' | tr '\n' ' '`
   cm  = commit --verbose
   cmm = !"git add -A && git status && git commit -m"
