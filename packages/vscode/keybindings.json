@@ -91,7 +91,7 @@
     "command": "-workbench.action.focusBelowGroup"
   },
   {
-    "key": "ctrl+ k",
+    "key": "ctrl+k",
     "command": "workbench.action.focusAboveGroup",
     "when": "editorFocus"
   },
@@ -234,26 +234,6 @@
   {
     "key": "cmd+f",
     "command": "-workbench.action.terminal.focusFind"
-  },
-  {
-    "key": "ctrl+j",
-    "command": "workbench.action.quickOpenSelectNext",
-    "when": "inQuickOpen"
-  },
-  {
-    "key": "ctrl+n",
-    "command": "-workbench.action.quickOpenSelectNext",
-    "when": "inQuickOpen"
-  },
-  {
-    "key": "ctrl+k",
-    "command": "workbench.action.quickOpenSelectPrevious",
-    "when": "inQuickOpen"
-  },
-  {
-    "key": "ctrl+p",
-    "command": "-workbench.action.quickOpenSelectPrevious",
-    "when": "inQuickOpen"
   },
   // {
   //   "key": "cmd+f",
