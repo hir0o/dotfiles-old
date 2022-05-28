@@ -15,7 +15,7 @@ nnoremap dw vb"_d
 " Select all
 nmap <C-a> gg<S-v>G
 
-nmap <silent>sq :<C-u>q <CR>
+nmap <silent>sq :<C-u>q! <CR>
 
 " Save with root permission
 command! W w !sudo tee > /dev/null %
@@ -36,7 +36,7 @@ vnoremap <silent> # :<C-U>
 " Tabs
 
 " Open current directory
-nmap te :tabedit
+nmap te :tabedit<Return>
 nmap <S-Tab> :tabprev<Return>
 nmap <Tab> :tabnext<Return>
 
@@ -61,3 +61,4 @@ nmap <C-w><left> <C-w><
 nmap <C-w><right> <C-w>>
 nmap <C-w><up> <C-w>+
 nmap <C-w><down> <C-w>-
+

@@ -63,6 +63,8 @@ autocmd InsertLeave * set nopaste
 " Add asterisks in block comments
 set formatoptions+=r
 
+autocmd BufNewFile,BufRead memo.txt $r! echo '--------------------------------------------------------------------------------' && date
+
 "}}}
 
 " Highlights "{{{
