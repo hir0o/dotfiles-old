@@ -2,7 +2,7 @@
   {
     "key": "ctrl+s f",
     "command": "workbench.view.explorer",
-    "when": "!filesExplorerFocus"
+    "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
     "key": "ctrl+s h",
@@ -259,9 +259,9 @@
     "when": "suggestWidgetVisible && textInputFocus"
   },
   {
-    "key": "; c",
+    "key": "[Semicolon] c",
     "command": "editor.action.rename",
-    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && vim.mode == 'Ng fsormal'"
   },
   {
     "key": "f2",
@@ -272,5 +272,53 @@
     "key": "ctrl+Enter",
     "command": "markdown.todo.toggleDone",
     "when": "editorTextFocus && resourceExtname == .md"
+  },
+  {
+    "key": "g d",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor && vim.mode == 'Normal'"
+  },
+  {
+    "key": "f12",
+    "command": "-editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "g shift+d",
+    "command": "editor.action.goToImplementation",
+    "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor && vim.mode == 'Normal'"
+  },
+  {
+    "key": "cmd+f12",
+    "command": "-editor.action.goToImplementation",
+    "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "shift+k",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "cmd+k cmd+i",
+    "command": "-editor.action.showHover",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "g p",
+    "command": "workbench.action.navigateBack",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "-workbench.action.navigateBack"
+  },
+  {
+    "key": "g n",
+    "command": "workbench.action.navigateForward",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "-workbench.action.navigateForward"
   }
 ]
