@@ -93,5 +93,27 @@
   "state action type": {
     "prefix": "set state type",
     "body": ["Dispatch<SetStateAction<${0:type}>>"]
+  },
+  "useEffect": {
+    "prefix": "ue",
+    "body": ["useEffect(() => {", "\t$0", "}, []);"]
+  },
+  "sfc": {
+    "prefix": "styled components",
+    "body": [
+      "import React from 'react'",
+      "import styled from 'styled-components'",
+      "type Props = {",
+      "  className?: string",
+      "}",
+      "export const ${1:FC${TM_FILENAME_BASE:ComponentName}}: React.FC<Props> = ({ className }) => {",
+      "return <div className={className}>$2</div>",
+      "}",
+      "export const ${TM_FILENAME_BASE:ComponentName} = styled(${1:FC${TM_FILENAME_BASE:ComponentName}})``"
+    ]
+  },
+  "className": {
+    "prefix": "cnst",
+    "body": ["className={`\\${className}__$1`}"]
   }
 }
