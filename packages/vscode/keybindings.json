@@ -261,7 +261,7 @@
   {
     "key": "[Semicolon] c",
     "command": "editor.action.rename",
-    "when": "editorTextFocus && !editorReadonly && vim.mode == 'Ng fsormal'"
+    "when": "editorTextFocus && !editorReadonly && vim.mode == 'Normal'"
   },
   {
     "key": "f2",
