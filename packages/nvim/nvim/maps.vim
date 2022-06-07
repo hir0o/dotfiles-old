@@ -32,6 +32,17 @@ vnoremap <silent> # :<C-U>
   \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
   \gV:call setreg('"', old_reg, old_regtype)<CR>
 
+" prettier
+" range_formatting in visual mode
+xmap <Leader>f <Plug>(prettier-format)
+
+" formatting in normal mode
+nmap <Leader>f <Plug>(prettier-format)
+
+" navigate back and forward
+nnoremap gp <C-o>
+nnoremap gn <C-i> 
+
 "-----------------------------
 " Tabs
 

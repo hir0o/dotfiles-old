@@ -11,6 +11,11 @@ if has("nvim")
   Plug 'neovim/nvim-lspconfig'
   Plug 'williamboman/nvim-lsp-installer'
   Plug 'tami5/lspsaga.nvim'
+  Plug 'jose-elias-alvarez/null-ls.nvim'
+  Plug 'MunifTanjim/prettier.nvim'
+
+  Plug 'akinsho/toggleterm.nvim'
+
   " telescope
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
@@ -28,7 +33,9 @@ if has("nvim")
   Plug 'kristijanhusak/defx-icons'
   " tig
   Plug 'iberianpig/tig-explorer.vim'
-
+  " tags
+  Plug 'windwp/nvim-autopairs'
+  " other
   Plug 'skanehira/translate.vim'
 endif
 
