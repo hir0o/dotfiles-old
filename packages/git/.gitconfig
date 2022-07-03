@@ -5,7 +5,7 @@
 [alias]
   ad  = add
   ada = add -A
-  am  = commit --amend
+  amd  = commit --amend
   st  = status
   ss  = stash -u
   sl  = !"git stash list | cut -d ":" -f 1 | fzf --preview 'git stash show -p --color=always {}'"
@@ -120,3 +120,17 @@
 
 [init]
   defaultBranch = main
+
+[gitflow "branch"]
+    main = main
+    develop = develop
+
+[gitflow "prefix"]
+    feature = feature/
+    release = release/
+    hotfix = hotfix/
+    support = support/
+  versiontag =
+
+[pull]
+	rebase = true
