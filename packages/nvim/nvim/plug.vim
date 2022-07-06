@@ -5,6 +5,7 @@ endif
 call plug#begin()
 
 Plug 'ulwlu/elly.vim'
+" Plug 'ayu-theme/ayu-vim'
 
 if has("nvim")
   " lsp
@@ -15,6 +16,9 @@ if has("nvim")
   Plug 'MunifTanjim/prettier.nvim'
 
   Plug 'akinsho/toggleterm.nvim'
+  Plug 'tpope/vim-surround'
+
+  " Plug 'github/copilot.vim'
 
   " telescope
   Plug 'nvim-lua/plenary.nvim'

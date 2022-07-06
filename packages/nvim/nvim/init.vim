@@ -23,6 +23,8 @@ set cmdheight=1
 set laststatus=2
 set scrolloff=10
 set expandtab
+set so=5
+
 "let loaded_matchparen = 1
 set shell=/bin/zsh
 set backupskip=/tmp/*,/private/tmp/*
@@ -34,6 +36,9 @@ endif
 
 " Suppress appending <PasteStart> and <PasteEnd> when pasting
 set t_BE=
+
+" mouse
+set mouse=a
 
 set nosc noru nosm
 " Don't redraw while executing macros (good performance config)
@@ -125,8 +130,10 @@ if exists("&termguicolors") && exists("&winblend")
   set wildoptions=pum
   set pumblend=5
   set background=dark
-  colorscheme elly
   set termguicolors
+  colorscheme elly
+  " let ayucolor="dark"
+  " colorscheme ayu
 endif
 
 "}}}
