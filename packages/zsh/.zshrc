@@ -56,7 +56,6 @@ alias py='python3'
 alias b='bat'
 alias vim='nvim'
 alias opap='ls /Applications | fzf | xargs open -a'
-alias memo="vim + ~/Documents/memo.txt"
 
 source "$DOTPATH/aliases/aliase.zsh"
 # source "$DOTPATH/aliases/docker.zsh"
@@ -70,6 +69,7 @@ source "$DOTPATH/aliases/node.zsh"
 # source "$DOTPATH/aliases/rails.zsh"
 # source "$DOTPATH/aliases/system.zsh"
 source "$DOTPATH/aliases/vscode.zsh"
+source "$DOTPATH/aliases/yarn.zsh"
 
 
 ## ----------------------------------------
@@ -106,12 +106,3 @@ export GIT_FUZZY_STATUS_RESET_KEY='Ctrl-R'
 ## ========== anyenv ==========
 eval "$(anyenv init -)"
 export PATH="$HOME/.anyenv/bin:$PATH"
-# export VOLTA_HOME="$HOME/.volta"
-# export PATH="$VOLTA_HOME/bin:$PATH"
-
-# android
-
-export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
-export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
-export PATH=$PATH:$HOME/platform-tools

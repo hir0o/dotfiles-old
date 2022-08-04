@@ -1,6 +1,6 @@
 " Description: Keymaps
 
-nnoremap <S-C-p> "0p
+nnoremap <S-C-p> "13p
 " Delete without yank
 nnoremap <leader>d "_d
 nnoremap x "_x
@@ -42,6 +42,17 @@ nmap <Leader>f <Plug>(prettier-format)
 " navigate back and forward
 nnoremap gp <C-o>
 nnoremap gn <C-i> 
+
+" Save
+nmap <C-s> :w<Return>
+nmap <C-s><C-q> :wq<Return>
+
+" move
+noremap h hzz
+noremap j jzz
+noremap k kzz
+noremap l lzz
+
 
 "-----------------------------
 " Tabs

@@ -14,6 +14,7 @@ if has("nvim")
   Plug 'tami5/lspsaga.nvim'
   Plug 'jose-elias-alvarez/null-ls.nvim'
   Plug 'MunifTanjim/prettier.nvim'
+  Plug 'mattn/emmet-vim'
 
   Plug 'akinsho/toggleterm.nvim'
   Plug 'tpope/vim-surround'
@@ -41,6 +42,9 @@ if has("nvim")
   Plug 'windwp/nvim-autopairs'
   " other
   Plug 'skanehira/translate.vim'
+  " md
+  Plug 'godlygeek/tabular'
+  Plug 'preservim/vim-markdown'
 endif
 
 call plug#end()

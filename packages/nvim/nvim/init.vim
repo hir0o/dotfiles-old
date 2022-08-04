@@ -68,7 +68,7 @@ autocmd InsertLeave * set nopaste
 " Add asterisks in block comments
 set formatoptions+=r
 
-autocmd BufNewFile,BufRead memo.txt $r! echo '--------------------------------------------------------------------------------' && date
+" autocmd BufNewFile,BufRead memo.md $r! echo '--------------------------------------------------------------------------------' && date
 
 "}}}
 
@@ -162,4 +162,6 @@ function! ToggleCheckbox()
     call setline('.', l:result)
   end
 endfunction
+
+let g:vim_markdown_folding_disabled = 1
 

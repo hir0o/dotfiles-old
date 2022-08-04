@@ -27,7 +27,7 @@
   {
     "key": "[Semicolon] r",
     "command": "workbench.action.terminal.searchWorkspace",
-    "when": "editorTextFocus && vim.mode == 'Normal' || filesExplorerFocus"
+    "when": "vim.mode != 'Insert'"
   },
   {
     "key": "shift+cmd+f",
@@ -42,6 +42,16 @@
   {
     "key": "cmd+p",
     "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "[Semicolon] t",
+    "command": "workbench.action.closePanel",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "[Semicolon] t",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "!terminalFocus && vim.mode != 'Insert'"
   },
   {
     "key": "cmd+n",
@@ -110,7 +120,7 @@
     "when": "editorFocus"
   },
   {
-    "key": "ctrl+s ctrl+s",
+    "key": "ctrl+s",
     "command": "workbench.action.files.save",
     "when": "editorFocus"
   },
@@ -320,5 +330,15 @@
   {
     "key": "ctrl+shift+-",
     "command": "-workbench.action.navigateForward"
+  },
+  {
+    "key": "; a",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+.",
+    "command": "-editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
   }
 ]

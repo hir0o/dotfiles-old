@@ -1,6 +1,6 @@
 {
   // ========== Theme ==========
-  "workbench.colorTheme": "elly",
+  "workbench.colorTheme": "Ayu Dark",
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.folders.color": "#224249",
   "material-icon-theme.folders.theme": "classic",
@@ -16,8 +16,8 @@
   "editor.cursorBlinking": "solid", // [blink, smooth, solid, expand]  // カーソル の点滅
   "editor.guides.bracketPairs": false,
   "workbench.colorCustomizations": {
-    "terminal.tab.activeBorder": "#ff0000",
-    "tab.activeBorderTop": "#ff0000",
+    "terminal.tab.activeBorder": "#ff0",
+    "tab.activeBorderTop": "#ff0",
     "editorBracketHighlight.foreground1": "#B48EAD",
     "editorBracketHighlight.foreground2": "#A3BE8C",
     "editorBracketHighlight.foreground3": "#EBCB8B",
@@ -38,11 +38,11 @@
   },
 
   // ========== Formatter ==========
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": false, // importを自動で追加
-    "source.fixAll.eslint": true, // ファイル保存時にESLintでフォーマット
-    "source.fixAll.stylelint": false // ファイル保存時にstylelintでフォーマット
-  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.codeActionsOnSave": ["source.fixAll.eslint"],
+
   "eslint.packageManager": "yarn",
   "eslint.validate": [
     // eslint適応するやつ
@@ -52,14 +52,15 @@
     "typescriptreact"
   ],
 
-  // Prateter
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-
   // Specific
   "[markdown]": {
     "editor.formatOnSave": false,
     "editor.wordWrap": "on",
-    "editor.quickSuggestions": true
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
   },
 
   // 引数名とか表紙するやつ
@@ -74,7 +75,6 @@
   "vim.surround": true,
 
   // 補完
-  "editor.acceptSuggestionOnEnter": "on", // エンターで補完しない
   "editor.detectIndentation": true, // editor.tabSizeを開いてるファイルに合わせる
   "editor.quickSuggestions": {
     // 補完候補を出す場所
@@ -82,7 +82,6 @@
     "strings": true,
     "comments": true
   }, // ペーストしたテキストをフォーマットする
-  "editor.formatOnType": true, // 入力したテキストをフォーマットする
   "editor.insertSpaces": true, // インデントをスペースにする
   "editor.linkedEditing": true, // 閉じタグを自動で編集する
   "editor.matchBrackets": "always", // 対応するカッコを強調する
@@ -102,9 +101,10 @@
     "*": true,
     "yaml": false,
     "plaintext": false,
-    "markdown": false,
-    "typescriptreact": true,
-    "haskell": false
+    "markdown": true,
+    "Log": false,
+    "rust": true,
+    "typescriptreact": true
   },
 
   // Suggest
@@ -114,9 +114,30 @@
   "security.workspace.trust.untrustedFiles": "open",
   "files.autoGuessEncoding": true,
   "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
-
   "editor.inlineSuggest.enabled": true,
-  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.startupEditor": "none",
+  "cSpell.userWords": [
+    "AGESTOCK",
+    "Alertbar",
+    "Chank",
+    "Datetime",
+    "datetimes",
+    "sekokan",
+    "SoftRoid",
+    "ssid",
+    "testid",
+    "usecases"
+  ],
+  "codestream.serverUrl": "https://api.codestream.com",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.formatOnSave": true,
-  "workbench.startupEditor": "none"
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.titleScrollbarSizing": "large",
+  "workbench.editor.enablePreview": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 5000,
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.visible": false,
+  "diffEditor.ignoreTrimWhitespace": false
 }

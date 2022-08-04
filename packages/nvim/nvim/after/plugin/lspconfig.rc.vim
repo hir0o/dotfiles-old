@@ -35,7 +35,7 @@ local on_attach = function(client, bufnr)
 end
 
 
-local servers = { "tsserver", "prismals", "rust-analyzer" }
+local servers = { "tsserver", "prismals" }
 for _, lsp in pairs(servers) do
   require('lspconfig')[lsp].setup {
     on_attach = on_attach,
@@ -43,5 +43,8 @@ for _, lsp in pairs(servers) do
       debounce_text_changes = 150,
     }
   }
+
+require'lspconfig'.tailwindcss.setup{}
+
 end
 EOF
