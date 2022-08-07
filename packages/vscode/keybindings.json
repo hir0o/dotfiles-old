@@ -46,7 +46,7 @@
   {
     "key": "[Semicolon] t",
     "command": "workbench.action.closePanel",
-    "when": "terminalFocus"
+    "when": "terminalFocus && vim.mode != 'Insert'"
   },
   {
     "key": "[Semicolon] t",
@@ -271,7 +271,7 @@
   {
     "key": "[Semicolon] c",
     "command": "editor.action.rename",
-    "when": "editorTextFocus && !editorReadonly && vim.mode == 'Normal'"
+    "when": "editorTextFocus && !editorReadonly && vim.mode != 'Insert'"
   },
   {
     "key": "f2",
@@ -332,9 +332,9 @@
     "command": "-workbench.action.navigateForward"
   },
   {
-    "key": "; a",
+    "key": "[Semicolon] a",
     "command": "editor.action.quickFix",
-    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly && vim.mode != 'Insert'"
   },
   {
     "key": "cmd+.",

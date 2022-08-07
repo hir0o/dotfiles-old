@@ -52,6 +52,9 @@
     "typescriptreact"
   ],
 
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
   // Specific
   "[markdown]": {
     "editor.formatOnSave": false,
@@ -137,7 +140,6 @@
   "workbench.editor.enablePreview": true,
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 5000,
-  "workbench.statusBar.visible": false,
-  "workbench.activityBar.visible": false,
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.activityBar.visible": false
 }
