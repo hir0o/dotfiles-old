@@ -96,15 +96,16 @@
   "files.trimFinalNewlines": true, // 末尾の改行を削除する
   "files.trimTrailingWhitespace": true, // 末尾の空白を削除する
   "terminal.integrated.cursorStyle": "line", // ターミナルのカーソル
+  "editor.glyphMargin": false, // グリフマージンを表示しない
   "editor.cursorStyle": "line", // エディタのカーソル
-  "editor.lineNumbers": "on", // 行数の表示
+  "editor.lineNumbers": "off", // 行数の表示
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?", // 文字の折り返し
   "editor.tabSize": 2, // タブサイズ
   "github.copilot.enable": {
     "*": true,
     "yaml": false,
     "plaintext": false,
-    "markdown": true,
+    "markdown": false,
     "Log": false,
     "rust": true,
     "typescriptreact": true
@@ -140,6 +141,11 @@
   "workbench.editor.enablePreview": true,
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 5000,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.activityBar.visible": false
+  // 将来デフォルトでtrueになる
+  "git.mergeEditor": true,
+  "git.ignoreRebaseWarning": true,
+  "editor.folding": false,
+  "breadcrumbs.enabled": false,
+  "window.title": "${activeEditorMedium}${separator}${activeEditorShort}",
+  "diffEditor.ignoreTrimWhitespace": false
 }
