@@ -9,18 +9,18 @@ Plug 'ulwlu/elly.vim'
 
 if has("nvim")
   " lsp
+  Plug 'williamboman/mason.nvim'
+  Plug 'williamboman/mason-lspconfig.nvim'
   Plug 'neovim/nvim-lspconfig'
-  Plug 'williamboman/nvim-lsp-installer'
   Plug 'tami5/lspsaga.nvim'
   Plug 'jose-elias-alvarez/null-ls.nvim'
   Plug 'MunifTanjim/prettier.nvim'
   Plug 'mattn/emmet-vim'
-
+  Plug 'windwp/nvim-ts-autotag'
   Plug 'akinsho/toggleterm.nvim'
   Plug 'tpope/vim-surround'
-
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   " Plug 'github/copilot.vim'
-
   " telescope
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
@@ -45,6 +45,8 @@ if has("nvim")
   " md
   Plug 'godlygeek/tabular'
   Plug 'preservim/vim-markdown'
+  " git
+  Plug 'lewis6991/gitsigns.nvim'
 endif
 
 call plug#end()
