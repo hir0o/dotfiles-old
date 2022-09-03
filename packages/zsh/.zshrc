@@ -1,4 +1,5 @@
 export DOTPATH=~/ghq/github.com/hir0o/dotfiles
+eval "$(sheldon source)"
 
 ## ----------------------------------------
 ##	ENV
@@ -36,73 +37,25 @@ export SAVEHIST=100000      # historyの上限
 export HISTSIZE=100000      # historyの上限
 
 ## ----------------------------------------
-##	Aliaces
+##	PATH
 ## ----------------------------------------
 
-## ========== General ==========
-mkcd() { mkdir $@; cd $@; }
-alias vz='nvim ${DOTPATH}/.zshrc'
-alias srz='source ~/.zshrc'
-alias ...='cd ../../'
-alias op='open ./'
-alias oplg='open https://github.com/hir0o/log/issues'
-alias rmds='find . -name '.DS_Store' -type f -ls -delete'
-alias ll='exa -alhF --icons --group-directories-first --time-style=long-iso'
-alias bat='bat --color=always --style=header,grid'
-alias cl='cd $(ls -d */ | fzf)'
-alias edd='vim $(ghq root)/github.com/hir0o/dotfiles'
-alias tma='tmux a || tmux'
-alias py='python3'
-alias b='bat'
-alias vim='nvim'
-alias opap='ls /Applications | fzf | xargs open -a'
-
-source "$DOTPATH/aliases/aliase.zsh"
-# source "$DOTPATH/aliases/docker.zsh"
-# source "$DOTPATH/aliases/ffmpg.zsh"
-source "$DOTPATH/aliases/git.zsh"
-source "$DOTPATH/aliases/node.zsh"
-# source "$DOTPATH/aliases/go.zsh"
-# source "$DOTPATH/aliases/heroku.zsh"
-# source "$DOTPATH/aliases/mysql.zsh"
-# source "$DOTPATH/aliases/npm.zsh"
-# source "$DOTPATH/aliases/rails.zsh"
-# source "$DOTPATH/aliases/system.zsh"
-source "$DOTPATH/aliases/vscode.zsh"
-source "$DOTPATH/aliases/yarn.zsh"
-
+export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 
 ## ----------------------------------------
 ## Other
 ## ----------------------------------------
 
-## ========== FZF ==========
-export FZF_DEFAULT_COMMAND="rg --files --hidden -g '!.git' -g '!node_modules' --max-columns 200"
-export FZF_DEFAULT_OPTS='--reverse --color fg:-1,bg:-1,hl:230,fg+:3,bg+:233,hl+:229 --color info:150,prompt:110,spinner:150,pointer:167,marker:174'
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-
 ## ========== p10k ==========
-source ~/powerlevel10k/powerlevel10k.zsh-theme
 zstyle ':prezto:module:prompt' theme 'powerlevel10k'
 [ -f ~/.p10k.zsh ] && source ~/.p10k.zsh
 
+zsh-defer source "$HOME/.zshrc.lazy"
 
-## ========== Gcloud ==========
-if [ -f '/Users/shibuyahiroyuki/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/shibuyahiroyuki/google-cloud-sdk/path.zsh.inc'; fi
-if [ -f '/Users/shibuyahiroyuki/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/shibuyahiroyuki/google-cloud-sdk/completion.zsh.inc'; fi
+zshaddhistory() {
+    local line="${1%%$'\n'}"
+    [[ ! "$line" =~ "^(cd|jj?|lazygit|la|ll|ls|rm|rmdir)($| )" ]]
+}
 
-## ========== Fuzzy ==========
-export PATH="/Users/shibuyahiroyuki/git-fuzzy/bin:$PATH"
-export GIT_FUZZY_STATUS_ADD_KEY='Ctrl-A'
-export GIT_FUZZY_STATUS_RESET_KEY='Ctrl-R'
-
-## ========== zsh-syntax-highlighting ==========
-[ -f ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-## ========== zsh-autosuggestions ==========
-[ -f ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ] && source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-## ========== anyenv ==========
-eval "$(anyenv init -)"
-export PATH="$HOME/.anyenv/bin:$PATH"
