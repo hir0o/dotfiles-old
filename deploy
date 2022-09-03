@@ -2,7 +2,6 @@
 
 set -e
 
-stow -v -d "${PWD}/packages" -t $HOME zsh p10k git tmux
+stow -v -d "${PWD}/packages" -t $HOME zsh p10k git tmux sheldon
 stow -v -d "${PWD}/packages" -t "${HOME}/.config/" nvim karabiner
 stow -v -d "${PWD}/packages" -t "${HOME}/Library/Application Support/Code/User/" vscode
-stow -v -d "${PWD}/packages" -t "${HOME}/Library/Preferences" item
