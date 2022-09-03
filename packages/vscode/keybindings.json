@@ -1,7 +1,22 @@
 [
   {
-    "key": "ctrl+s f",
+    "key": "space e",
     "command": "workbench.view.explorer",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space e",
+    "command": "workbench.action.focusFirstEditorGroup",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "space t",
+    "command": "workbench.view.focusFirstEditorGroup",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space a",
+    "command": "workbench.action.toggleActivityBarVisibility",
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
@@ -27,7 +42,7 @@
   {
     "key": "[Semicolon] r",
     "command": "workbench.action.terminal.searchWorkspace",
-    "when": "vim.mode != 'Insert'"
+    "when": "vim.mode != 'Insert' && !terminalFocus"
   },
   {
     "key": "shift+cmd+f",

@@ -98,7 +98,7 @@
   "terminal.integrated.cursorStyle": "line", // ターミナルのカーソル
   "editor.glyphMargin": false, // グリフマージンを表示しない
   "editor.cursorStyle": "line", // エディタのカーソル
-  "editor.lineNumbers": "off", // 行数の表示
+  "editor.lineNumbers": "on", // 行数の表示
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?", // 文字の折り返し
   "editor.tabSize": 2, // タブサイズ
   "github.copilot.enable": {
@@ -147,5 +147,8 @@
   "editor.folding": false,
   "breadcrumbs.enabled": false,
   "window.title": "${activeEditorMedium}${separator}${activeEditorShort}",
-  "diffEditor.ignoreTrimWhitespace": false
+  "notebook.lineNumbers": "on",
+  "typescript.referencesCodeLens.enabled": true,
+  "editor.stickyScroll.enabled": true,
+  "terminal.integrated.smoothScrolling": false // ターミナルのスムーズなスクロール
 }
